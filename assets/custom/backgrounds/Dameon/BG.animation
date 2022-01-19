@@ -1,0 +1,5 @@
+imagePath="D:/EverythingOpenBN/ClientServer_4_14_2021/server_6_8_2021Bn3/assets/custom/backgrounds/Dameon/BG.png"
+
+animation state="BG"
+frame duration="0.5" x="0" y="0" w="240" h="160" originx="0" originy="0"
+frame duration="0.5" x="240" y="0" w="240" h="160" originx="0" originy="0"

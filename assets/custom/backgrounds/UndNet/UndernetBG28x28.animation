@@ -1,0 +1,5 @@
+imagePath="UndernetBG28x28.png"
+
+animation state="BG"
+frame duration="0.15" x="0" y="0" w="28" h="28" originx="0" originy="0"
+frame duration="0.15" x="28" y="0" w="28" h="28" originx="0" originy="0"

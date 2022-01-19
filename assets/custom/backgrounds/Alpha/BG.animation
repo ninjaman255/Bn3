@@ -1,0 +1,11 @@
+imagePath="D:/EverythingOpenBN/ClientServer_4_14_2021/server_4_14_2021Yoka/assets/custom/backgrounds/Alpha/BG.png"
+
+animation state="BG"
+frame duration="0.45" x="0" y="0" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="256" y="0" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="512" y="0" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="768" y="0" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="0" y="256" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="256" y="256" w="256" h="256" originx="0" originy="0"
+frame duration="0.45" x="512" y="256" w="256" h="256" originx="0" originy="0"
+frame duration="1" x="768" y="256" w="256" h="256" originx="0" originy="0"

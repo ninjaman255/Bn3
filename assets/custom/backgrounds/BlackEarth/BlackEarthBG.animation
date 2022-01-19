@@ -1,0 +1,7 @@
+imagePath="BlackEarthBG.png"
+
+animation state="Unnamed State"
+frame duration="0.15" x="4" y="4" w="256" h="256" originx="0" originy="0"
+frame duration="0.15" x="268" y="4" w="256" h="256" originx="0" originy="0"
+frame duration="0.15" x="4" y="268" w="256" h="256" originx="0" originy="0"
+frame duration="0.15" x="268" y="268" w="256" h="256" originx="0" originy="0"

@@ -1,0 +1,4 @@
+imagePath="Navy_Punk_mug.png"
+
+animation state="IDLE"
+frame duration="0.05" x="4" y="0" w="40" h="48" originx="0" originy="0"

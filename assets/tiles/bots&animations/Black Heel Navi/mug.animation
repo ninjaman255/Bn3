@@ -1,0 +1,4 @@
+imagePath="Black_Heel_mug.png"
+
+animation state="IDLE"
+frame duration="0.05" x="5" y="5" w="38" h="46" originx="0" originy="0"

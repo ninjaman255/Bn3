@@ -1,0 +1,11 @@
+imagePath="GenericHpBg.png"
+
+animation state="BG"
+frame duration="0.15" x="0" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="68" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="136" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="204" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="0" y="68" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="68" y="68" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="136" y="68" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="204" y="68" w="64" h="64" originx="0" originy="0"

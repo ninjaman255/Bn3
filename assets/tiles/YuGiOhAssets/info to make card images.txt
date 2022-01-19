@@ -1,0 +1,1 @@
+only the main card image box resize to 17x17 resolution 200

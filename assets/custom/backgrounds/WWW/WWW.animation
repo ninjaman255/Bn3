@@ -1,0 +1,10 @@
+imagePath="w3Rocketbg.png"
+
+animation state="BG"
+frame duration="0.05" x="4" y="4" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="136" y="4" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="268" y="4" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="4" y="136" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="136" y="136" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="268" y="136" w="128" h="128" originx="0" originy="0"
+frame duration="0.05" x="4" y="268" w="128" h="128" originx="0" originy="0"

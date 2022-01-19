@@ -1,0 +1,11 @@
+imagePath="JomonHP.png"
+
+animation state="BG"
+frame duration="0.5" x="0" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="64" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="128" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="196" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="256" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="320" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="384" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.5" x="448" y="0" w="64" h="64" originx="0" originy="0"

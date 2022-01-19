@@ -1,0 +1,6 @@
+imagePath="visionBurstBG.png"
+
+animation state="BG"
+frame duration="0.3" x="3" y="4" w="240" h="160" originx="0" originy="0"
+frame duration="0.3" x="250" y="4" w="240" h="160" originx="0" originy="0"
+frame duration="0.3" x="498" y="4" w="240" h="160" originx="0" originy="0"

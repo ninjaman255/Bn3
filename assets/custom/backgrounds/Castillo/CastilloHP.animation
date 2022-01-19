@@ -1,0 +1,11 @@
+imagePath="CastilloHP.png"
+
+animation state="BG"
+frame duration="0.5" x="0" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="16" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="32" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="48" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="64" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="80" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="96" y="0" w="16" h="79" originx="0" originy="0"
+frame duration="0.5" x="112" y="0" w="16" h="79" originx="0" originy="0"

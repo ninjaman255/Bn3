@@ -1,0 +1,4 @@
+imagePath="Thick_Offical_mug.png"
+
+animation state="IDLE"
+frame duration="0.05" x="1" y="1" w="38" h="46" originx="0" originy="0"

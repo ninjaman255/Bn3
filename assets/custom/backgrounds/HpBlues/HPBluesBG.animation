@@ -1,0 +1,7 @@
+imagePath="HPBluesBG.png"
+
+animation state="BG"
+frame duration="0.5" x="0" y="0" w="256" h="128" originx="0" originy="0"
+frame duration="0.5" x="256" y="0" w="256" h="128" originx="0" originy="0"
+frame duration="0.5" x="512" y="0" w="256" h="128" originx="0" originy="0"
+frame duration="0.5" x="768" y="0" w="256" h="128" originx="0" originy="0"

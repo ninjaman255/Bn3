@@ -1,0 +1,7 @@
+imagePath="D:/EverythingOpenBN/ClientServer_4_14_2021/server_6_14_BN3/assets/custom/backgrounds/HpTamako/BG.png"
+
+animation state="BG"
+frame duration="0.166" x="0" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.166" x="64" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.166" x="128" y="0" w="64" h="64" originx="0" originy="0"
+frame duration="0.166" x="192" y="0" w="64" h="64" originx="0" originy="0"

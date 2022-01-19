@@ -1,0 +1,7 @@
+imagePath="denAreabg.png"
+
+animation state="BG"
+frame duration="0.1" x="0" y="0" w="256" h="128" originx="0" originy="0"
+frame duration="0.1" x="258" y="0" w="256" h="128" originx="0" originy="0"
+frame duration="0.1" x="0" y="130" w="256" h="128" originx="0" originy="0"
+frame duration="0.1" x="258" y="130" w="256" h="128" originx="0" originy="0"

@@ -1,0 +1,1 @@
+net_battle_server.exe -p 3000 --custom-emotes-path=/server/assets/emotes/LonelyReel.png

@@ -1,0 +1,10 @@
+imagePath="BG.png"
+
+animation state="BG"
+frame duration="0.2" x="0" y="0" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="256" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="512" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="768" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="1024" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="1280" w="256" h="256" originx="0" originy="0"
+frame duration="0.4" x="0" y="1536" w="256" h="256" originx="0" originy="0"

@@ -1,0 +1,8 @@
+imagePath="RoboControlPCbg.png"
+
+animation state="BG"
+frame duration="1" x="4" y="4" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="4" y="72" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="72" y="72" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="4" y="140" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="72" y="140" w="64" h="64" originx="0" originy="0"

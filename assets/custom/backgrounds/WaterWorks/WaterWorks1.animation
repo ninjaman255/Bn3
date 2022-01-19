@@ -1,0 +1,13 @@
+imagePath="waterworks.frozen.1.png"
+
+animation state="BG"
+frame duration="0.1" x="4" y="4" w="64" h="32" originx="0" originy="0"
+frame duration="0.1" x="72" y="4" w="64" h="32" originx="0" originy="0"
+frame duration="0.1" x="140" y="4" w="64" h="32" originx="0" originy="0"
+frame duration="0.1" x="208" y="4" w="64" h="32" originx="0" originy="0"
+frame duration="0.1" x="276" y="4" w="64" h="32" originx="0" originy="0"
+frame duration="0.05" x="4" y="40" w="64" h="32" originx="0" originy="0"
+frame duration="0.05" x="72" y="40" w="64" h="32" originx="0" originy="0"
+frame duration="0.05" x="140" y="40" w="64" h="32" originx="0" originy="0"
+frame duration="0.05" x="208" y="40" w="64" h="32" originx="0" originy="0"
+frame duration="0.05" x="276" y="40" w="64" h="32" originx="0" originy="0"

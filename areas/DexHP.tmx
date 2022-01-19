@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="34">
+ <properties>
+  <property name="Background" value="custom"/>
+  <property name="Background Animation" value="/server/assets/custom/backgrounds/HpDex/DexHP.animation"/>
+  <property name="Background Texture" value="/server/assets/custom/backgrounds/HpDex/DexHP.png"/>
+  <property name="Background Vel X" type="float" value="0.1"/>
+  <property name="Background Vel Y" type="float" value="0.1"/>
+  <property name="Name" value="Dex_HP"/>
+  <property name="Song" value="/server/assets/music/Mega Man Battle Network 3 OST - T21 Network Is Spreading (Internet Theme).ogg"/>
+ </properties>
+ <tileset firstgid="1" source="../assets/tiles/DexHomepage.tsx"/>
+ <tileset firstgid="2" source="../assets/tiles/tile.tsx"/>
+ <tileset firstgid="11" source="../assets/tiles/warp.tsx"/>
+ <tileset firstgid="17" source="../assets/tiles/BN3DexPanel.tsx"/>
+ <tileset firstgid="24" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
+ <tileset firstgid="33" source="../assets/tiles/shotcutwarps.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="20" height="20" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" gid="1" x="832" y="704" width="1024" height="768"/>
+ </objectgroup>
+ <layer id="3" name="Tile Layer 2" width="20" height="20" visible="0" offsetx="0" offsety="-16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2,2,2,0,2,2,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2,2,2,2,2,2,0,2,2,2,0,0,0,0,
+0,0,0,0,0,0,2,2,2,0,2,2,2,2,2,2,0,0,0,0,
+0,0,0,2,2,2,2,2,2,0,2,2,0,2,2,2,0,0,0,0,
+0,0,0,2,2,2,2,2,2,0,2,2,0,2,2,2,0,2,2,0,
+0,0,0,2,2,2,2,2,2,0,2,2,0,2,2,2,2,2,2,0,
+0,0,2,2,2,2,2,2,2,0,2,2,0,2,2,2,0,2,2,0,
+0,0,2,2,2,0,2,2,2,0,2,2,0,2,2,2,0,2,2,0,
+0,0,2,2,2,0,2,2,2,0,2,2,0,2,2,2,0,2,2,0,
+0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,
+0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,
+0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,
+0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,
+0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 2" offsetx="0" offsety="-16">
+  <object id="2" name="DexHP" type="Custom Warp" gid="12" x="240" y="272" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Up Right"/>
+    <property name="warp_name" value="ACDC1Warp"/>
+    <property name="warp_to" value="default"/>
+   </properties>
+  </object>
+  <object id="3" gid="25" x="240" y="272" width="64" height="40"/>
+  <object id="4" gid="24" x="496" y="368" width="64" height="40"/>
+  <object id="5" name="AcdcSqrShortcut" type="Custom Warp" gid="12" x="560" y="272" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Up Right"/>
+    <property name="warp_name" value="ACDCSQRTODEX"/>
+    <property name="warp_to" value="ACDCSqr"/>
+   </properties>
+  </object>
+  <object id="6" gid="33" x="560" y="272" width="46" height="32"/>
+  <object id="7" gid="17" x="192" y="224" width="64" height="32"/>
+  <object id="8" gid="17" x="96" y="128" width="64" height="32"/>
+  <object id="9" gid="17" x="192" y="128" width="64" height="32"/>
+  <object id="10" gid="17" x="96" y="224" width="64" height="32"/>
+  <object id="11" gid="17" x="96" y="288" width="64" height="32"/>
+  <object id="12" gid="17" x="96" y="352" width="64" height="32"/>
+  <object id="13" gid="17" x="448" y="384" width="64" height="32"/>
+  <object id="14" gid="17" x="512" y="448" width="64" height="32"/>
+  <object id="15" gid="17" x="384" y="384" width="64" height="32"/>
+  <object id="16" gid="17" x="320" y="384" width="64" height="32"/>
+  <object id="17" gid="17" x="320" y="448" width="64" height="32"/>
+  <object id="18" gid="17" x="384" y="448" width="64" height="32"/>
+  <object id="19" gid="17" x="448" y="448" width="64" height="32"/>
+  <object id="20" gid="17" x="448" y="512" width="64" height="32"/>
+  <object id="21" gid="17" x="384" y="512" width="64" height="32"/>
+  <object id="22" gid="17" x="384" y="576" width="64" height="32"/>
+  <object id="23" gid="17" x="448" y="576" width="64" height="32"/>
+  <object id="24" name="Gutsman" type="NPC" x="312" y="376">
+   <properties>
+    <property name="Animation Name" value="gutsman"/>
+    <property name="Asset Name" value="gutsman"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Down Right"/>
+    <property name="Next Waypoint 1" type="object" value="25"/>
+    <property name="Text 1" value="Guts! welcome to my Homepage!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="WP1" x="600" y="376">
+   <properties>
+    <property name="Direction" value="Up Left"/>
+    <property name="Next Waypoint 1" type="object" value="26"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="WP1" x="600" y="408">
+   <properties>
+    <property name="Direction" value="Up Left"/>
+    <property name="Next Waypoint 1" type="object" value="27"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="WP1" x="568" y="408">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Next Waypoint 1" type="object" value="28"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="WP1" x="568" y="504">
+   <properties>
+    <property name="Direction" value="Up Left"/>
+    <property name="Next Waypoint 1" type="object" value="29"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="WP1" x="536" y="504">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Next Waypoint 1" type="object" value="30"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="WP1" x="536" y="600">
+   <properties>
+    <property name="Direction" value="Up Left"/>
+    <property name="Next Waypoint 1" type="object" value="31"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="WP1" x="376" y="600">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="32"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="WP1" x="376" y="504">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="33"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="WP1" x="312" y="504">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="24"/>
+    <property name="Wait Time" type="int" value="1"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

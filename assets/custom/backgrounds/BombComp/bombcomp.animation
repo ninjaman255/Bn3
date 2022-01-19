@@ -1,0 +1,12 @@
+imagePath="bombcompbg.png"
+
+animation state="BG"
+frame duration="0.1" x="0" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="37" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="74" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.05" x="111" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="148" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="185" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="222" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="259" y="0" w="32" h="32" originx="0" originy="0"
+frame duration="0.1" x="296" y="0" w="32" h="32" originx="0" originy="0"

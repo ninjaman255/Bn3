@@ -1,0 +1,7 @@
+imagePath="trafficlightbg.png"
+
+animation state="BG"
+frame duration="0.15" x="4" y="152" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="72" y="152" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="140" y="152" w="64" h="64" originx="0" originy="0"
+frame duration="0.15" x="208" y="152" w="64" h="64" originx="0" originy="0"

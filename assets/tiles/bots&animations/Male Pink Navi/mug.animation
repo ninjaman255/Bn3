@@ -1,0 +1,9 @@
+imagePath="Male_Pink_mug.png"
+
+animation state="IDLE"
+frame duration="0.05" x="5" y="5" w="38" h="46" originx="0" originy="0"
+
+animation state="TALK"
+frame duration="0.1" x="5" y="5" w="38" h="46" originx="0" originy="0"
+frame duration="0.1" x="49" y="5" w="38" h="46" originx="0" originy="0"
+frame duration="0.1" x="93" y="5" w="38" h="46" originx="0" originy="0"

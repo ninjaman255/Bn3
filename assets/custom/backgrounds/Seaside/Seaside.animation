@@ -1,0 +1,10 @@
+imagePath="Seasidebg.png"
+
+animation state="BG"
+frame duration="0.15" x="4" y="4" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="136" y="4" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="4" y="72" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="136" y="72" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="4" y="140" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="136" y="140" w="128" h="64" originx="0" originy="0"
+frame duration="0.15" x="4" y="208" w="128" h="64" originx="0" originy="0"

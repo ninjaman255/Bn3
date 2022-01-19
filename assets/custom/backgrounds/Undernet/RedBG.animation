@@ -1,0 +1,5 @@
+imagePath="BG.png"
+
+animation state="BG"
+frame duration="0.1" x="240" y="0" w="64" h="32" originx="0" originy="0"
+frame duration="0.1" x="240" y="40" w="64" h="32" originx="0" originy="0"

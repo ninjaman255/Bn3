@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="27" height="29" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="72">
+ <properties>
+  <property name="Background" value="custom"/>
+  <property name="Background Animation" value="/server/assets/custom/backgrounds/ACDC BN3/ACDC.animation"/>
+  <property name="Background Texture" value="/server/assets/custom/backgrounds/ACDC BN3/ACDC.png"/>
+  <property name="Background Vel X" type="float" value="0.1"/>
+  <property name="Background Vel Y" type="float" value="0.1"/>
+  <property name="Name" value="ACDC_2"/>
+  <property name="Song" value="/server/assets/music/Mega Man Battle Network 3 OST - T21 Network Is Spreading (Internet Theme).ogg"/>
+ </properties>
+ <tileset firstgid="1" source="../assets/tiles/GlowStairs.tsx"/>
+ <tileset firstgid="4" source="../assets/tiles/ACDC2.tsx"/>
+ <tileset firstgid="5" source="../assets/tiles/GlowLrg.tsx"/>
+ <tileset firstgid="8" source="../assets/tiles/tile.tsx"/>
+ <tileset firstgid="17" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
+ <tileset firstgid="26" source="../assets/tiles/warp.tsx"/>
+ <tileset firstgid="32" source="../assets/tiles/ACDC_Arrows.tsx"/>
+ <tileset firstgid="48" source="../assets/objects/ezmystery/BlueMysteryData.tsx"/>
+ <tileset firstgid="56" source="../assets/objects/ezmystery/GreenMysteryData.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="27" height="29" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" gid="4" x="776.5" y="795.5" width="1188" height="563"/>
+ </objectgroup>
+ <layer id="3" name="Tile Layer 2" width="27" height="29" visible="0" offsetx="0" offsety="-16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 2" offsetx="0" offsety="16"/>
+ <layer id="5" name="Tile Layer 3" width="27" height="29" visible="0" offsetx="0" offsety="-32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,
+0,0,0,0,0,0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,8,8,8,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,8,8,8,0,8,8,8,8,8,8,8,8,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,8,8,8,0,8,0,0,0,0,0,0,8,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,8,8,8,0,8,0,0,0,0,0,0,8,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,8,0,0,8,0,8,8,8,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,8,0,0,8,0,8,8,8,8,8,8,8,8,0,0,0,0,0,
+0,0,0,8,8,8,8,8,8,8,0,0,8,0,8,8,8,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,8,8,8,8,8,8,8,8,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,0,0,
+0,0,0,0,0,0,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Object Layer 3" offsetx="0" offsety="-32">
+  <object id="13" name="ACDC2ToYai" type="Custom Warp" gid="27" x="288" y="496" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Down Left"/>
+    <property name="warp_name" value="YaiToACDC2"/>
+    <property name="warp_to" value="YaiHp"/>
+   </properties>
+  </object>
+  <object id="14" gid="18" x="288" y="496" width="64" height="40"/>
+  <object id="17" gid="2147483688" x="353" y="881" width="96" height="64"/>
+  <object id="19" gid="40" x="801" y="369" width="96" height="64"/>
+  <object id="20" name="ACDC2ToACDC1" type="Radius Warp" x="400" y="896">
+   <properties>
+    <property name="Activation Radius" type="float" value="0.6"/>
+    <property name="Arrival Animation" value="arrow_down_left_in"/>
+    <property name="Leave Animation" value="arrow_down_left_out"/>
+    <property name="Target Area" value="default"/>
+    <property name="Target Object" value="34"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="ACDC2ToACDC3" type="Radius Warp" x="832" y="400">
+   <properties>
+    <property name="Activation Radius" type="float" value="0.6"/>
+    <property name="Arrival Animation" value="arrow_down_right_in"/>
+    <property name="Leave Animation" value="arrow_down_right_out"/>
+    <property name="Target Area" value="ACDC3"/>
+    <property name="Target Object" value="35"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="MinisterProg" type="NPC" x="624" y="176">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Next Waypoint 1" type="object" value="29"/>
+    <property name="Text 1" value="ALL CAN BE SAVED THROUGH OUR LORD AND SAVIOR PROGSMAN, BROTHERS, SISTERS GATHER 'ROUND LEND AN EAR AND I CAN TELL YOU OF THE WORKS OF PROGSMAN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="PROGSMANIAN1" type="NPC" x="592" y="208">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="36"/>
+    <property name="Text 1" value="PREACH!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="ScepticProg" type="NPC" x="624" y="240">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="30"/>
+    <property name="Text 1" value="THIS GUY HAS REALLY LOST IT HAS'NT HE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Prog2" type="NPC" x="624" y="208">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="35"/>
+    <property name="Text 1" value="WHY AM I EVEN HERE?"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Prog2" type="NPC" x="656" y="208">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="34"/>
+    <property name="Text 1" value="I HAVENT EVEN HEARD OF THIS PROGSMAN, IS IT SOME SORT OF INSIDE JOKE OR SOMETHING? OR IS THERE MORE TO IT..."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="ReDirect" x="624" y="176">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Next Waypoint 1" type="object" value="23"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="ReDirect" x="624" y="240">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="25"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="ReDirect" x="656" y="208">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="27"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="ReDirect" x="624" y="208">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="26"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="ReDirect" x="592" y="208">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="24"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="MerchWares" type="Mystery Data" gid="48" x="624" y="720" width="14" height="43">
+   <properties>
+    <property name="Description" value="Assortment of chips, and other rare wares"/>
+    <property name="Name" value="MerchWares"/>
+    <property name="Once" type="bool" value="false"/>
+    <property name="Type" value="keyitem"/>
+   </properties>
+  </object>
+  <object id="41" name="ShopKeepACDC" type="NPC" x="496" y="624">
+   <properties>
+    <property name="Asset Name" value="normal-navi-bn4_green"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Down Right"/>
+    <property name="Event Name" value="MerchWaresCheck"/>
+    <property name="Next 1" type="object" value="65"/>
+    <property name="Next 2" type="object" value="66"/>
+    <property name="Next Waypoint 1" type="object" value="42"/>
+    <property name="Text 1" value="I lost all my wares... What even happened? I had just gotten here to set up shop for the day then suddenly... nothing. I just woke up and I was here, but after looking around things dont look like i remember them"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="ReDirect" x="496" y="624">
+   <properties>
+    <property name="Direction" value="Down Right"/>
+    <property name="Next Waypoint 1" type="object" value="41"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" type="Mystery Data" gid="56" x="208" y="272" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="44"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="44" name="RandomMonies" type="Mystery Data" x="136" y="192">
+   <properties>
+    <property name="Next 1" type="object" value="45"/>
+    <property name="Next 2" type="object" value="46"/>
+    <property name="Next 3" type="object" value="47"/>
+    <property name="Type" value="random"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="common" type="Mystery Data" x="72" y="208">
+   <properties>
+    <property name="Next 1" type="object" value="49"/>
+    <property name="Next 2" type="object" value="48"/>
+    <property name="Next 3" type="object" value="50"/>
+    <property name="Next 4" type="object" value="51"/>
+    <property name="Next 5" type="object" value="52"/>
+    <property name="Type" value="random"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="common" type="Mystery Data" x="88" y="160">
+   <properties>
+    <property name="Next 1" type="object" value="48"/>
+    <property name="Next 2" type="object" value="51"/>
+    <property name="Next 3" type="object" value="52"/>
+    <property name="Type" value="random"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="common" type="Mystery Data" x="120" y="128">
+   <properties>
+    <property name="Next 1" type="object" value="48"/>
+    <property name="Next 2" type="object" value="51"/>
+    <property name="Next 3" type="object" value="52"/>
+    <property name="Type" value="random"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="100 Zennies" type="Mystery Data" x="16" y="136">
+   <properties>
+    <property name="Amount" type="int" value="100"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="550 Zennies" type="Mystery Data" x="16" y="168">
+   <properties>
+    <property name="Amount" type="int" value="550"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="750 Zennies" type="Mystery Data" x="24" y="104">
+   <properties>
+    <property name="Amount" type="int" value="750"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="200 Zennies" type="Mystery Data" x="56" y="96">
+   <properties>
+    <property name="Amount" type="int" value="200"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="200 Zennies" type="Mystery Data" x="72" y="88">
+   <properties>
+    <property name="Amount" type="int" value="550"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" type="Mystery Data" gid="56" x="112" y="656" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="44"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="54" type="Mystery Data" gid="56" x="688" y="752" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="44"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="55" type="Mystery Data" gid="56" x="528" y="176" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="44"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="57" type="Mystery Data" gid="56" x="720" y="272" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="44"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="65" name="Wares" x="496" y="624">
+   <properties>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Text 1" value="Come back in a while and ill open back up shop! Thank you again for finding my wares!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="NoWares" x="496" y="624">
+   <properties>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Text 1" value="Oh... thats too bad, please let me know if you see them!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="InProgsmanWeTrust" type="NPC" x="528" y="272">
+   <properties>
+    <property name="Asset Name" value="prog"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="71"/>
+    <property name="Text 1" value="In Progsman name we execute!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="ReDirect" x="528" y="272">
+   <properties>
+    <property name="Direction" value="Up Right"/>
+    <property name="Next Waypoint 1" type="object" value="70"/>
+    <property name="Wait Time" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

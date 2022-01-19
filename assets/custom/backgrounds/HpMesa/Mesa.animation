@@ -1,0 +1,7 @@
+imagePath="mesahpbg.png"
+
+animation state="BG"
+frame duration="0.2" x="4" y="4" w="64" h="64" originx="0" originy="0"
+frame duration="0.2" x="76" y="4" w="64" h="64" originx="0" originy="0"
+frame duration="0.2" x="148" y="4" w="64" h="64" originx="0" originy="0"
+frame duration="0.2" x="220" y="4" w="64" h="64" originx="0" originy="0"

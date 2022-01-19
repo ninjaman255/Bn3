@@ -1,0 +1,4 @@
+imagePath="BGmanual.png"
+
+animation state="BG"
+frame duration="0.05" x="0" y="0" w="256" h="128" originx="0" originy="0"

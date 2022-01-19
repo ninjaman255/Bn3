@@ -1,0 +1,12 @@
+Tilesets were imported into tiled/made then imported into tiled by these individuals, 
+this folder wouldnt be possible without them!
+
+Keristero
+blaxun
+regenal
+no381
+FrozenLake
+D3str0y3d255
+Konstinople
+
+And of course sprites inc and all their contributors!

@@ -1,0 +1,13 @@
+imagePath="engineerprog.png"
+
+animation state="IDLE_DR"
+frame duration="0.2" x="0" y="0" w="22" h="43" originx="10" originy="39"
+frame duration="0.2" x="22" y="0" w="22" h="43" originx="9" originy="39"
+frame duration="0.2" x="44" y="0" w="19" h="43" originx="8" originy="39"
+frame duration="0.2" x="22" y="0" w="22" h="43" originx="9" originy="39"
+
+animation state="IDLE_DL"
+frame duration="0.2" x="0" y="0" w="22" h="43" originx="10" originy="39" flipx="1"
+frame duration="0.2" x="22" y="0" w="22" h="43" originx="9" originy="39" flipx="1"
+frame duration="0.2" x="44" y="0" w="19" h="43" originx="8" originy="39" flipx="1"
+frame duration="0.2" x="22" y="0" w="22" h="43" originx="9" originy="39" flipx="1"
