@@ -1,0 +1,6 @@
+[submodule "scripts/ezlibs-scripts"]
+	path = scripts/ezlibs-scripts
+	url = https://github.com/Keristero/ezlibs-scripts
+[submodule "assets/ezlibs-assets"]
+	path = assets/ezlibs-assets
+	url = https://github.com/Keristero/ezlibs-assets
