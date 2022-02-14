@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="isometric" renderorder="right-down" width="31" height="27" tilewidth="64" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="86">
+<map version="1.5" tiledversion="1.7.2" orientation="isometric" renderorder="right-down" width="31" height="27" tilewidth="64" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="100">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/ACDC BN3/ACDC.animation"/>
@@ -61,7 +61,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="Object Layer 1">
-  <object id="1" gid="1" x="956.5" y="905.5" width="1115" height="865"/>
+  <object id="1" gid="1" x="954.5" y="903.5" width="1115" height="865"/>
  </objectgroup>
  <layer id="15" name="Tile Layer 7" width="31" height="27" visible="0" offsetx="0" offsety="-16">
   <data encoding="csv">
@@ -95,9 +95,9 @@
 </data>
  </layer>
  <objectgroup id="16" name="Object Layer 7" offsetx="0" offsety="-16">
-  <object id="2" gid="5" x="943.5" y="892.5" width="1115" height="865"/>
-  <object id="73" gid="86" x="-129.5" y="27.5" width="1115" height="865"/>
-  <object id="74" gid="87" x="1087.5" y="892.5" width="1115" height="865"/>
+  <object id="2" gid="5" x="941.5" y="890.5" width="1115" height="865"/>
+  <object id="73" gid="86" x="-147.5" y="25.5" width="1115" height="865"/>
+  <object id="74" gid="87" x="1103.5" y="890.5" width="1115" height="865"/>
  </objectgroup>
  <layer id="3" name="Tile Layer 2" width="31" height="27" visible="0" offsetx="0" offsety="-32">
   <data encoding="csv">
@@ -136,7 +136,15 @@
   </object>
   <object id="51" type="Mystery Data" gid="70" x="496" y="752" width="14" height="43">
    <properties>
-    <property name="Next 1" type="object" value="54"/>
+    <property name="Next 1" type="object" value="0"/>
+    <property name="Next 2" type="object" value="58"/>
+    <property name="Next 3" type="object" value="58"/>
+    <property name="Next 4" type="object" value="58"/>
+    <property name="Next 5" type="object" value="58"/>
+    <property name="Next 6" type="object" value="58"/>
+    <property name="Next 7" type="object" value="58"/>
+    <property name="Next 8" type="object" value="58"/>
+    <property name="Next 9" type="object" value="0"/>
     <property name="Type" value="random"/>
    </properties>
   </object>
@@ -304,8 +312,8 @@
     <property name="Target Object" value="2"/>
    </properties>
   </object>
-  <object id="26" gid="52" x="560" y="336" width="64" height="64"/>
-  <object id="27" gid="53" x="576" y="352" width="64" height="64"/>
+  <object id="26" gid="52" x="558.5" y="333.5" width="64" height="64"/>
+  <object id="27" gid="53" x="573.5" y="349.5" width="64" height="64"/>
   <object id="30" gid="54" x="290.5" y="81.5" width="96" height="64"/>
   <object id="31" gid="54" x="578.5" y="113.5" width="96" height="64"/>
   <object id="32" name="ACDC1ToACDC3" type="Radius Warp" x="624" y="160">
@@ -318,7 +326,7 @@
    </properties>
    <point/>
   </object>
-  <object id="33" name="TestBud" type="NPC" x="400" y="336">
+  <object id="33" name="Heel" type="NPC" x="400" y="336">
    <properties>
     <property name="Asset Name" value="heel-navi-exe4_black"/>
     <property name="Dialogue Type" value="first"/>
@@ -368,7 +376,7 @@
    </properties>
    <point/>
   </object>
-  <object id="40" name="Prog1" type="NPC" x="688" y="464">
+  <object id="40" name="FarmerProg" type="NPC" x="688" y="464">
    <properties>
     <property name="Animation Name" value="prog-farmer"/>
     <property name="Asset Name" value="prog-farmer"/>
@@ -405,7 +413,7 @@
    </properties>
    <point/>
   </object>
-  <object id="44" name="Waypoint 4" type="Dialogue" x="688" y="464">
+  <object id="44" name="Waypoint 4" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
@@ -413,7 +421,7 @@
    </properties>
    <point/>
   </object>
-  <object id="45" name="Normal1" type="NPC" x="208" y="304">
+  <object id="45" name="Normal" type="NPC" x="208" y="304">
    <properties>
     <property name="Asset Name" value="normal-navi-bn4_green"/>
     <property name="Dialogue Type" value="first"/>
@@ -443,25 +451,7 @@
   </object>
   <object id="49" type="Mystery Data" gid="70" x="560" y="272" width="14" height="43">
    <properties>
-    <property name="Next 1" type="object" value="54"/>
-    <property name="Type" value="random"/>
-   </properties>
-  </object>
-  <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
-   <properties>
-    <property name="Next 1" type="object" value="54"/>
-    <property name="Type" value="random"/>
-   </properties>
-  </object>
-  <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
-   <properties>
-    <property name="Next 1" type="object" value="54"/>
-    <property name="Type" value="random"/>
-   </properties>
-  </object>
-  <object id="54" name="RandomMonies" type="Mystery Data" x="208" y="168">
-   <properties>
-    <property name="Next 1" type="object" value="55"/>
+    <property name="Next 1" type="object" value="0"/>
     <property name="Next 2" type="object" value="58"/>
     <property name="Next 3" type="object" value="58"/>
     <property name="Next 4" type="object" value="58"/>
@@ -469,12 +459,31 @@
     <property name="Next 6" type="object" value="58"/>
     <property name="Next 7" type="object" value="58"/>
     <property name="Next 8" type="object" value="58"/>
-    <property name="Next 9" type="object" value="56"/>
+    <property name="Next 9" type="object" value="0"/>
     <property name="Type" value="random"/>
    </properties>
-   <point/>
   </object>
-  <object id="55" name="ULTRARare" type="Mystery Data" x="112" y="272">
+  <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="0"/>
+    <property name="Next 2" type="object" value="58"/>
+    <property name="Next 3" type="object" value="58"/>
+    <property name="Next 4" type="object" value="58"/>
+    <property name="Next 5" type="object" value="58"/>
+    <property name="Next 6" type="object" value="58"/>
+    <property name="Next 7" type="object" value="58"/>
+    <property name="Next 8" type="object" value="58"/>
+    <property name="Next 9" type="object" value="0"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
+   <properties>
+    <property name="Next 1" type="object" value="58"/>
+    <property name="Type" value="random"/>
+   </properties>
+  </object>
+  <object id="55" name="ULTRARare" type="Mystery Data" x="64" y="144">
    <properties>
     <property name="Next 1" type="object" value="71"/>
     <property name="Next 2" type="object" value="72"/>
@@ -482,88 +491,147 @@
    </properties>
    <point/>
   </object>
-  <object id="56" name="Rare" type="Mystery Data" x="128" y="200">
+  <object id="56" name="Uncommon" type="Mystery Data" x="95.5" y="100.5">
    <properties>
     <property name="Next 1" type="object" value="61"/>
     <property name="Next 2" type="object" value="62"/>
+    <property name="Next 3" type="object" value="93"/>
+    <property name="Next 4" type="object" value="94"/>
+    <property name="Next 5" type="object" value="97"/>
+    <property name="Next 6" type="object" value="98"/>
+    <property name="Next 7" type="object" value="99"/>
+    <property name="Next 8" type="object" value="55"/>
     <property name="Type" value="random"/>
    </properties>
    <point/>
   </object>
-  <object id="58" name="common" type="Mystery Data" x="232" y="128">
+  <object id="58" name="common" type="Mystery Data" x="190.5" y="61.5">
    <properties>
     <property name="Next 1" type="object" value="63"/>
     <property name="Next 2" type="object" value="64"/>
     <property name="Next 3" type="object" value="66"/>
     <property name="Next 4" type="object" value="67"/>
     <property name="Next 5" type="object" value="65"/>
+    <property name="Next 6" type="object" value="56"/>
+    <property name="Next 7" type="object" value="95"/>
+    <property name="Next 8" type="object" value="96"/>
     <property name="Type" value="random"/>
    </properties>
    <point/>
   </object>
-  <object id="61" name="2000Zennies" type="Mystery Data" x="80" y="184">
+  <object id="61" name="1500Zennies" type="Mystery Data" x="32" y="80">
    <properties>
     <property name="Amount" type="int" value="1500"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="62" name="1000 Zennies" type="Mystery Data" x="104" y="144">
+  <object id="62" name="1000 Zennies" type="Mystery Data" x="16" y="48">
    <properties>
     <property name="Amount" type="int" value="1000"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="63" name="100 Zennies" type="Mystery Data" x="272" y="32">
+  <object id="63" name="100 Zennies" type="Mystery Data" x="128" y="32">
    <properties>
     <property name="Amount" type="int" value="100"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="64" name="200 Zennies" type="Mystery Data" x="344" y="64">
+  <object id="64" name="200 Zennies" type="Mystery Data" x="112" y="0">
    <properties>
     <property name="Amount" type="int" value="200"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="65" name="250 Zennies" type="Mystery Data" x="368" y="16">
+  <object id="65" name="250 Zennies" type="Mystery Data" x="144" y="0">
    <properties>
     <property name="Amount" type="int" value="250"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="66" name="150 Zennies" type="Mystery Data" x="408" y="64">
+  <object id="66" name="150 Zennies" type="Mystery Data" x="192" y="16">
    <properties>
     <property name="Amount" type="int" value="150"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="67" name="550 Zennies" type="Mystery Data" x="464" y="64">
+  <object id="67" name="550 Zennies" type="Mystery Data" x="224" y="32">
    <properties>
     <property name="Amount" type="int" value="550"/>
     <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="71" name="5000Zennies" type="Mystery Data" x="8" y="160">
+  <object id="71" name="5000Zennies" type="Mystery Data" x="64" y="160">
    <properties>
     <property name="Amount" type="int" value="5000"/>
-    <property name="Type" value="Money"/>
+    <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
-  <object id="72" name="10000Zennies" type="Mystery Data" x="8" y="112">
+  <object id="72" name="10000Zennies" type="Mystery Data" x="64" y="192">
    <properties>
     <property name="Amount" type="int" value="10000"/>
-    <property name="Type" value="Money"/>
+    <property name="Type" value="money"/>
    </properties>
    <point/>
   </object>
   <object id="85" gid="97" x="416" y="352" width="64" height="40"/>
+  <object id="92" gid="2147483694" x="640" y="640" width="64" height="52"/>
+  <object id="93" name="1000 Zennies" type="Mystery Data" x="16" y="16">
+   <properties>
+    <property name="Amount" type="int" value="1000"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="1000 Zennies" type="Mystery Data" x="64" y="16">
+   <properties>
+    <property name="Amount" type="int" value="1000"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="750 Zennies" type="Mystery Data" x="176" y="16">
+   <properties>
+    <property name="Amount" type="int" value="750"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="300 Zennies" type="Mystery Data" x="128" y="0">
+   <properties>
+    <property name="Amount" type="int" value="300"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="850 Zennies" type="Mystery Data" x="32" y="0">
+   <properties>
+    <property name="Amount" type="int" value="850"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="950 Zennies" type="Mystery Data" x="96" y="32">
+   <properties>
+    <property name="Amount" type="int" value="950"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="2000Zennies" type="Mystery Data" x="64" y="96">
+   <properties>
+    <property name="Amount" type="int" value="2000"/>
+    <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
 </map>

@@ -111,7 +111,7 @@
    </properties>
    <point/>
   </object>
-  <object id="25" name="WP1" x="600" y="376">
+  <object id="25" name="WP1" type="Dialogue" x="600" y="376">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="26"/>
@@ -119,7 +119,7 @@
    </properties>
    <point/>
   </object>
-  <object id="26" name="WP1" x="600" y="408">
+  <object id="26" name="WP1" type="Dialogue" x="600" y="408">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="27"/>
@@ -127,7 +127,7 @@
    </properties>
    <point/>
   </object>
-  <object id="27" name="WP1" x="568" y="408">
+  <object id="27" name="WP1" type="Dialogue" x="568" y="408">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="28"/>
@@ -135,7 +135,7 @@
    </properties>
    <point/>
   </object>
-  <object id="28" name="WP1" x="568" y="504">
+  <object id="28" name="WP1" type="Dialogue" x="568" y="504">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="29"/>
@@ -143,7 +143,7 @@
    </properties>
    <point/>
   </object>
-  <object id="29" name="WP1" x="536" y="504">
+  <object id="29" name="WP1" type="Dialogue" x="536" y="504">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="30"/>
@@ -151,7 +151,7 @@
    </properties>
    <point/>
   </object>
-  <object id="30" name="WP1" x="536" y="600">
+  <object id="30" name="WP1" type="Dialogue" x="536" y="600">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="31"/>
@@ -159,7 +159,7 @@
    </properties>
    <point/>
   </object>
-  <object id="31" name="WP1" x="376" y="600">
+  <object id="31" name="WP1" type="Dialogue" x="376" y="600">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="32"/>
@@ -167,7 +167,7 @@
    </properties>
    <point/>
   </object>
-  <object id="32" name="WP1" x="376" y="504">
+  <object id="32" name="WP1" type="Dialogue" x="376" y="504">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="33"/>
@@ -175,7 +175,7 @@
    </properties>
    <point/>
   </object>
-  <object id="33" name="WP1" x="312" y="504">
+  <object id="33" name="WP1" type="Dialogue" x="312" y="504">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="24"/>
