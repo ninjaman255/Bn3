@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.5" tiledversion="1.7.0" name="ACDC_Arrows" tilewidth="96" tileheight="64" tilecount="16" columns="8" objectalignment="top">
+<tileset version="1.5" tiledversion="1.7.2" name="ACDC_Arrows" tilewidth="96" tileheight="64" tilecount="16" columns="8" objectalignment="top">
  <tileoffset x="15" y="16"/>
  <image source="ACDC_Arrows.png" width="768" height="128"/>
  <tile id="0">

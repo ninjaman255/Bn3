@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="31" height="27" tilewidth="64" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="75">
+<map version="1.5" tiledversion="1.7.2" orientation="isometric" renderorder="right-down" width="31" height="27" tilewidth="64" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="86">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/ACDC BN3/ACDC.animation"/>
@@ -9,27 +9,25 @@
   <property name="Name" value="ACDC_1"/>
   <property name="Song" value="/server/assets/music/Mega Man Battle Network 3 OST - T21 Network Is Spreading (Internet Theme).ogg"/>
  </properties>
- <tileset firstgid="1" source="../assets/tiles/GlowLrg.tsx"/>
- <tileset firstgid="4" source="../assets/tiles/ACDC1.tsx"/>
- <tileset firstgid="5" source="../assets/tiles/GlowStairs.tsx"/>
- <tileset firstgid="8" source="../assets/tiles/ACDC1rampsandmetro.tsx"/>
- <tileset firstgid="9" source="../assets/tiles/warp.tsx"/>
- <tileset firstgid="15" source="../assets/tiles/ACDC2.tsx"/>
- <tileset firstgid="16" source="../assets/tiles/ServerWarp.tsx"/>
- <tileset firstgid="26" source="../assets/tiles/tile.tsx"/>
- <tileset firstgid="35" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
- <tileset firstgid="44" source="../assets/tiles/home_warp.tsx"/>
- <tileset firstgid="49" source="../assets/tiles/gate.tsx"/>
- <tileset firstgid="54" source="../assets/tiles/evildoor_40x74.tsx"/>
- <tileset firstgid="62" source="../assets/tiles/BridgeTile.tsx"/>
- <tileset firstgid="64" source="../assets/tiles/TileBridgeOverlayACDC1.tsx"/>
- <tileset firstgid="65" source="../assets/tiles/ACDC_Arrows.tsx"/>
- <tileset firstgid="81" source="../assets/objects/ezmystery/GreenMysteryData.tsx"/>
- <tileset firstgid="89" source="../assets/objects/ezmystery/YellowMysteryData.tsx"/>
- <tileset firstgid="97" source="../assets/objects/ezmystery/PurpleMysteryData.tsx"/>
- <tileset firstgid="105" source="../assets/tiles/ACDCMetroExtentsion.tsx"/>
- <tileset firstgid="106" source="../assets/tiles/ACDCMetroExtentsionP2.tsx"/>
- <tileset firstgid="107" source="../assets/objects/ezmystery/BlueMysteryData.tsx"/>
+ <tileset firstgid="1" source="../assets/tiles/ACDC1.tsx"/>
+ <tileset firstgid="2" source="../assets/tiles/GlowStairs.tsx"/>
+ <tileset firstgid="5" source="../assets/tiles/ACDC1rampsandmetro.tsx"/>
+ <tileset firstgid="6" source="../assets/tiles/warp.tsx"/>
+ <tileset firstgid="12" source="../assets/tiles/ACDC2.tsx"/>
+ <tileset firstgid="13" source="../assets/tiles/ServerWarp.tsx"/>
+ <tileset firstgid="23" source="../assets/tiles/tile.tsx"/>
+ <tileset firstgid="32" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
+ <tileset firstgid="41" source="../assets/tiles/home_warp.tsx"/>
+ <tileset firstgid="46" source="../assets/tiles/gate.tsx"/>
+ <tileset firstgid="51" source="../assets/tiles/BridgeTile.tsx"/>
+ <tileset firstgid="53" source="../assets/tiles/TileBridgeOverlayACDC1.tsx"/>
+ <tileset firstgid="54" source="../assets/tiles/ACDC_Arrows.tsx"/>
+ <tileset firstgid="70" source="../assets/ezlibs-assets/ezmystery/GreenMysteryData.tsx"/>
+ <tileset firstgid="78" source="../assets/ezlibs-assets/ezmystery/PurpleMysteryData.tsx"/>
+ <tileset firstgid="86" source="../assets/tiles/ACDCMetroExtentsion.tsx"/>
+ <tileset firstgid="87" source="../assets/tiles/ACDCMetroExtentsionP2.tsx"/>
+ <tileset firstgid="88" source="../assets/ezlibs-assets/ezmystery/BlueMysteryData.tsx"/>
+ <tileset firstgid="96" source="../assets/tiles/BN3ACDC1Warp-NoCollision.tsx"/>
  <layer id="1" name="Tile Layer 1" width="31" height="27" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -62,7 +60,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="Object Layer 1">
-  <object id="1" gid="4" x="956.5" y="905.5" width="1115" height="865"/>
+  <object id="1" gid="1" x="956.5" y="905.5" width="1115" height="865"/>
  </objectgroup>
  <layer id="15" name="Tile Layer 7" width="31" height="27" visible="0" offsetx="0" offsety="-16">
   <data encoding="csv">
@@ -96,9 +94,9 @@
 </data>
  </layer>
  <objectgroup id="16" name="Object Layer 7" offsetx="0" offsety="-16">
-  <object id="2" gid="8" x="943.5" y="892.5" width="1115" height="865"/>
-  <object id="73" gid="105" x="-129.5" y="27.5" width="1115" height="865"/>
-  <object id="74" gid="106" x="1087.5" y="892.5" width="1115" height="865"/>
+  <object id="2" gid="5" x="943.5" y="892.5" width="1115" height="865"/>
+  <object id="73" gid="86" x="-129.5" y="27.5" width="1115" height="865"/>
+  <object id="74" gid="87" x="1087.5" y="892.5" width="1115" height="865"/>
  </objectgroup>
  <layer id="3" name="Tile Layer 2" width="31" height="27" visible="0" offsetx="0" offsety="-32">
   <data encoding="csv">
@@ -124,9 +122,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,0,0,0,0,0,2147483653,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,26,26,26,26,26,26,26,26,26,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,23,23,23,0,0,0,0,0,2147483650,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,23,23,23,23,23,23,23,23,23,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
@@ -135,7 +133,7 @@
   <object id="14" name="progineer1" x="528" y="720">
    <point/>
   </object>
-  <object id="51" type="Mystery Data" gid="81" x="496" y="752" width="14" height="43">
+  <object id="51" type="Mystery Data" gid="70" x="496" y="752" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="54"/>
     <property name="Type" value="random"/>
@@ -166,7 +164,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483650,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -197,7 +195,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483650,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -228,7 +226,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483650,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -243,24 +241,24 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,26,26,26,0,0,26,26,26,26,26,26,26,26,0,26,26,26,26,26,26,0,0,0,0,0,0,
-0,0,0,0,0,26,26,26,26,26,26,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,26,26,26,0,0,26,0,26,26,26,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,26,0,0,0,26,0,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,0,
-0,0,0,0,0,0,26,0,0,0,26,0,26,26,26,0,0,26,0,0,0,0,0,0,0,0,0,0,0,26,0,
-0,0,0,0,0,0,26,0,0,0,26,0,0,0,0,0,0,26,0,0,26,26,26,0,26,26,26,0,0,26,0,
-0,0,0,0,0,0,26,0,0,0,26,0,0,0,0,0,0,26,26,26,26,26,26,0,26,26,26,26,26,26,0,
-0,0,0,0,0,0,26,0,0,0,26,0,0,0,0,0,0,26,0,0,26,26,26,0,26,26,26,0,0,26,0,
-0,0,0,0,0,26,26,26,0,0,26,0,0,26,26,26,0,26,0,0,0,0,0,0,0,0,0,0,0,26,0,
-0,0,0,0,0,26,26,26,26,26,26,26,26,26,26,26,0,26,0,0,0,0,0,0,26,26,26,26,26,26,0,
-0,0,0,0,0,26,26,26,0,0,26,0,0,26,26,26,0,26,0,0,26,26,26,0,26,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,26,26,26,26,26,26,0,26,0,0,0,0,0,0,
-0,0,0,0,0,0,26,26,26,26,26,26,26,26,26,26,26,26,0,0,26,26,26,0,2147483655,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,23,23,23,0,0,23,23,23,23,23,23,23,23,0,23,23,23,23,23,23,0,0,0,0,0,0,
+0,0,0,0,0,23,23,23,23,23,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,23,23,23,0,0,23,0,23,23,23,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,23,0,0,0,23,0,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,0,
+0,0,0,0,0,0,23,0,0,0,23,0,23,23,23,0,0,23,0,0,0,0,0,0,0,0,0,0,0,23,0,
+0,0,0,0,0,0,23,0,0,0,23,0,0,0,0,0,0,23,0,0,23,23,23,0,23,23,23,0,0,23,0,
+0,0,0,0,0,0,23,0,0,0,23,0,0,0,0,0,0,23,23,23,23,23,23,0,23,23,23,23,23,23,0,
+0,0,0,0,0,0,23,0,0,0,23,0,0,0,0,0,0,23,0,0,23,23,23,0,23,23,23,0,0,23,0,
+0,0,0,0,0,23,23,23,0,0,23,0,0,23,23,23,0,23,0,0,0,0,0,0,0,0,0,0,0,23,0,
+0,0,0,0,0,23,23,23,23,23,23,23,23,23,23,23,0,23,0,0,0,0,0,0,23,23,23,23,23,23,0,
+0,0,0,0,0,23,23,23,0,0,23,0,0,23,23,23,0,23,0,0,23,23,23,0,23,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,23,23,23,23,23,23,0,23,0,0,0,0,0,0,
+0,0,0,0,0,0,23,23,23,23,23,23,23,23,23,23,23,23,0,0,23,23,23,0,2147483652,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -270,14 +268,14 @@
 </data>
  </layer>
  <objectgroup id="12" name="Object Layer 6" offsetx="0" offsety="-96">
-  <object id="10" name="ACDC1Warp" type="Custom Warp" gid="10" x="800" y="448" width="61" height="32" visible="0">
+  <object id="10" name="ACDC1Warp" type="Custom Warp" gid="7" x="800" y="448" width="61" height="32" visible="0">
    <properties>
     <property name="direction" value="Down Right"/>
     <property name="warp_name" value="DexHP"/>
     <property name="warp_to" value="DexHP"/>
    </properties>
   </object>
-  <object id="12" name="Central" type="Server Warp" gid="16" x="768" y="256" width="58" height="30">
+  <object id="12" name="Central" type="Server Warp" gid="13" x="768" y="256" width="58" height="30">
    <properties>
     <property name="Address" value="158.101.96.179"/>
     <property name="Data" value="2C3NTR4L_AREA1abc"/>
@@ -286,33 +284,30 @@
     <property name="Port" value="3066"/>
    </properties>
   </object>
-  <object id="13" name="TOMAYLFROMACDC" type="Custom Warp" gid="10" x="448" y="544" width="61" height="32" visible="0">
+  <object id="15" gid="33" x="800" y="448" width="64" height="40"/>
+  <object id="16" name="Mayl Comp" type="Custom Warp" gid="33" x="448" y="544" width="64" height="40">
    <properties>
-    <property name="direction" value="Up Left"/>
-    <property name="warp_name" value="TOACDCFROMMAYL"/>
-    <property name="warp_to" value="MaylComp"/>
+    <property name="Direction" value="Up Left"/>
+    <property name="Target Area" value="MaylComp"/>
+    <property name="Target Object" value="8"/>
    </properties>
   </object>
-  <object id="15" gid="36" x="800" y="448" width="64" height="40"/>
-  <object id="16" gid="36" x="448" y="544" width="64" height="40"/>
-  <object id="17" name="HP Warp" type="Home Warp" gid="44" x="416" y="352" width="60" height="32" visible="0">
+  <object id="17" name="HP Warp" type="Home Warp" gid="41" x="416" y="352" width="60" height="32" visible="0">
    <properties>
     <property name="Direction" value="Down Right"/>
    </properties>
   </object>
-  <object id="21" name="LOCKEDACDC1" type="Custom Warp" gid="10" x="688" y="696" width="61" height="32" visible="0">
+  <object id="25" name="Alpha Comp" type="Custom Warp" gid="33" x="672" y="608" width="64" height="40">
    <properties>
-    <property name="direction" value="Up Left"/>
-    <property name="warp_name" value="ALPHA"/>
-    <property name="warp_to" value="AlphaComp"/>
+    <property name="Direction" value="Up Left"/>
+    <property name="Target Area" value="AlphaComp"/>
+    <property name="Target Object" value="2"/>
    </properties>
   </object>
-  <object id="23" gid="36" x="416" y="352" width="64" height="40"/>
-  <object id="25" gid="36" x="672" y="608" width="64" height="40"/>
-  <object id="26" gid="63" x="560" y="336" width="64" height="64"/>
-  <object id="27" gid="64" x="576" y="352" width="64" height="64"/>
-  <object id="30" gid="65" x="290.5" y="81.5" width="96" height="64"/>
-  <object id="31" gid="65" x="578.5" y="113.5" width="96" height="64"/>
+  <object id="26" gid="52" x="560" y="336" width="64" height="64"/>
+  <object id="27" gid="53" x="576" y="352" width="64" height="64"/>
+  <object id="30" gid="54" x="290.5" y="81.5" width="96" height="64"/>
+  <object id="31" gid="54" x="578.5" y="113.5" width="96" height="64"/>
   <object id="32" name="ACDC1ToACDC3" type="Radius Warp" x="624" y="160">
    <properties>
     <property name="Activation Radius" type="float" value="0.6"/>
@@ -446,32 +441,23 @@
    </properties>
    <point/>
   </object>
-  <object id="49" type="Mystery Data" gid="81" x="560" y="272" width="14" height="43">
+  <object id="49" type="Mystery Data" gid="70" x="560" y="272" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="54"/>
     <property name="Type" value="random"/>
    </properties>
   </object>
-  <object id="50" type="Mystery Data" gid="81" x="176" y="272" width="14" height="43">
+  <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="54"/>
     <property name="Type" value="random"/>
    </properties>
   </object>
-  <object id="52" type="Mystery Data" gid="81" x="720" y="496" width="14" height="43">
+  <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="54"/>
     <property name="Type" value="random"/>
    </properties>
-  </object>
-  <object id="53" name="TEST1" type="Custom Warp" x="688" y="624">
-   <properties>
-    <property name="Target Area" value="AlphaComp"/>
-    <property name="Target Object" value="40"/>
-    <property name="Warp In" type="bool" value="true"/>
-    <property name="Warp Out" type="bool" value="true"/>
-   </properties>
-   <point/>
   </object>
   <object id="54" name="RandomMonies" type="Mystery Data" x="208" y="168">
    <properties>
@@ -578,5 +564,6 @@
    </properties>
    <point/>
   </object>
+  <object id="85" gid="97" x="416" y="352" width="64" height="40"/>
  </objectgroup>
 </map>

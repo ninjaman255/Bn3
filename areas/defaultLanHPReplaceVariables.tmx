@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="isometric" renderorder="right-down" width="11" height="11" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="7">
+ <tileset firstgid="1" source="../assets/tiles/LanHP.tsx"/>
+ <tileset firstgid="2" source="../assets/tiles/tile.tsx"/>
+ <tileset firstgid="11" source="../assets/tiles/hp_warp.tsx"/>
+ <tileset firstgid="16" source="../assets/tiles/LanHpAnimatedTiles.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="11" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,9,2,2,2,2,2,2,10,0,0,
+0,2,2,2,2,2,2,2,2,10,0,
+0,2,2,2,2,2,2,2,2,2,0,
+0,2,2,2,2,2,2,2,2,2,0,
+0,2,2,2,2,2,2,2,2,2,0,
+0,2,2,2,2,2,2,2,2,2,0,
+0,2,2,2,2,2,2,2,2,2,0,
+0,8,2,2,2,2,2,2,2,2,0,
+0,0,8,2,2,2,2,2,2,7,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" gid="1" x="42.5" y="39.5" width="480" height="282"/>
+  <object id="2" name="AccentObjs" gid="16" x="100.5" y="99.5" width="50" height="26"/>
+  <object id="3" name="AccentObjs" gid="16" x="164.5" y="163.5" width="50" height="26"/>
+  <object id="4" name="AccentObjs" gid="16" x="228.5" y="227.5" width="50" height="26"/>
+  <object id="5" name="AccentObjs" gid="16" x="100.5" y="227.5" width="50" height="26"/>
+  <object id="6" name="AccentObjs" gid="16" x="228.5" y="99.5" width="50" height="26"/>
+ </objectgroup>
+</map>

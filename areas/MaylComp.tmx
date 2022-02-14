@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.6.0" orientation="isometric" renderorder="right-down" width="20" height="22" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="11">
+<map version="1.5" tiledversion="1.7.2" orientation="isometric" renderorder="right-down" width="20" height="22" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="11">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/HpMayl/MaylHP.animation"/>
@@ -16,9 +16,9 @@
  <tileset firstgid="43" source="../assets/tiles/cursed-stairs-2.tsx"/>
  <tileset firstgid="58" source="../assets/tiles/warp.tsx"/>
  <tileset firstgid="64" source="../assets/tiles/tile.tsx"/>
- <tileset firstgid="65" source="../assets/tiles/BN3ACDCWarp2.tsx"/>
- <tileset firstgid="74" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
- <tileset firstgid="83" source="../assets/tiles/shotcutwarps.tsx"/>
+ <tileset firstgid="73" source="../assets/tiles/BN3ACDCWarp2.tsx"/>
+ <tileset firstgid="82" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
+ <tileset firstgid="91" source="../assets/tiles/shotcutwarps.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="22" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -76,7 +76,7 @@
  </layer>
  <objectgroup id="4" name="Object Layer 2" offsetx="0" offsety="-16">
   <object id="2" gid="8" x="816" y="784" width="1280" height="768"/>
-  <object id="9" gid="83" x="240" y="432" width="46" height="32"/>
+  <object id="9" gid="91" x="240" y="432" width="46" height="32"/>
   <object id="10" name="TOYOKAFROMMAYL" type="Custom Warp" gid="59" x="240" y="432" width="61" height="32" visible="0">
    <properties>
     <property name="direction" value="Right"/>
@@ -142,13 +142,12 @@
 </data>
  </layer>
  <objectgroup id="8" name="Object Layer 4" offsetx="0" offsety="-48">
-  <object id="4" name="TOACDCFROMMAYL" type="Custom Warp" gid="59" x="464" y="560" width="61" height="32" visible="0">
+  <object id="8" name="Acdc" type="Custom Warp" gid="83" x="464" y="560" width="64" height="40">
    <properties>
-    <property name="direction" value="Down Right"/>
-    <property name="warp_name" value="TOMAYLFROMACDC"/>
-    <property name="warp_to" value="default"/>
+    <property name="Direction" value="Up Left"/>
+    <property name="Target Area" value="default"/>
+    <property name="Target Object" value="16"/>
    </properties>
   </object>
-  <object id="8" gid="75" x="464" y="560" width="64" height="40"/>
  </objectgroup>
 </map>

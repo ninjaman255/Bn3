@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.5" tiledversion="1.7.2" name="BN3ACDC1Warp" tilewidth="64" tileheight="40" tilecount="9" columns="1" objectalignment="top">
+<tileset version="1.5" tiledversion="1.7.2" name="BN3ACDC1Warp-NoCollision" tilewidth="64" tileheight="40" tilecount="9" columns="1" objectalignment="top">
  <tileoffset x="0" y="-6"/>
- <image source="BN3ACDC1Warp.png" trans="000000" width="64" height="360"/>
+ <image source="BN3ACDC1Warp-NoCollision.png" trans="000000" width="64" height="360"/>
  <tile id="1">
-  <objectgroup draworder="index" id="2">
-   <object id="2" x="12" y="15" width="40" height="19">
-    <ellipse/>
-   </object>
-  </objectgroup>
   <animation>
    <frame tileid="1" duration="166"/>
    <frame tileid="2" duration="166"/>
