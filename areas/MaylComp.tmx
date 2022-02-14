@@ -144,7 +144,7 @@
  <objectgroup id="8" name="Object Layer 4" offsetx="0" offsety="-48">
   <object id="8" name="Acdc" type="Custom Warp" gid="83" x="464" y="560" width="64" height="40">
    <properties>
-    <property name="Direction" value="Up Left"/>
+    <property name="Direction" value="Down Right"/>
     <property name="Target Area" value="default"/>
     <property name="Target Object" value="16"/>
    </properties>

@@ -28,6 +28,7 @@
  <tileset firstgid="87" source="../assets/tiles/ACDCMetroExtentsionP2.tsx"/>
  <tileset firstgid="88" source="../assets/ezlibs-assets/ezmystery/BlueMysteryData.tsx"/>
  <tileset firstgid="96" source="../assets/tiles/BN3ACDC1Warp-NoCollision.tsx"/>
+ <tileset firstgid="105" source="../assets/tiles/generic-arrow.tsx"/>
  <layer id="1" name="Tile Layer 1" width="31" height="27" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -241,8 +242,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,109,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,109,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,
@@ -268,13 +269,6 @@
 </data>
  </layer>
  <objectgroup id="12" name="Object Layer 6" offsetx="0" offsety="-96">
-  <object id="10" name="ACDC1Warp" type="Custom Warp" gid="7" x="800" y="448" width="61" height="32" visible="0">
-   <properties>
-    <property name="direction" value="Down Right"/>
-    <property name="warp_name" value="DexHP"/>
-    <property name="warp_to" value="DexHP"/>
-   </properties>
-  </object>
   <object id="12" name="Central" type="Server Warp" gid="13" x="768" y="256" width="58" height="30">
    <properties>
     <property name="Address" value="158.101.96.179"/>
@@ -284,7 +278,13 @@
     <property name="Port" value="3066"/>
    </properties>
   </object>
-  <object id="15" gid="33" x="800" y="448" width="64" height="40"/>
+  <object id="15" name="DexHp" type="Custom Warp" gid="33" x="800" y="448" width="64" height="40">
+   <properties>
+    <property name="Direction" value="Down Right"/>
+    <property name="Target Area" value="DexHP"/>
+    <property name="Target Object" value="3"/>
+   </properties>
+  </object>
   <object id="16" name="Mayl Comp" type="Custom Warp" gid="33" x="448" y="544" width="64" height="40">
    <properties>
     <property name="Direction" value="Up Left"/>
@@ -340,28 +340,28 @@
    </properties>
    <point/>
   </object>
-  <object id="36" name="Waypoint1" x="464" y="336">
+  <object id="36" name="Waypoint1" type="Dialogue" x="464" y="336">
    <properties>
     <property name="Next Waypoint 1" type="object" value="37"/>
     <property name="Wait Time" type="int" value="3"/>
    </properties>
    <point/>
   </object>
-  <object id="37" name="Waypoint2" x="464" y="400">
+  <object id="37" name="Waypoint2" type="Dialogue" x="464" y="400">
    <properties>
     <property name="Next Waypoint 1" type="object" value="38"/>
     <property name="Wait Time" type="int" value="3"/>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Waypoint 3" x="400" y="400">
+  <object id="38" name="Waypoint 3" type="Dialogue" x="400" y="400">
    <properties>
     <property name="Next Waypoint 1" type="object" value="39"/>
     <property name="Wait Time" type="int" value="3"/>
    </properties>
    <point/>
   </object>
-  <object id="39" name="Waypoint 4" x="400" y="336">
+  <object id="39" name="Waypoint 4" type="Dialogue" x="400" y="336">
    <properties>
     <property name="Next Waypoint 1" type="object" value="36"/>
     <property name="Wait Time" type="int" value="3"/>
@@ -381,7 +381,7 @@
    </properties>
    <point/>
   </object>
-  <object id="41" name="Waypoint 1" x="688" y="464">
+  <object id="41" name="Waypoint 1" type="Dialogue" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="42"/>
@@ -389,7 +389,7 @@
    </properties>
    <point/>
   </object>
-  <object id="42" name="Waypoint 2" x="688" y="464">
+  <object id="42" name="Waypoint 2" type="Dialogue" x="688" y="464">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="43"/>
@@ -397,7 +397,7 @@
    </properties>
    <point/>
   </object>
-  <object id="43" name="Waypoint 3" x="688" y="464">
+  <object id="43" name="Waypoint 3" type="Dialogue" x="688" y="464">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="44"/>
@@ -405,7 +405,7 @@
    </properties>
    <point/>
   </object>
-  <object id="44" name="Waypoint 4" x="688" y="464">
+  <object id="44" name="Waypoint 4" type="Dialogue" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
@@ -425,7 +425,7 @@
    </properties>
    <point/>
   </object>
-  <object id="46" name="Waypoint1" x="208" y="560">
+  <object id="46" name="Waypoint1" type="Dialogue" x="208" y="560">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="47"/>
@@ -433,7 +433,7 @@
    </properties>
    <point/>
   </object>
-  <object id="47" name="Waypoint2" x="208" y="304">
+  <object id="47" name="Waypoint2" type="Dialogue" x="208" y="304">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="46"/>
