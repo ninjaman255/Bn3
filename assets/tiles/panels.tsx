@@ -60,12 +60,14 @@
    </object>
   </objectgroup>
   <animation>
-   <frame tileid="3" duration="320"/>
-   <frame tileid="10" duration="320"/>
-   <frame tileid="17" duration="320"/>
-   <frame tileid="24" duration="320"/>
-   <frame tileid="17" duration="320"/>
-   <frame tileid="10" duration="320"/>
+   <frame tileid="3" duration="250"/>
+   <frame tileid="10" duration="250"/>
+   <frame tileid="17" duration="250"/>
+   <frame tileid="24" duration="250"/>
+   <frame tileid="31" duration="250"/>
+   <frame tileid="38" duration="250"/>
+   <frame tileid="45" duration="250"/>
+   <frame tileid="52" duration="250"/>
   </animation>
  </tile>
  <tile id="4">
