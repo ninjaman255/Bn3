@@ -136,16 +136,7 @@
   </object>
   <object id="51" type="Mystery Data" gid="70" x="496" y="752" width="14" height="43">
    <properties>
-    <property name="Next 1" type="object" value="0"/>
-    <property name="Next 2" type="object" value="58"/>
-    <property name="Next 3" type="object" value="58"/>
-    <property name="Next 4" type="object" value="58"/>
-    <property name="Next 5" type="object" value="58"/>
-    <property name="Next 6" type="object" value="58"/>
-    <property name="Next 7" type="object" value="58"/>
-    <property name="Next 8" type="object" value="58"/>
-    <property name="Next 9" type="object" value="0"/>
-    <property name="Type" value="random"/>
+    <property name="Next 1" type="object" value="58"/>
    </properties>
   </object>
  </objectgroup>
@@ -286,14 +277,14 @@
     <property name="Port" value="3066"/>
    </properties>
   </object>
-  <object id="15" name="DexHp" type="Custom Warp" gid="33" x="800" y="448" width="64" height="40">
+  <object id="15" name="Dex Hp" type="Custom Warp" gid="33" x="800" y="448" width="64" height="40">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Target Area" value="DexHP"/>
     <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="16" name="Mayl Comp" type="Custom Warp" gid="33" x="448" y="544" width="64" height="40">
+  <object id="16" name="Mayl Hp" type="Custom Warp" gid="33" x="448" y="544" width="64" height="40">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Target Area" value="MaylComp"/>
@@ -413,7 +404,7 @@
    </properties>
    <point/>
   </object>
-  <object id="44" name="Waypoint 4" x="688" y="464">
+  <object id="44" name="Waypoint 4" type="Dialogue" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
@@ -451,30 +442,12 @@
   </object>
   <object id="49" type="Mystery Data" gid="70" x="560" y="272" width="14" height="43">
    <properties>
-    <property name="Next 1" type="object" value="0"/>
-    <property name="Next 2" type="object" value="58"/>
-    <property name="Next 3" type="object" value="58"/>
-    <property name="Next 4" type="object" value="58"/>
-    <property name="Next 5" type="object" value="58"/>
-    <property name="Next 6" type="object" value="58"/>
-    <property name="Next 7" type="object" value="58"/>
-    <property name="Next 8" type="object" value="58"/>
-    <property name="Next 9" type="object" value="0"/>
-    <property name="Type" value="random"/>
+    <property name="Next 1" type="object" value="58"/>
    </properties>
   </object>
   <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
    <properties>
-    <property name="Next 1" type="object" value="0"/>
-    <property name="Next 2" type="object" value="58"/>
-    <property name="Next 3" type="object" value="58"/>
-    <property name="Next 4" type="object" value="58"/>
-    <property name="Next 5" type="object" value="58"/>
-    <property name="Next 6" type="object" value="58"/>
-    <property name="Next 7" type="object" value="58"/>
-    <property name="Next 8" type="object" value="58"/>
-    <property name="Next 9" type="object" value="0"/>
-    <property name="Type" value="random"/>
+    <property name="Next 1" type="object" value="58"/>
    </properties>
   </object>
   <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
