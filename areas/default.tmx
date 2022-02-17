@@ -382,7 +382,7 @@
    </properties>
    <point/>
   </object>
-  <object id="41" name="Waypoint 1" type="Dialogue" x="688" y="464">
+  <object id="41" name="Waypoint 1" type="Waypoint" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="42"/>
@@ -390,7 +390,7 @@
    </properties>
    <point/>
   </object>
-  <object id="42" name="Waypoint 2" type="Dialogue" x="688" y="464">
+  <object id="42" name="Waypoint 2" type="Waypoint" x="688" y="464">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="43"/>
@@ -398,7 +398,7 @@
    </properties>
    <point/>
   </object>
-  <object id="43" name="Waypoint 3" type="Dialogue" x="688" y="464">
+  <object id="43" name="Waypoint 3" type="Waypoint" x="688" y="464">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="44"/>
@@ -406,7 +406,7 @@
    </properties>
    <point/>
   </object>
-  <object id="44" name="Waypoint 4" type="Dialogue" x="688" y="464">
+  <object id="44" name="Waypoint 4" type="Waypoint" x="688" y="464">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
@@ -426,7 +426,7 @@
    </properties>
    <point/>
   </object>
-  <object id="46" name="Waypoint1" type="Dialogue" x="208" y="560">
+  <object id="46" name="Waypoint1" type="Waypoint" x="208" y="560">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="47"/>
@@ -434,7 +434,7 @@
    </properties>
    <point/>
   </object>
-  <object id="47" name="Waypoint2" type="Dialogue" x="208" y="304">
+  <object id="47" name="Waypoint2" type="Waypoint" x="208" y="304">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="46"/>
