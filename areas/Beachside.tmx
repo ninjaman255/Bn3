@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="34" height="37" tilewidth="64" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="92">
+<map version="1.8" tiledversion="1.8.1" orientation="isometric" renderorder="right-down" width="34" height="37" tilewidth="64" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="92">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Beachside BN3/BG.animation"/>
@@ -31,6 +31,7 @@
  <tileset firstgid="201" source="../assets/tiles/BoardRelayObject.tsx"/>
  <tileset firstgid="203" source="../assets/tiles/BeachAnimatedArrows1.tsx"/>
  <tileset firstgid="219" source="../assets/tiles/BeachAnimatedArrows2.tsx"/>
+ <tileset firstgid="243" source="../assets/tiles/generic-arrow.tsx"/>
  <layer id="3" name="Tile Layer 2" width="34" height="37" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -238,7 +239,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,36,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,36,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -275,14 +276,13 @@
   <object id="26" gid="98" x="224" y="768" width="64" height="32"/>
   <object id="27" gid="98" x="160" y="768" width="64" height="32"/>
   <object id="28" gid="98" x="192" y="768" width="64" height="32"/>
-  <object id="29" name="BeachToHades" type="Custom Warp" gid="2" x="832" y="544" width="61" height="32" visible="0">
+  <object id="30" name="Hades" type="Custom Warp" gid="46" x="832" y="544" width="64" height="40">
    <properties>
-    <property name="direction" value="Down Left"/>
-    <property name="warp_name" value="HadesToBeach"/>
-    <property name="warp_to" value="Hades"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Hades"/>
+    <property name="Target Object" value="12"/>
    </properties>
   </object>
-  <object id="30" gid="46" x="832" y="544" width="64" height="40"/>
   <object id="34" gid="98" x="608" y="768" width="64" height="32"/>
   <object id="35" gid="107" x="128" y="512" width="64" height="32"/>
   <object id="36" gid="107" x="160" y="512" width="64" height="32"/>
@@ -344,7 +344,7 @@
    </properties>
    <point/>
   </object>
-  <object id="89" name="ReDirect" x="816" y="592">
+  <object id="89" name="ReDirect" type="Waypoint" x="816" y="592">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="88"/>
@@ -516,7 +516,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,36,36,36,36,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -525,14 +525,13 @@
 </data>
  </layer>
  <objectgroup id="16" name="Object Layer 8" offsetx="0" offsety="-128">
-  <object id="3" name="Beach1Warp" type="Custom Warp" gid="2" x="416" y="160" width="61" height="32" visible="0">
+  <object id="8" name="Beach Square" type="Custom Warp" gid="46" x="416" y="160" width="64" height="40">
    <properties>
-    <property name="direction" value="Down Left"/>
-    <property name="warp_name" value="BeachSQR"/>
-    <property name="warp_to" value="BeachSqr"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="BeachSqr"/>
+    <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="8" gid="46" x="416" y="160" width="64" height="40"/>
   <object id="22" name="BeachWarpToWarp1" type="Custom Warp" gid="2" x="512" y="160" width="61" height="32" visible="0">
    <properties>
     <property name="direction" value="Down Left"/>
@@ -583,21 +582,21 @@
    </properties>
    <point/>
   </object>
-  <object id="85" name="Waypoint 2" x="560" y="112">
+  <object id="85" name="Waypoint 2" type="Waypoint" x="560" y="112">
    <properties>
     <property name="Next Waypoint 1" type="object" value="86"/>
     <property name="Wait Time" type="int" value="1"/>
    </properties>
    <point/>
   </object>
-  <object id="86" name="Waypoint 3" x="560" y="272">
+  <object id="86" name="Waypoint 3" type="Waypoint" x="560" y="272">
    <properties>
     <property name="Next Waypoint 1" type="object" value="87"/>
     <property name="Wait Time" type="int" value="1"/>
    </properties>
    <point/>
   </object>
-  <object id="87" name="Waypoint 4" x="400" y="272">
+  <object id="87" name="Waypoint 4" type="Waypoint" x="400" y="272">
    <properties>
     <property name="Next Waypoint 1" type="object" value="84"/>
     <property name="Wait Time" type="int" value="1"/>
