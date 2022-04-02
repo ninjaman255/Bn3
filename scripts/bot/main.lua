@@ -322,10 +322,9 @@ function handle_player_disconnect(player_id)
 end
 
 --function handle_player_join(player_id)
-    --for i = 1, #bots do
-       -- bots[i]:handle_player_join(player_id)
-    --end
+
 --end
+
 function handle_player_join(player_id)
     return
 end

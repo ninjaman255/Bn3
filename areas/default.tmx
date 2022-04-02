@@ -451,14 +451,14 @@
     <property name="Next 3" type="object" value="107"/>
    </properties>
   </object>
-  <object id="50" type="Mystery Datum" gid="70" x="176" y="272" width="14" height="43">
+  <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="106"/>
     <property name="Next 2" type="object" value="105"/>
     <property name="Next 3" type="object" value="104"/>
    </properties>
   </object>
-  <object id="52" type="Mystery Datum" gid="70" x="720" y="496" width="14" height="43">
+  <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="106"/>
     <property name="Next 2" type="object" value="105"/>
@@ -482,7 +482,7 @@
    </properties>
    <point/>
   </object>
-  <object id="106" name="150 zennies" type="Mystery Option" x="128" y="144">
+  <object id="106" name="150 zennies" type="Mystery Option" x="96" y="128">
    <properties>
     <property name="Amount" type="int" value="150"/>
     <property name="Type" value="money"/>
