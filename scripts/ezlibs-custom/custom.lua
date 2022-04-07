@@ -1,6 +1,6 @@
 --Enable fog for all maps
 
---[[--]] local ezweather = require('scripts/ezlibs-scripts/ezweather')
+--[[ local ezweather = require('scripts/ezlibs-scripts/ezweather')
 local custom = {}
 
 local areas = Net.list_areas()
