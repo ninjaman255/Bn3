@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.5" tiledversion="1.7.0" name="UndernetStatue" tilewidth="78" tileheight="92" tilecount="1" columns="1">
- <tileoffset x="8" y="9"/>
+<tileset version="1.8" tiledversion="1.8.4" name="UndernetStatue" tilewidth="78" tileheight="92" tilecount="1" columns="1" objectalignment="bottom">
+ <tileoffset x="8" y="7"/>
  <image source="UndernetStatue.png" width="78" height="92"/>
  <tile id="0">
   <objectgroup draworder="index" id="2">
