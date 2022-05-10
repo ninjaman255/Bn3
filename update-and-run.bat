@@ -1,3 +1,4 @@
+echo %RUSTC%
 cd Scriptable-OpenNetBattle-Server
 git pull
 cargo build --release
