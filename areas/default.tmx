@@ -97,7 +97,7 @@
  </layer>
  <objectgroup id="16" name="Object Layer 7" offsetx="0" offsety="-16">
   <object id="2" gid="5" x="941.5" y="890.5" width="1115" height="865"/>
-  <object id="73" gid="86" x="-144" y="32" width="1115" height="865"/>
+  <object id="73" gid="86" x="-154" y="25.3333" width="1115" height="865"/>
   <object id="74" gid="87" x="1103.5" y="890.5" width="1115" height="865"/>
  </objectgroup>
  <layer id="3" name="Tile Layer 2" width="31" height="27" visible="0" offsetx="0" offsety="-32">

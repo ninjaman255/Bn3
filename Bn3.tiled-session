@@ -5,10 +5,10 @@
     },
     "activeFile": "areas/default.tmx",
     "expandedProjectPaths": [
-        "assets",
-        "areas",
         ".",
-        "assets/tiles"
+        "assets/tiles",
+        "assets",
+        "areas"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10415,11 +10415,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 3,
-            "selectedLayer": 13,
+            "scale": 0.75,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 244.5,
-                "y": 270.5
+                "x": 581.3333333333333,
+                "y": 246
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
