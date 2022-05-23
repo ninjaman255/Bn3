@@ -2,11 +2,13 @@ local CustPlugin = {} --Required! Doesn't have to be called this, but DOES need 
 
 local helpers = require('scripts/ezlibs-scripts/helpers')
 local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
-local ezcheckpoints = require('scripts/ezlibs-custom/ezcheckpoints')
+local ezcheckpoints = require('scripts/ezlibs-custom/ezcheckpoints.lua')
 
 local nebulibs = require('scripts/ezlibs-custom/nebulous-liberations/main') --Required! Include Nebulous Liberations!
 
 local plugins = {nebulibs, ezcheckpoints} --Required! Make sure you list all the plugins you're including here!
+
+
 
 --Required! Pass handlers on to all the libraries we are using!
 --Make them properties of what we called the blank object at the top!
