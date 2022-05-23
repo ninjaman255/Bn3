@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/UndernetSqr.tmx",
+    "activeFile": "areas/SecretArea3.tmx",
     "expandedProjectPaths": [
+        "assets/tiles",
         "assets",
         "areas",
-        "assets/tiles",
         "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -10287,11 +10287,11 @@
             }
         },
         "areas/SecretArea3.tmx": {
-            "scale": 0.33,
+            "scale": 0.125,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1595.4545454545455,
-                "y": 713.6363636363636
+                "x": 992,
+                "y": 444
             }
         },
         "areas/ShademanComp1.tmx": {
@@ -10938,12 +10938,12 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/UndernetSqr.tmx",
-        "assets/tiles/UndernetStatue.tsx"
+        "areas/SecretArea3.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "areas/SecretArea3.tmx",
         "areas/SecretArea2.tmx",
         "assets/tiles/UndernetStatue.tsx",
         "areas/UndernetSqr.tmx",
@@ -10954,8 +10954,7 @@
         "areas/Undernet7.tmx",
         "areas/Undernet6.tmx",
         "areas/Undernet5.tmx",
-        "assets/tiles/generic-arrow.tsx",
-        "areas/Undernet4.tmx"
+        "assets/tiles/generic-arrow.tsx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
