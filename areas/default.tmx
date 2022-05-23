@@ -501,7 +501,7 @@
     <property name="Unlock Item" value="DevKey"/>
    </properties>
   </object>
-  <object id="122" name="DevKey" type="Mystery Data" gid="88" x="72" y="568" width="14" height="43" visible="0">
+  <object id="122" name="DevKey" type="Mystery Data" gid="88" x="88" y="592" width="14" height="43" visible="0">
    <properties>
     <property name="Description" value="A key that proves you are a dev of this server"/>
     <property name="Name" value="DevKey"/>
