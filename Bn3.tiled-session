@@ -10172,11 +10172,11 @@
             }
         },
         "areas/AlphaComp.tmx": {
-            "scale": 3,
+            "scale": 0.33,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1178.8333333333333,
-                "y": 137.16666666666663
+                "x": 1134.8484848484848,
+                "y": 74.24242424242425
             }
         },
         "areas/AlphaLib1.tmx": {
@@ -10211,6 +10211,14 @@
                 "y": 296
             }
         },
+        "areas/GospelHQ.tmx": {
+            "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 927.1666666666666,
+                "y": 108.83333333333334
+            }
+        },
         "areas/Hades.tmx": {
             "scale": 0.5,
             "selectedLayer": 10,
@@ -10228,11 +10236,11 @@
             }
         },
         "areas/SciLabSqr.tmx": {
-            "scale": 1.5,
+            "scale": 1,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 590.3333333333333,
-                "y": 247.66666666666666
+                "x": 585.5,
+                "y": 272.5
             }
         },
         "areas/Scilab1.tmx": {
@@ -10244,11 +10252,11 @@
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 2,
+            "scale": 0.5,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1435.75,
-                "y": 353.75
+                "x": 1351,
+                "y": 523
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10479,6 +10487,9 @@
         "assets/tiles/GlowStairs.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/GospelPortal.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/HadesF2_Arrows.tsx": {
             "scaleInDock": 1
         },
@@ -10518,6 +10529,9 @@
             "scaleInDock": 1
         },
         "assets/tiles/SciLabF2_Arrows.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/SciLabSqr.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/ScilabAnimatedArrows.tsx": {
@@ -10622,6 +10636,9 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/gospelhideout.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/home_warp.tsx": {
             "scaleInDock": 1
         },
@@ -10687,18 +10704,18 @@
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
+        "areas/Scilab2.tmx",
+        "areas/GospelHQ.tmx",
+        "areas/SciLabSqr.tmx",
         "areas/default.tmx",
+        "areas/AlphaComp.tmx",
         "areas/Scilab1.tmx",
         "C:/Users/Clevettes/Desktop/OBN SERVER BACKUPS/Server_10_5_2021_RickRoll/areas/default.tmx",
-        "areas/AlphaComp.tmx",
         "areas/ACDC2.tmx",
         "areas/Beachside.tmx",
         "areas/ACDC3.tmx",
         "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/OvenNetwork_tileset.tsx",
-        "C:/Users/Clevettes/Desktop/Server_12_22_2021/areas/default.tmx",
-        "assets/tiles/BN3UndernetWarpVariant2.tsx",
-        "areas/UndernetSqr.tmx",
-        "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/ArcadeFloor.tsx"
+        "C:/Users/Clevettes/Desktop/Server_12_22_2021/areas/default.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

@@ -95,7 +95,7 @@
    </properties>
    <point/>
   </object>
-  <object id="9" name="ReDirect" x="272" y="48">
+  <object id="9" name="ReDirect" type="Waypoint" x="272" y="48">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="8"/>

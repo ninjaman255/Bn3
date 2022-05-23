@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="27" height="29" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="120">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="27" height="29" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="131">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/ACDC BN3/ACDC.animation"/>
@@ -256,35 +256,20 @@
   <object id="41" name="ShopKeepACDC" type="NPC" x="496" y="624">
    <properties>
     <property name="Asset Name" value="normal-navi-bn4_green"/>
-    <property name="Dialogue Type" value="first"/>
+    <property name="Dialogue Type" value="itemcheck"/>
     <property name="Direction" value="Down Right"/>
-    <property name="Event Name" value="MerchWaresCheck"/>
-    <property name="Next 1" type="object" value="65"/>
-    <property name="Next 2" type="object" value="66"/>
+    <property name="Next 1" type="object" value="121"/>
+    <property name="Next 2" type="object" value="124"/>
     <property name="Next Waypoint 1" type="object" value="42"/>
-    <property name="Text 1" value="I lost all my wares... What even happened? I had just gotten here to set up shop for the day then suddenly... nothing. I just woke up and I was here, but after looking around things dont look like i remember them"/>
+    <property name="Required Item" value="QuestComplete"/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="ReDirect" type="Waypoint" x="496" y="624">
+  <object id="42" name="ReDirect" type="Waypoint" x="480" y="624">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
-    <property name="Wait Time" type="int" value="10"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="65" name="Wares" x="496" y="624">
-   <properties>
-    <property name="Dialogue Type" value="first"/>
-    <property name="Text 1" value="Come back in a while and ill open back up shop! Thank you again for finding my wares!"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="66" name="NoWares" x="496" y="624">
-   <properties>
-    <property name="Dialogue Type" value="first"/>
-    <property name="Text 1" value="Oh... thats too bad, please let me know if you see them!"/>
+    <property name="Wait Time" type="int" value="5"/>
    </properties>
    <point/>
   </object>
@@ -481,6 +466,82 @@
    <properties>
     <property name="Amount" type="int" value="2000"/>
     <property name="Type" value="money"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="QuestAlreadyComplete" type="Dialogue" x="528" y="592">
+   <properties>
+    <property name="Dialogue Type" value="shop"/>
+    <property name="Item 1" type="object" value="130"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="GiveQuest" type="Dialogue" x="704" y="688">
+   <properties>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Next 1" type="object" value="125"/>
+    <property name="Text 1" value="Please find my wares... I woke up and they were gone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="QuestIncomplete" type="Dialogue" x="624" y="656">
+   <properties>
+    <property name="Dialogue Type" value="itemcheck"/>
+    <property name="Next 1" type="object" value="127"/>
+    <property name="Next 2" type="object" value="123"/>
+    <property name="Required Amount" type="int" value="1"/>
+    <property name="Required Item" value="QuestAccepted"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="AcceptQuest" type="Dialogue" x="768" y="704">
+   <properties>
+    <property name="Dialogue Type" value="item"/>
+    <property name="Dont Notify" type="bool" value="true"/>
+    <property name="Name" value="QuestAccepted"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="QuestReminder" type="Dialogue" x="736" y="640">
+   <properties>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Text 1" value="Please whatever you do just find my wares..."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="CheckWares" type="Dialogue" x="656" y="640">
+   <properties>
+    <property name="Dialogue Type" value="itemcheck"/>
+    <property name="Next 1" type="object" value="128"/>
+    <property name="Next 2" type="object" value="126"/>
+    <property name="Required Amount" type="int" value="1"/>
+    <property name="Required Item" value="MerchWares"/>
+    <property name="Take Item" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="QuestComplete" type="Dialogue" x="688" y="592">
+   <properties>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Next 1" type="object" value="129"/>
+    <property name="Text 1" value="Thank you for finding my wares"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="GiveItemQuestComplete" x="704" y="560">
+   <properties>
+    <property name="Dialogue Type" value="item"/>
+    <property name="Dont Notify" type="bool" value="true"/>
+    <property name="Name" value="QuestComplete"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" x="544" y="544">
+   <properties>
+    <property name="Description" value="Opens a door in SciLab"/>
+    <property name="Is Key" type="bool" value="true"/>
+    <property name="Name" value="SpecialDoorKey"/>
+    <property name="Price" type="int" value="5000"/>
    </properties>
    <point/>
   </object>

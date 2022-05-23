@@ -346,9 +346,9 @@
   <object id="10" gid="16" x="80" y="336" width="800" height="600"/>
   <object id="11" name="TOGOSPEL" type="Cusom Warp" gid="18" x="736" y="608" width="61" height="32">
    <properties>
-    <property name="direction" value="Up Left"/>
-    <property name="warp_name" value="TOSCILABMETRO"/>
-    <property name="warp_to" value="GospelHQ"/>
+    <property name="Direction" value="Up Left"/>
+    <property name="Target Area" value="GospelHQ"/>
+    <property name="Target Object" value="4"/>
    </properties>
   </object>
   <object id="14" name="ToSciLabSqr" type="Custom Warp" gid="32" x="544" y="304" width="64" height="40">
@@ -358,7 +358,7 @@
     <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="15" name="ScilabArchObj" gid="40" x="1216" y="1136" width="1280" height="1080" visible="0"/>
+  <object id="15" name="ScilabArchObj" gid="40" x="1216" y="1136" width="1280" height="1080"/>
   <object id="44" name="Scilab2To1F2" type="Radius Warp" x="976" y="1056">
    <properties>
     <property name="Activation Radius" type="float" value="0.6"/>
