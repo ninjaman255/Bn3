@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/Undernet5.tmx",
+    "activeFile": "assets/tiles/WaterTilesV2.tsx",
     "expandedProjectPaths": [
-        ".",
+        "assets/tiles",
         "areas",
-        "assets",
-        "assets/tiles"
+        ".",
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10821,7 +10821,8 @@
             "scaleInEditor": 1
         },
         "assets/tiles/WaterTilesV2.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "assets/tiles/YaiPC.tsx": {
             "scaleInDock": 1
@@ -10951,23 +10952,25 @@
     "map.width": 50,
     "openFiles": [
         "areas/Undernet5.tmx",
-        "assets/tiles/Bn3UndernetFlashingWarp.tsx"
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
+        "areas/SecretArea1.tmx",
+        "assets/tiles/WaterTilesV2.tsx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
         "areas/Undernet5.tmx",
-        "areas/UndernetSqr.tmx",
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
         "areas/SecretArea1.tmx",
+        "assets/tiles/WaterTilesV2.tsx",
+        "areas/UndernetSqr.tmx",
         "areas/DevRoom.tmx",
         "assets/tiles/ServerWarp.tsx",
         "areas/default.tmx",
         "areas/ACDC3.tmx",
         "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
-        "areas/SecretArea3.tmx",
-        "areas/SecretArea2.tmx"
+        "areas/SecretArea3.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
