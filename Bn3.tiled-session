@@ -10279,11 +10279,11 @@
             }
         },
         "areas/SecretArea2.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1212.6666666666665,
-                "y": 663.3333333333334
+                "x": 1378,
+                "y": 559
             }
         },
         "areas/SecretArea3.tmx": {
@@ -10375,11 +10375,11 @@
             }
         },
         "areas/UndernetSqr.tmx": {
-            "scale": 4,
+            "scale": 0.75,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 783.25,
-                "y": 354.875
+                "x": 757.3333333333333,
+                "y": 355.33333333333337
             }
         },
         "areas/YaiHp.tmx": {
@@ -10944,6 +10944,7 @@
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "areas/SecretArea2.tmx",
         "assets/tiles/UndernetStatue.tsx",
         "areas/UndernetSqr.tmx",
         "areas/Scilab2.tmx",
@@ -10954,8 +10955,7 @@
         "areas/Undernet6.tmx",
         "areas/Undernet5.tmx",
         "assets/tiles/generic-arrow.tsx",
-        "areas/Undernet4.tmx",
-        "areas/Undernet2.tmx"
+        "areas/Undernet4.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
