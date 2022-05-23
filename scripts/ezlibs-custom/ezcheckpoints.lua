@@ -1,30 +1,6 @@
 local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
-local helpers = require('scripts/ezlibs-scripts/helpers')
 
 local ezcheckpoints = {}
-local checkpoints_hidden_till_rejoin_for_player = {}
-
-function ezcheckpoints.handle_player_join(player_id)
-    checkpoints_hidden_till_rejoin_for_player[player_id] = {}
-    --Pretend to do a transfer too, to hide data in entry map
-    ezcheckpoints.handle_player_transfer(player_id)
-end
-
-function ezcheckpoints.handle_player_disconnect(player_id)
-    checkpoints_hidden_till_rejoin_for_player[player_id] = {}
-end
-
-function ezcheckpoints.handle_player_transfer(player_id)
-    local area_id = Net.get_player_area(player_id)
-    if checkpoints_hidden_till_rejoin_for_player[player_id][area_id] then
-        print("area id is "..area_id)
-        for object_id, is_hidden in pairs(checkpoints_hidden_till_rejoin_for_player[player_id][area_id]) do
-            Net.exclude_object_for_player(player_id, object_id)
-        end
-    else
-        checkpoints_hidden_till_rejoin_for_player[player_id][area_id] = {}
-    end
-end
 
 function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
     if button ~= 0 then return end
@@ -33,6 +9,7 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
     if checkpoint_object.type ~= "Checkpoint" then return end
     local required_item = checkpoint_object.custom_properties["Unlock Item"]
     local dialogue_type = checkpoint_object.custom_properties["Dialogue Type"]
+    local take_item = checkpoint_object.custom_properties["Take Item"] == "true"
     local dialogue_check = not dialogue_type or dialogue_type and dialogue_type ~= "None"
     if not required_item then return end
     local item_count = 0
@@ -68,14 +45,8 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
         }
         Net.set_object_data(area_id, checkpoint_object.id, unlock_data)
         Async.sleep(tonumber(checkpoint_object.custom_properties["Disappear Cooldown"])).and_then(function()
-            if is_hide_forever then
-                local safe_secret = helpers.get_safe_player_secret(player_id)
-                local player_area_memory = ezmemory.get_player_area_memory(safe_secret,area_id)
-                player_area_memory.hidden_objects[tostring(checkpoint_object.id)] = true
-                ezmemory.save_player_memory(safe_secret)
-            end
-            checkpoints_hidden_till_rejoin_for_player[player_id][area_id][tostring(checkpoint_object.id)] = true
-            Net.exclude_object_for_player(player_id, checkpoint_object.id)
+            if is_hide_forever then ezmemory.hide_object_from_player(player_id,area_id,object_id) --Hide permanently if needed
+            else ezmemory.hide_object_from_player_till_disconnect(player_id,area_id,object_id) end --Otherwise hide it until disconnect
             local relock_data = {
                 type = "tile",
                 gid=lockedGID,
@@ -83,7 +54,7 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
                 flipped_vertically=checkpoint_object.data.flipped_vertically
             }
             Net.set_object_data(area_id, checkpoint_object.id, relock_data)
-            if checkpoint_object.custom_properties["Take Item"] == "true" then
+            if take_item then
                 if required_item == "money" then
                     ezmemory.spend_player_money(player_id, necessary_count)
                 else
