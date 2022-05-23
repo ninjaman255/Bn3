@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/Scilab2.tmx",
+    "activeFile": "areas/UndernetSqr.tmx",
     "expandedProjectPaths": [
         "assets",
-        ".",
         "areas",
-        "assets/tiles"
+        "assets/tiles",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10154,8 +10154,8 @@
             "scale": 1.5,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 895.6666666666666,
-                "y": 415.6666666666667
+                "x": 895.3333333333333,
+                "y": 415.66666666666663
             }
         },
         "areas/ACDC3.tmx": {
@@ -10202,8 +10202,8 @@
             "scale": 0.75,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 869.3333333333333,
-                "y": 526
+                "x": 1134.6666666666665,
+                "y": 474
             }
         },
         "areas/Beachside2.tmx": {
@@ -10330,8 +10330,8 @@
             "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 698,
-                "y": 475.3333333333333
+                "x": 1070.6666666666665,
+                "y": 479.33333333333337
             }
         },
         "areas/Undernet3.tmx": {
@@ -10346,7 +10346,7 @@
             "scale": 0.125,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1036,
+                "x": 1040,
                 "y": 452
             }
         },
@@ -10354,32 +10354,32 @@
             "scale": 0.75,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 1022,
-                "y": 464.66666666666663
+                "x": 1021.3333333333333,
+                "y": 464.6666666666667
             }
         },
         "areas/Undernet6.tmx": {
             "scale": 1.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 911.6666666666666,
-                "y": 439.6666666666667
+                "x": 911.3333333333333,
+                "y": 439.66666666666663
             }
         },
         "areas/Undernet7.tmx": {
             "scale": 0.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1005,
+                "x": 1004,
                 "y": 429
             }
         },
         "areas/UndernetSqr.tmx": {
-            "scale": 0.5,
+            "scale": 4,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 761,
-                "y": 343
+                "x": 783.25,
+                "y": 354.875
             }
         },
         "areas/YaiHp.tmx": {
@@ -10418,8 +10418,8 @@
             "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 993.3333333333333,
-                "y": 240.66666666666669
+                "x": 926.6666666666667,
+                "y": 400.6666666666667
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10938,32 +10938,24 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/Undernet2.tmx",
-        "areas/Undernet4.tmx",
-        "assets/tiles/generic-arrow.tsx",
-        "areas/Undernet5.tmx",
-        "areas/Undernet6.tmx",
-        "areas/Undernet7.tmx",
-        "areas/ACDC2.tmx",
-        "areas/default.tmx",
-        "areas/Beachside.tmx",
-        "areas/Scilab2.tmx"
+        "areas/UndernetSqr.tmx",
+        "assets/tiles/UndernetStatue.tsx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "areas/Undernet2.tmx",
-        "areas/Undernet4.tmx",
-        "assets/tiles/generic-arrow.tsx",
-        "areas/Undernet5.tmx",
-        "areas/Undernet6.tmx",
-        "areas/Undernet7.tmx",
-        "areas/ACDC2.tmx",
-        "areas/default.tmx",
-        "areas/Beachside.tmx",
+        "assets/tiles/UndernetStatue.tsx",
+        "areas/UndernetSqr.tmx",
         "areas/Scilab2.tmx",
-        "areas/Undernet3.tmx",
-        "areas/SecretArea3.tmx"
+        "areas/Beachside.tmx",
+        "areas/default.tmx",
+        "areas/ACDC2.tmx",
+        "areas/Undernet7.tmx",
+        "areas/Undernet6.tmx",
+        "areas/Undernet5.tmx",
+        "assets/tiles/generic-arrow.tsx",
+        "areas/Undernet4.tmx",
+        "areas/Undernet2.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
