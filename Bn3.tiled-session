@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/SecretArea3.tmx",
+    "activeFile": "areas/default.tmx",
     "expandedProjectPaths": [
-        "assets/tiles",
-        "assets",
+        ".",
         "areas",
-        "."
+        "assets/tiles",
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -9899,11 +9899,11 @@
             }
         },
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx": {
-            "scale": 4,
+            "scale": 2,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 1159.875,
-                "y": 542.875
+                "x": 1521.5,
+                "y": 158.25
             }
         },
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/assets/ezlibs-assets/ezmystery/RedMysteryData.tsx": {
@@ -10415,11 +10415,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 0.75,
+            "scale": 3,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 926.6666666666667,
-                "y": 400.6666666666667
+                "x": 399.99999999999994,
+                "y": 359.8333333333333
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10732,6 +10732,9 @@
         "assets/tiles/ShadowCompressionRoad.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/SpecialBlockerObject.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/TileBridgeOverlayACDC1.tsx": {
             "scaleInDock": 1
         },
@@ -10938,23 +10941,23 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/SecretArea3.tmx"
+        "areas/default.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "areas/default.tmx",
+        "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
         "areas/SecretArea3.tmx",
         "areas/SecretArea2.tmx",
         "assets/tiles/UndernetStatue.tsx",
         "areas/UndernetSqr.tmx",
         "areas/Scilab2.tmx",
         "areas/Beachside.tmx",
-        "areas/default.tmx",
         "areas/ACDC2.tmx",
         "areas/Undernet7.tmx",
         "areas/Undernet6.tmx",
-        "areas/Undernet5.tmx",
-        "assets/tiles/generic-arrow.tsx"
+        "areas/Undernet5.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
