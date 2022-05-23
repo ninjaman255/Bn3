@@ -19,7 +19,7 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
         item_count = ezmemory.count_player_item(player_id, required_item)
     end
 	local necessary_count = 1
-    local is_hide_forever = checkpoint_object.custom_properties["Once"] == "true"
+    local is_hide_forever = checkpoint_object.custom_properties["Once"] 
     if checkpoint_object.custom_properties["Required Keys"] ~= nil then
         necessary_count = tonumber(checkpoint_object.custom_properties["Required Keys"])
     end
@@ -45,7 +45,7 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
         }
         Net.set_object_data(area_id, checkpoint_object.id, unlock_data)
         Async.sleep(tonumber(checkpoint_object.custom_properties["Disappear Cooldown"])).and_then(function()
-            if is_hide_forever then ezmemory.hide_object_from_player(player_id,area_id,object_id) --Hide permanently if needed
+            if is_hide_forever == "true" then ezmemory.hide_object_from_player(player_id,area_id,object_id) --Hide permanently if needed
             else ezmemory.hide_object_from_player_till_disconnect(player_id,area_id,object_id) end --Otherwise hide it until disconnect
             local relock_data = {
                 type = "tile",

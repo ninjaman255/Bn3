@@ -10282,8 +10282,8 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1565.3333333333333,
-                "y": 594
+                "x": 1407.3333333333333,
+                "y": 694
             }
         },
         "areas/SecretArea2.tmx": {
@@ -10362,8 +10362,8 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1232,
-                "y": 698
+                "x": 1022,
+                "y": 463.3333333333333
             }
         },
         "areas/Undernet6.tmx": {
