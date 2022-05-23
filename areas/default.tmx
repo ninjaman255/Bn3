@@ -239,7 +239,7 @@
 </data>
  </layer>
  <objectgroup id="10" name="Object Layer 5" offsetx="0" offsety="-80"/>
- <layer id="11" name="Tile Layer 6" width="31" height="27" offsetx="0" offsety="-96">
+ <layer id="11" name="Tile Layer 6" width="31" height="27" visible="0" offsetx="0" offsety="-96">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -489,7 +489,7 @@
    </properties>
    <point/>
   </object>
-  <object id="120" type="Checkpoint" gid="114" x="192" y="672" width="64" height="32">
+  <object id="120" type="Checkpoint" gid="114" x="192" y="672" width="64" height="32" visible="0">
    <properties>
     <property name="Disappear Cooldown" type="float" value="0"/>
     <property name="Once" type="bool" value="false"/>
