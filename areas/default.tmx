@@ -494,7 +494,7 @@
    <properties>
     <property name="Dialogue Type" value="None"/>
     <property name="Disappear Cooldown" type="float" value="0"/>
-    <property name="Once" type="bool" value="true"/>
+    <property name="Once" type="bool" value="false"/>
     <property name="Required Keys" type="int" value="1"/>
     <property name="Take Item" type="bool" value="false"/>
     <property name="Unlock GID" type="int" value="0"/>
