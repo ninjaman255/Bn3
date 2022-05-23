@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="31" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="42">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="31" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="52">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Undernet/GrayBG.animation"/>
@@ -14,6 +14,8 @@
  <tileset firstgid="11" source="../assets/tiles/BN3ACDC1Warp.tsx"/>
  <tileset firstgid="20" source="../assets/tiles/warp.tsx"/>
  <tileset firstgid="26" source="../assets/tiles/Conveyor.tsx"/>
+ <tileset firstgid="35" source="../assets/tiles/BN3UndernetWarpVariant1.tsx"/>
+ <tileset firstgid="44" source="../assets/tiles/LargeFire.tsx"/>
  <layer id="1" name="Tile Layer 1" width="31" height="33" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -101,14 +103,6 @@
 </data>
  </layer>
  <objectgroup id="4" name="Object Layer 2" offsetx="0" offsety="-16">
-  <object id="2" name="Undernet3ToSquare" type="Custom Warp" gid="21" x="96" y="352" width="61" height="32" visible="0">
-   <properties>
-    <property name="direction" value="Down Left"/>
-    <property name="warp_name" value="UndernetSqrToUndernet3"/>
-    <property name="warp_to" value="UndernetSqr"/>
-   </properties>
-  </object>
-  <object id="3" gid="12" x="96" y="352" width="64" height="40" visible="0"/>
   <object id="41" name="Undernet3ToUndernet2" type="Radius Warp" x="864" y="688">
    <properties>
     <property name="Activation Radius" type="float" value="0.6"/>
@@ -119,5 +113,55 @@
    </properties>
    <point/>
   </object>
+  <object id="43" type="Custom Warp" gid="36" x="96" y="352" width="64" height="40">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="UndernetSqr"/>
+    <property name="Target Object" value="28"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Tile Layer 3" width="31" height="33" offsetx="0" offsety="-32">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Object Layer 3" offsetx="0" offsety="-32">
+  <object id="48" gid="44" x="176" y="32" width="55" height="72"/>
+  <object id="49" gid="44" x="368" y="32" width="55" height="72"/>
+  <object id="50" gid="44" x="368" y="192" width="55" height="72"/>
+  <object id="51" gid="44" x="176" y="192" width="55" height="72"/>
  </objectgroup>
 </map>
