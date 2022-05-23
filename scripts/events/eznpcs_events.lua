@@ -10,7 +10,8 @@ local AlphaFight = {
     name="AlphaFight",
     action=function (npc,player_id,dialogue,relay_object)
         return async(function()
-            Async.initiate_encounter(player_id, "/server/assets/mobs/Alpha.zip")
+            await(Async.message_player(player_id, "FOOOOOOOODDDDDD", "/server/assets/ezlibs-assets/eznpcs/mug/alpha.png", "/server/assets/ezlibs-assets/eznpcs/mug/mug.animation"))
+            await(Async.initiate_encounter(player_id, "/server/assets/mobs/Alpha.zip"))
         end)
     end
 }
