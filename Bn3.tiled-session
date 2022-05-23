@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/default.tmx",
+    "activeFile": "assets/tiles/ServerWarp.tsx",
     "expandedProjectPaths": [
-        ".",
-        "assets/tiles",
         "assets",
-        "areas"
+        "areas",
+        ".",
+        "assets/tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10159,11 +10159,11 @@
             }
         },
         "areas/ACDC3.tmx": {
-            "scale": 0.25,
+            "scale": 2,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 2206,
-                "y": -558
+                "x": 1286,
+                "y": 518.25
             }
         },
         "areas/ACDCSqr.tmx": {
@@ -10415,11 +10415,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 0.75,
-            "selectedLayer": 3,
+            "scale": 8,
+            "selectedLayer": 13,
             "viewCenter": {
-                "x": 581.3333333333333,
-                "y": 246
+                "x": 1384.375,
+                "y": 415.8125
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10718,7 +10718,8 @@
             "scaleInDock": 1
         },
         "assets/tiles/ServerWarp.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "assets/tiles/ShademanComp1.tsx": {
             "scaleInDock": 1
@@ -10941,12 +10942,16 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/default.tmx"
+        "areas/default.tmx",
+        "assets/tiles/ServerWarp.tsx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
         "areas/default.tmx",
+        "assets/tiles/ServerWarp.tsx",
+        "areas/ACDC3.tmx",
+        "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
         "areas/SecretArea3.tmx",
         "areas/SecretArea2.tmx",
@@ -10954,10 +10959,7 @@
         "areas/UndernetSqr.tmx",
         "areas/Scilab2.tmx",
         "areas/Beachside.tmx",
-        "areas/ACDC2.tmx",
-        "areas/Undernet7.tmx",
-        "areas/Undernet6.tmx",
-        "areas/Undernet5.tmx"
+        "areas/Undernet7.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
