@@ -10148,11 +10148,11 @@
             "scaleInDock": 1
         },
         "areas/ACDC2.tmx": {
-            "scale": 3,
+            "scale": 1.5,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 866.1666666666666,
-                "y": 526.5
+                "x": 910,
+                "y": 549
             }
         },
         "areas/ACDC3.tmx": {
@@ -10164,11 +10164,11 @@
             }
         },
         "areas/ACDCSqr.tmx": {
-            "scale": 0.75,
+            "scale": 2,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 679.3333333333333,
-                "y": 295.3333333333333
+                "x": 613.75,
+                "y": 337.75
             }
         },
         "areas/AlphaComp.tmx": {
@@ -10180,35 +10180,43 @@
             }
         },
         "areas/AlphaLib1.tmx": {
-            "scale": 0.33,
+            "scale": 0.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1598.4848484848485,
-                "y": 799.9999999999999
+                "x": 1359,
+                "y": 357
             }
         },
         "areas/BeachSqr.tmx": {
-            "scale": 0.75,
+            "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 607.3333333333333,
-                "y": 264.66666666666663
+                "x": 654.1666666666666,
+                "y": 486.83333333333326
             }
         },
         "areas/Beachside.tmx": {
-            "scale": 1.5,
+            "scale": 0.5,
             "selectedLayer": 17,
             "viewCenter": {
-                "x": 1550.3333333333333,
-                "y": 231.66666666666669
+                "x": 1107,
+                "y": 651
+            }
+        },
+        "areas/Beachside2.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 11,
+            "viewCenter": {
+                "x": 1239,
+                "y": 267
             }
         },
         "areas/DexHP.tmx": {
-            "scale": 1,
+            "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 639,
-                "y": 296
+                "x": 632.6666666666667,
+                "y": 446
             }
         },
         "areas/GospelHQ.tmx": {
@@ -10221,34 +10229,34 @@
         },
         "areas/Hades.tmx": {
             "scale": 0.5,
-            "selectedLayer": 10,
+            "selectedLayer": 11,
             "viewCenter": {
-                "x": 1232,
-                "y": 770
+                "x": 1251,
+                "y": 227
             }
         },
         "areas/MaylComp.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 650.6666666666667,
-                "y": 650
+                "x": 719,
+                "y": 589
             }
         },
         "areas/SciLabSqr.tmx": {
-            "scale": 1,
+            "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 585.5,
-                "y": 272.5
+                "x": 423.16666666666663,
+                "y": 329.8333333333333
             }
         },
         "areas/Scilab1.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 1130,
-                "y": 320.6666666666667
+                "x": 927,
+                "y": 513
             }
         },
         "areas/Scilab2.tmx": {
@@ -10283,6 +10291,22 @@
                 "y": 713.6363636363636
             }
         },
+        "areas/ShademanComp1.tmx": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 398.5,
+                "y": 534.5
+            }
+        },
+        "areas/TomakoHp.tmx": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 663.5,
+                "y": 96.5
+            }
+        },
         "areas/Undernet5.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
@@ -10300,11 +10324,35 @@
             }
         },
         "areas/YaiHp.tmx": {
+            "scale": 4,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 909.375,
+                "y": 201.125
+            }
+        },
+        "areas/Yoka1.tmx": {
+            "scale": 4,
+            "selectedLayer": 15,
+            "viewCenter": {
+                "x": 742.875,
+                "y": 284.375
+            }
+        },
+        "areas/Yoka2.tmx": {
             "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 544,
-                "y": 423.99999999999994
+                "x": 1191.3333333333333,
+                "y": 506
+            }
+        },
+        "areas/YokaSqr.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 687,
+                "y": 479
             }
         },
         "areas/default.tmx": {
@@ -10415,6 +10463,9 @@
         "assets/tiles/BN3DexPanel.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/BN3TamakoPanel.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/BN3UndernetWarpVariant2.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -10455,6 +10506,12 @@
         "assets/tiles/BeachSqr2.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/Beachside2A.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Beachside2B.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/BoardRelayObject.tsx": {
             "scaleInDock": 1
         },
@@ -10469,6 +10526,10 @@
             "scaleInEditor": 1
         },
         "assets/tiles/Conveyor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/CusBeachWarp.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
@@ -10488,6 +10549,9 @@
             "scaleInDock": 1
         },
         "assets/tiles/GospelPortal.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/GreenMysteryData.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/HadesF2_Arrows.tsx": {
@@ -10583,6 +10647,12 @@
         "assets/tiles/ServerWarp.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/ShademanComp1.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/ShademanCompWarpAnimation.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/Shading.tsx": {
             "scaleInDock": 1
         },
@@ -10602,6 +10672,9 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/UndernetStairs.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/UndernetStatue.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 2
@@ -10617,6 +10690,45 @@
             "scaleInDock": 1
         },
         "assets/tiles/YaiPC.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka12B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka12BStairs.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka1B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka1BBasePlatform.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka1F1.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka1F2.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Yoka2NewPaths.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaAnimatedArrows1.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaAnimatedArrows2.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaF1_Arrows.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaF2_Arrows.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaRemadeForcompression2.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/YokaSqr.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/cursed-stairs-2.tsx": {
@@ -10648,6 +10760,9 @@
         "assets/tiles/indicator.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/metalmanHP.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/panels.tsx": {
             "scaleInDock": 0.75,
             "scaleInEditor": 2
@@ -10665,7 +10780,8 @@
             "scaleInDock": 1
         },
         "assets/tiles/shotcutwarps.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "assets/tiles/stairs.tsx": {
             "scaleInDock": 1
@@ -10679,10 +10795,10 @@
             "scaleInDock": 1
         }
     },
-    "frame.defaultDuration": 250,
+    "frame.defaultDuration": 333,
     "last.exportedFilePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_4_14_2021Yoka/assets/tiles",
     "last.externalTilesetPath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/ezlibs-assets/ezmystery",
-    "last.imagePath": "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles",
+    "last.imagePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/tiles",
     "last.objectTemplatePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_5_22_2021_TESTING/assets/tiles",
     "last.worldFilePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3",
     "lastUsedTilesetExportFilter": "Tiled tileset files (*.tsx *.xml)",
@@ -10702,20 +10818,20 @@
     "openFiles": [
     ],
     "project": "Bn3.tiled-project",
-    "property.type": "bool",
+    "property.type": "object",
     "recentFiles": [
-        "areas/Scilab2.tmx",
-        "areas/GospelHQ.tmx",
-        "areas/SciLabSqr.tmx",
-        "areas/default.tmx",
-        "areas/AlphaComp.tmx",
+        "assets/tiles/gate.tsx",
+        "areas/Yoka2.tmx",
+        "areas/MaylComp.tmx",
         "areas/Scilab1.tmx",
-        "C:/Users/Clevettes/Desktop/OBN SERVER BACKUPS/Server_10_5_2021_RickRoll/areas/default.tmx",
-        "areas/ACDC2.tmx",
+        "areas/ACDCSqr.tmx",
+        "areas/DexHP.tmx",
+        "areas/SciLabSqr.tmx",
+        "areas/YaiHp.tmx",
+        "areas/YokaSqr.tmx",
         "areas/Beachside.tmx",
-        "areas/ACDC3.tmx",
-        "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/OvenNetwork_tileset.tsx",
-        "C:/Users/Clevettes/Desktop/Server_12_22_2021/areas/default.tmx"
+        "areas/Yoka1.tmx",
+        "areas/Beachside2.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
@@ -10725,8 +10841,8 @@
     "tileset.margin": 0,
     "tileset.spacing": 0,
     "tileset.tileSize": {
-        "height": 41,
-        "width": 62
+        "height": 34,
+        "width": 52
     },
     "tileset.transparentColor": "#ffffff",
     "tileset.type": 0,

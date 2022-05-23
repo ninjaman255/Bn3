@@ -249,7 +249,7 @@
    <properties>
     <property name="Description" value="Assortment of chips, and other rare wares"/>
     <property name="Name" value="MerchWares"/>
-    <property name="Once" type="bool" value="false"/>
+    <property name="Once" type="bool" value="true"/>
     <property name="Type" value="keyitem"/>
    </properties>
   </object>
@@ -265,7 +265,7 @@
    </properties>
    <point/>
   </object>
-  <object id="42" name="ReDirect" type="Waypoint" x="480" y="624">
+  <object id="42" name="ReDirect" type="Waypoint" x="496" y="624">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Next Waypoint 1" type="object" value="41"/>
