@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/DevRoom.tmx",
+    "activeFile": "areas/SecretArea1.tmx",
     "expandedProjectPaths": [
         "assets/tiles",
         ".",
-        "areas",
-        "assets"
+        "assets",
+        "areas"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10219,7 +10219,7 @@
             "selectedLayer": 1,
             "viewCenter": {
                 "x": 742.6666666666667,
-                "y": 16.666666666666742
+                "y": 18
             }
         },
         "areas/DexHP.tmx": {
@@ -10384,7 +10384,7 @@
         },
         "areas/UndernetSqr.tmx": {
             "scale": 0.75,
-            "selectedLayer": 7,
+            "selectedLayer": 9,
             "viewCenter": {
                 "x": 757.3333333333333,
                 "y": 355.33333333333337
@@ -10426,8 +10426,8 @@
             "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1153.3333333333333,
-                "y": 351.33333333333337
+                "x": 927.3333333333333,
+                "y": 399.3333333333333
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10953,22 +10953,23 @@
         "areas/default.tmx",
         "assets/tiles/ServerWarp.tsx",
         "areas/DevRoom.tmx",
-        "areas/SecretArea1.tmx"
+        "areas/SecretArea1.tmx",
+        "areas/UndernetSqr.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
         "areas/default.tmx",
         "assets/tiles/ServerWarp.tsx",
-        "areas/SecretArea1.tmx",
         "areas/DevRoom.tmx",
+        "areas/UndernetSqr.tmx",
+        "areas/SecretArea1.tmx",
         "areas/ACDC3.tmx",
         "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
         "areas/SecretArea3.tmx",
         "areas/SecretArea2.tmx",
         "assets/tiles/UndernetStatue.tsx",
-        "areas/UndernetSqr.tmx",
         "areas/Scilab2.tmx"
     ],
     "resizeMap.removeObjects": false,

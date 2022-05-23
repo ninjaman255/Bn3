@@ -209,9 +209,9 @@
  <objectgroup id="10" name="Object Layer 5" offsetx="0" offsety="-64">
   <object id="20" name="UnderSqrTOSecret1" type="Custom Warp" gid="49" x="128" y="400" width="88" height="52">
    <properties>
-    <property name="direction" value="Down Right"/>
-    <property name="warp_name" value="Secret1ToUnderSquare"/>
-    <property name="warp_to" value="SecretArea1"/>
+    <property name="Direction" value="Down Right"/>
+    <property name="Target Area" value="SecretArea1"/>
+    <property name="Target Object" value="2"/>
    </properties>
   </object>
  </objectgroup>
