@@ -489,7 +489,7 @@
    </properties>
    <point/>
   </object>
-  <object id="120" type="Interact Relay" gid="114" x="160" y="640" width="64" height="32">
+  <object id="120" type="Interact Relay" gid="114" x="96" y="640" width="64" height="32">
    <properties>
     <property name="Dialogue Type" value="None"/>
     <property name="Disappear Cooldown" type="int" value="0"/>
@@ -508,7 +508,7 @@
    </properties>
    <point/>
   </object>
-  <object id="122" name="DevKey" type="Mystery Data" gid="88" x="144" y="656" width="14" height="43">
+  <object id="122" name="DevKey" type="Mystery Data" gid="88" x="176" y="656" width="14" height="43">
    <properties>
     <property name="Description" value="A key that proves you are a dev of this server"/>
     <property name="Name" value="DevKey"/>
