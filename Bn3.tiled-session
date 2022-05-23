@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/SecretArea1.tmx",
+    "activeFile": "areas/Undernet5.tmx",
     "expandedProjectPaths": [
-        "assets/tiles",
         ".",
+        "areas",
         "assets",
-        "areas"
+        "assets/tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10360,10 +10360,10 @@
         },
         "areas/Undernet5.tmx": {
             "scale": 0.75,
-            "selectedLayer": 9,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 1021.3333333333333,
-                "y": 464.6666666666667
+                "x": 1232,
+                "y": 698
             }
         },
         "areas/Undernet6.tmx": {
@@ -10426,8 +10426,8 @@
             "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 927.3333333333333,
-                "y": 399.3333333333333
+                "x": 926.6666666666667,
+                "y": 399.33333333333337
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10950,27 +10950,24 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/default.tmx",
-        "assets/tiles/ServerWarp.tsx",
-        "areas/DevRoom.tmx",
-        "areas/SecretArea1.tmx",
-        "areas/UndernetSqr.tmx"
+        "areas/Undernet5.tmx",
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "areas/default.tmx",
-        "assets/tiles/ServerWarp.tsx",
-        "areas/DevRoom.tmx",
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
+        "areas/Undernet5.tmx",
         "areas/UndernetSqr.tmx",
         "areas/SecretArea1.tmx",
+        "areas/DevRoom.tmx",
+        "assets/tiles/ServerWarp.tsx",
+        "areas/default.tmx",
         "areas/ACDC3.tmx",
         "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
         "areas/SecretArea3.tmx",
-        "areas/SecretArea2.tmx",
-        "assets/tiles/UndernetStatue.tsx",
-        "areas/Scilab2.tmx"
+        "areas/SecretArea2.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

@@ -87,7 +87,7 @@
     <property name="Target Object" value="29"/>
    </properties>
   </object>
-  <object id="8" gid="36" x="480" y="736" width="60" height="29">
+  <object id="8" type="Custom Warp" gid="36" x="480" y="736" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Right"/>
     <property name="Target Area" value="UndernetSqr"/>
