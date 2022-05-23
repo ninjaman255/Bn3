@@ -61,13 +61,6 @@ Net.set_bot_direction("progineer4", "Down Left")
 print("progineer4 made")
 
 --
-local Alpha_pos = Net.get_object_by_name(Area12, "alpha")
-local alpha = create_custom_bot("alpha", "Alpha", Area12, "/server/assets/tiles/bots&animations/AlphaOW/alphaOW.png", "/server/assets/tiles/bots&animations/AlphaOW/alphaOW.animation", 7.5,4.4, 1.0, true)
-alpha.mug_texture_path = nil
-alpha.mug_animation_path = nil
-Net.set_spawn_direction = "Down Left"
-print("alpha Made")
---
 bots = {
     lonely,
     progineer1,

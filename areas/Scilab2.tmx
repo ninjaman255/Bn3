@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="40" height="37" tilewidth="64" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="79">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="40" height="37" tilewidth="64" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="80">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Scilab BN3/BG.animation"/>
@@ -21,7 +21,7 @@
  <tileset firstgid="40" source="../assets/tiles/scilab1D.tsx"/>
  <tileset firstgid="41" source="../assets/tiles/gate.tsx"/>
  <tileset firstgid="46" source="../assets/tiles/Conveyor.tsx"/>
- <tileset firstgid="55" source="../assets/objects/ezmystery/GreenMysteryData.tsx"/>
+ <tileset firstgid="55" source="../assets/ezlibs-assets/ezmystery/GreenMysteryData.tsx"/>
  <tileset firstgid="63" source="../assets/tiles/SciLabF1_Arrows.tsx"/>
  <tileset firstgid="79" source="../assets/tiles/SciLabF2_Arrows.tsx"/>
  <tileset firstgid="95" source="../assets/tiles/ScilabAnimatedArrows.tsx"/>
@@ -351,16 +351,14 @@
     <property name="warp_to" value="GospelHQ"/>
    </properties>
   </object>
-  <object id="13" name="ToSciLabSquare" type="Custom Warp" gid="18" x="544" y="304" width="61" height="32" visible="0">
+  <object id="14" name="ToSciLabSqr" type="Custom Warp" gid="32" x="544" y="304" width="64" height="40">
    <properties>
-    <property name="direction" value="Down Left"/>
-    <property name="warp_name" value="ToSciLabArea"/>
-    <property name="warp_to" value="SciLabSqr"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="SciLabSqr"/>
+    <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="14" gid="32" x="544" y="304" width="64" height="40"/>
-  <object id="15" gid="40" x="1216" y="1136" width="1280" height="1080"/>
-  <object id="16" gid="2147483689" x="784" y="720" width="34" height="52"/>
+  <object id="15" name="ScilabArchObj" gid="40" x="1216" y="1136" width="1280" height="1080" visible="0"/>
   <object id="44" name="Scilab2To1F2" type="Radius Warp" x="976" y="1056">
    <properties>
     <property name="Activation Radius" type="float" value="0.6"/>
@@ -381,7 +379,7 @@
    </properties>
    <point/>
   </object>
-  <object id="47" name="ReDirect" x="592" y="368">
+  <object id="47" name="ReDirect" type="Waypoint" x="592" y="368">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="46"/>
@@ -503,5 +501,6 @@
   <object id="76" gid="103" x="944.5" y="709.5" width="33" height="24"/>
   <object id="77" gid="103" x="944.5" y="741.5" width="33" height="24"/>
   <object id="78" gid="103" x="944.5" y="773.5" width="33" height="24"/>
+  <object id="79" gid="2147483689" x="800" y="736" width="64" height="52"/>
  </objectgroup>
 </map>

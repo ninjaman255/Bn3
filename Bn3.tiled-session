@@ -1682,8 +1682,8 @@
             "scale": 4,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 334.75,
-                "y": 68.375
+                "x": 360.375,
+                "y": 76.375
             }
         },
         "C:/Users/Clevettes/Desktop/OBN SERVER BACKUPS/Server_10_5_2021_RickRoll/assets/tiles/BoardRelayObject.tsx": {
@@ -10148,11 +10148,11 @@
             "scaleInDock": 1
         },
         "areas/ACDC2.tmx": {
-            "scale": 0.33,
+            "scale": 3,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 895.4545454545454,
-                "y": 153.030303030303
+                "x": 866.1666666666666,
+                "y": 526.5
             }
         },
         "areas/ACDC3.tmx": {
@@ -10175,8 +10175,8 @@
             "scale": 3,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1181.8333333333333,
-                "y": 142.83333333333334
+                "x": 1178.8333333333333,
+                "y": 137.16666666666663
             }
         },
         "areas/AlphaLib1.tmx": {
@@ -10196,11 +10196,11 @@
             }
         },
         "areas/Beachside.tmx": {
-            "scale": 0.33,
+            "scale": 1.5,
             "selectedLayer": 17,
             "viewCenter": {
-                "x": 1134.848484848485,
-                "y": 474.24242424242425
+                "x": 1550.3333333333333,
+                "y": 231.66666666666669
             }
         },
         "areas/DexHP.tmx": {
@@ -10227,20 +10227,28 @@
                 "y": 650
             }
         },
-        "areas/Scilab1.tmx": {
-            "scale": 5.5,
-            "selectedLayer": 6,
+        "areas/SciLabSqr.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 975.909090909091,
-                "y": 447.90909090909093
+                "x": 590.3333333333333,
+                "y": 247.66666666666666
+            }
+        },
+        "areas/Scilab1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 1130,
+                "y": 320.6666666666667
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 0.22,
-            "selectedLayer": 0,
+            "scale": 2,
+            "selectedLayer": 13,
             "viewCenter": {
-                "x": 1236.3636363636365,
-                "y": 554.5454545454546
+                "x": 1435.75,
+                "y": 353.75
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10292,11 +10300,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 0.33,
+            "scale": 1,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 2750,
-                "y": 153.030303030303
+                "x": 994.5,
+                "y": 251.5
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10656,7 +10664,7 @@
     },
     "frame.defaultDuration": 250,
     "last.exportedFilePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_4_14_2021Yoka/assets/tiles",
-    "last.externalTilesetPath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/tiles",
+    "last.externalTilesetPath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/ezlibs-assets/ezmystery",
     "last.imagePath": "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles",
     "last.objectTemplatePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_5_22_2021_TESTING/assets/tiles",
     "last.worldFilePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3",
@@ -10679,18 +10687,18 @@
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "areas/AlphaComp.tmx",
         "areas/default.tmx",
+        "areas/Scilab1.tmx",
+        "C:/Users/Clevettes/Desktop/OBN SERVER BACKUPS/Server_10_5_2021_RickRoll/areas/default.tmx",
+        "areas/AlphaComp.tmx",
         "areas/ACDC2.tmx",
+        "areas/Beachside.tmx",
         "areas/ACDC3.tmx",
         "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/OvenNetwork_tileset.tsx",
         "C:/Users/Clevettes/Desktop/Server_12_22_2021/areas/default.tmx",
         "assets/tiles/BN3UndernetWarpVariant2.tsx",
         "areas/UndernetSqr.tmx",
-        "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/ArcadeFloor.tsx",
-        "areas/Undernet5.tmx",
-        "assets/tiles/UndernetStatue.tsx",
-        "assets/tiles/UndernetInteractWarp.tsx"
+        "C:/Users/Clevettes/Desktop/Server_12_22_2021/assets/tiles/ArcadeFloor.tsx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

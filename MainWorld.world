@@ -1,5 +1,26 @@
 {
     "maps": [
+        {
+            "fileName": "areas/default.tmx",
+            "height": 928,
+            "width": 1856,
+            "x": 0,
+            "y": 0
+        },
+        {
+            "fileName": "areas/ACDC2.tmx",
+            "height": 896,
+            "width": 1792,
+            "x": 1856,
+            "y": 0
+        },
+        {
+            "fileName": "areas/ACDC3.tmx",
+            "height": 976,
+            "width": 1952,
+            "x": 0,
+            "y": 896
+        }
     ],
     "onlyShowAdjacentMaps": false,
     "type": "world"

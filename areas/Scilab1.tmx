@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="29" height="32" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="68">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="29" height="32" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="69">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Scilab BN3/BG.animation"/>
@@ -207,11 +207,6 @@
   <object id="9" gid="2147483660" x="176" y="240" width="34" height="52" visible="0"/>
   <object id="10" gid="2147483660" x="144" y="240" width="34" height="52" visible="0"/>
   <object id="11" gid="2147483660" x="112" y="240" width="34" height="52" visible="0"/>
-  <object id="12" gid="2147483660" x="688" y="880" width="34" height="52">
-   <properties>
-    <property name="Interact Relay" type="object" value="66"/>
-   </properties>
-  </object>
   <object id="35" gid="2147483674" x="128" y="464" width="36" height="46"/>
   <object id="36" name="Scilab1To2F2" type="Radius Warp" x="528" y="160">
    <properties>
@@ -233,7 +228,7 @@
    </properties>
    <point/>
   </object>
-  <object id="40" name="ReDirect" x="560" y="432">
+  <object id="40" name="ReDirect" type="Waypoint" x="560" y="432">
    <properties>
     <property name="Direction" value="Up Right"/>
     <property name="Next Waypoint 1" type="object" value="39"/>
@@ -261,7 +256,7 @@
    </properties>
    <point/>
   </object>
-  <object id="43" name="ReDirect" x="176" y="432">
+  <object id="43" name="ReDirect" type="Waypoint" x="176" y="432">
    <properties>
     <property name="Direction" value="Down Left"/>
     <property name="Next Waypoint 1" type="object" value="42"/>
@@ -270,7 +265,7 @@
    <point/>
   </object>
   <object id="45" gid="45" x="480.5" y="111.5" width="96" height="64"/>
-  <object id="66" name="Stuck Prog" type="NPC" x="704" y="880">
+  <object id="66" name="Stuck Prog" type="NPC" x="720" y="880">
    <properties>
     <property name="Animation Name" value="prog"/>
     <property name="Asset Name" value="prog"/>
@@ -281,7 +276,7 @@
    </properties>
    <point/>
   </object>
-  <object id="67" name="ReDirect" x="704" y="880">
+  <object id="67" name="ReDirect" type="Waypoint" x="720" y="880">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Next Waypoint 1" type="object" value="66"/>
@@ -289,5 +284,6 @@
    </properties>
    <point/>
   </object>
+  <object id="68" gid="2147483660" x="704" y="896" width="64" height="52"/>
  </objectgroup>
 </map>
