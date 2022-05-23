@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "assets/tiles/ServerWarp.tsx",
+    "activeFile": "areas/default.tmx",
     "expandedProjectPaths": [
-        "assets",
         "areas",
-        ".",
-        "assets/tiles"
+        "assets",
+        "assets/tiles",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10946,10 +10946,10 @@
         "assets/tiles/ServerWarp.tsx"
     ],
     "project": "Bn3.tiled-project",
-    "property.type": "string",
+    "property.type": "bool",
     "recentFiles": [
-        "areas/default.tmx",
         "assets/tiles/ServerWarp.tsx",
+        "areas/default.tmx",
         "areas/ACDC3.tmx",
         "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
