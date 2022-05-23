@@ -10164,11 +10164,11 @@
             }
         },
         "areas/ACDCSqr.tmx": {
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 613.75,
-                "y": 337.75
+                "x": 524.3333333333333,
+                "y": 305
             }
         },
         "areas/AlphaComp.tmx": {
@@ -10196,16 +10196,16 @@
             }
         },
         "areas/Beachside.tmx": {
-            "scale": 2,
-            "selectedLayer": 9,
+            "scale": 0.75,
+            "selectedLayer": 16,
             "viewCenter": {
-                "x": 1483.75,
-                "y": 649.75
+                "x": 1039.3333333333333,
+                "y": 428.6666666666667
             }
         },
         "areas/Beachside2.tmx": {
             "scale": 0.5,
-            "selectedLayer": 11,
+            "selectedLayer": 2,
             "viewCenter": {
                 "x": 1239,
                 "y": 267
@@ -10229,7 +10229,7 @@
         },
         "areas/Hades.tmx": {
             "scale": 0.5,
-            "selectedLayer": 11,
+            "selectedLayer": 10,
             "viewCenter": {
                 "x": 1251,
                 "y": 227
@@ -10253,7 +10253,7 @@
         },
         "areas/Scilab1.tmx": {
             "scale": 0.5,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
                 "x": 927,
                 "y": 513
@@ -10261,33 +10261,33 @@
         },
         "areas/Scilab2.tmx": {
             "scale": 0.5,
-            "selectedLayer": 13,
+            "selectedLayer": 4,
             "viewCenter": {
                 "x": 1351,
                 "y": 523
             }
         },
         "areas/SecretArea1.tmx": {
-            "scale": 1.5,
-            "selectedLayer": 1,
+            "scale": 3,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 1557,
-                "y": 687.6666666666666
+                "x": 1174.1666666666665,
+                "y": 364.8333333333333
             }
         },
         "areas/SecretArea2.tmx": {
-            "scale": 0.25,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1280,
-                "y": 610
+                "x": 1212.6666666666665,
+                "y": 663.3333333333334
             }
         },
         "areas/SecretArea3.tmx": {
             "scale": 0.33,
-            "selectedLayer": 18,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 1596.9696969696968,
+                "x": 1595.4545454545455,
                 "y": 713.6363636363636
             }
         },
@@ -10315,20 +10315,60 @@
                 "y": 96.5
             }
         },
-        "areas/Undernet3.tmx": {
-            "scale": 0.25,
+        "areas/Undernet1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 956.6666666666667,
+                "y": 412.6666666666667
+            }
+        },
+        "areas/Undernet2.tmx": {
+            "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1602,
-                "y": -302
+                "x": 846,
+                "y": 471.33333333333337
+            }
+        },
+        "areas/Undernet3.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 1265.151515151515,
+                "y": -156.060606060606
+            }
+        },
+        "areas/Undernet4.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1127,
+                "y": 749
             }
         },
         "areas/Undernet5.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 982,
+                "y": 523.3333333333334
+            }
+        },
+        "areas/Undernet6.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1281,
+                "y": 127
+            }
+        },
+        "areas/Undernet7.tmx": {
             "scale": 0.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1145,
-                "y": 557
+                "x": 435,
+                "y": 761
             }
         },
         "areas/UndernetSqr.tmx": {
@@ -10348,19 +10388,19 @@
             }
         },
         "areas/Yoka1.tmx": {
-            "scale": 4,
-            "selectedLayer": 15,
+            "scale": 0.75,
+            "selectedLayer": 14,
             "viewCenter": {
-                "x": 742.875,
-                "y": 284.375
+                "x": 1080.6666666666665,
+                "y": 419.33333333333337
             }
         },
         "areas/Yoka2.tmx": {
-            "scale": 0.75,
-            "selectedLayer": 3,
+            "scale": 0.5,
+            "selectedLayer": 10,
             "viewCenter": {
-                "x": 1191.3333333333333,
-                "y": 506
+                "x": 941,
+                "y": 265
             }
         },
         "areas/YokaSqr.tmx": {
@@ -10482,6 +10522,9 @@
         "assets/tiles/BN3TamakoPanel.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/BN3UndernetWarpVariant1.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/BN3UndernetWarpVariant2.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -10527,6 +10570,14 @@
         },
         "assets/tiles/Beachside2B.tsx": {
             "scaleInDock": 1
+        },
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/tiles/Bn3UndernetFlashingWarpVariant2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "assets/tiles/BoardRelayObject.tsx": {
             "scaleInDock": 1
@@ -10681,11 +10732,33 @@
         "assets/tiles/TileBridgeOverlayACDC1.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/Undernet1A.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet1B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet1Ramps.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet2A.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet2B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet3.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/Undernet5A.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/Undernet5B.tsx": {
             "scaleInDock": 1
+        },
+        "assets/tiles/UndernetConveyorAnim.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "assets/tiles/UndernetInteractWarp.tsx": {
             "scaleInDock": 1,
@@ -10814,7 +10887,7 @@
             "scaleInDock": 1
         }
     },
-    "frame.defaultDuration": 300,
+    "frame.defaultDuration": 166,
     "last.exportedFilePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_4_14_2021Yoka/assets/tiles",
     "last.externalTilesetPath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/ezlibs-assets/ezmystery",
     "last.imagePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/tiles",
@@ -10839,18 +10912,18 @@
     "project": "Bn3.tiled-project",
     "property.type": "object",
     "recentFiles": [
+        "areas/Undernet3.tmx",
+        "areas/SecretArea3.tmx",
+        "areas/SecretArea2.tmx",
         "areas/SecretArea1.tmx",
-        "areas/Beachside.tmx",
-        "areas/Beachside2.tmx",
-        "areas/ShademanComp2.tmx",
-        "areas/Scilab1.tmx",
         "areas/Scilab2.tmx",
-        "areas/SciLabSqr.tmx",
-        "assets/tiles/gate.tsx",
+        "areas/Scilab1.tmx",
+        "areas/Hades.tmx",
+        "areas/Beachside2.tmx",
+        "areas/Beachside.tmx",
         "areas/Yoka2.tmx",
-        "areas/MaylComp.tmx",
-        "areas/ACDCSqr.tmx",
-        "areas/DexHP.tmx"
+        "areas/Yoka1.tmx",
+        "areas/ACDCSqr.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
@@ -10860,8 +10933,8 @@
     "tileset.margin": 0,
     "tileset.spacing": 0,
     "tileset.tileSize": {
-        "height": 29,
-        "width": 60
+        "height": 32,
+        "width": 64
     },
     "tileset.transparentColor": "#ffffff",
     "tileset.type": 0,
