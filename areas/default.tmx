@@ -467,7 +467,11 @@
    </properties>
   </object>
   <object id="85" gid="97" x="416" y="352" width="64" height="40"/>
-  <object id="92" gid="2147483694" x="640" y="640" width="64" height="52"/>
+  <object id="92" gid="2147483694" x="640" y="640" width="64" height="52">
+   <properties>
+    <property name="Flavor" value="You cant open this door yet"/>
+   </properties>
+  </object>
   <object id="104" name="400 zennies" type="Mystery Option" x="120" y="88">
    <properties>
     <property name="Amount" type="int" value="400"/>

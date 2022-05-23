@@ -354,7 +354,11 @@
     <property name="Target Object" value="93"/>
    </properties>
   </object>
-  <object id="96" gid="256" x="400" y="720" width="64" height="52"/>
+  <object id="96" gid="256" x="400" y="720" width="64" height="52">
+   <properties>
+    <property name="Flavor" value="You cant open this door yet"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="9" name="Tile Layer 5" width="34" height="37" visible="0" offsetx="0" offsety="-80">
   <data encoding="csv">
