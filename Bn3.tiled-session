@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/default.tmx",
+    "activeFile": "areas/DevRoom.tmx",
     "expandedProjectPaths": [
-        "areas",
-        "assets",
         "assets/tiles",
-        "."
+        ".",
+        "areas",
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10214,6 +10214,14 @@
                 "y": 267
             }
         },
+        "areas/DevRoom.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 742.6666666666667,
+                "y": 16.666666666666742
+            }
+        },
         "areas/DexHP.tmx": {
             "scale": 0.75,
             "selectedLayer": 3,
@@ -10271,11 +10279,11 @@
             }
         },
         "areas/SecretArea1.tmx": {
-            "scale": 3,
-            "selectedLayer": 0,
+            "scale": 0.75,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 1174.1666666666665,
-                "y": 364.8333333333333
+                "x": 1565.3333333333333,
+                "y": 594
             }
         },
         "areas/SecretArea2.tmx": {
@@ -10415,11 +10423,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 8,
+            "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1384.375,
-                "y": 415.8125
+                "x": 1153.3333333333333,
+                "y": 351.33333333333337
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10943,13 +10951,17 @@
     "map.width": 50,
     "openFiles": [
         "areas/default.tmx",
-        "assets/tiles/ServerWarp.tsx"
+        "assets/tiles/ServerWarp.tsx",
+        "areas/DevRoom.tmx",
+        "areas/SecretArea1.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "assets/tiles/ServerWarp.tsx",
         "areas/default.tmx",
+        "assets/tiles/ServerWarp.tsx",
+        "areas/SecretArea1.tmx",
+        "areas/DevRoom.tmx",
         "areas/ACDC3.tmx",
         "areas/ACDC2.tmx",
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
@@ -10957,9 +10969,7 @@
         "areas/SecretArea2.tmx",
         "assets/tiles/UndernetStatue.tsx",
         "areas/UndernetSqr.tmx",
-        "areas/Scilab2.tmx",
-        "areas/Beachside.tmx",
-        "areas/Undernet7.tmx"
+        "areas/Scilab2.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

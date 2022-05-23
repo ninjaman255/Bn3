@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="3">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="12">
  <tileset firstgid="1" source="../assets/tiles/warp.tsx"/>
  <tileset firstgid="7" source="../assets/tiles/floor.tsx"/>
+ <tileset firstgid="10" source="../assets/tiles/ServerWarp.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
-0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
+0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0,
 0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -37,5 +38,19 @@
    </properties>
    <point/>
   </object>
+  <object id="3" gid="10" x="128" y="128" width="58" height="30"/>
+  <object id="4" gid="10" x="192" y="128" width="58" height="30"/>
+  <object id="5" gid="10" x="256" y="128" width="58" height="30"/>
+  <object id="6" gid="10" x="320" y="128" width="58" height="30"/>
+  <object id="7" gid="10" x="384" y="128" width="58" height="30"/>
+  <object id="8" name="Secret Area Shortcut" type="Custom Warp" gid="10" x="64" y="128" width="58" height="30">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="SecretArea1"/>
+    <property name="Target Object" value="2"/>
+   </properties>
+  </object>
+  <object id="9" gid="10" x="448" y="128" width="58" height="30"/>
+  <object id="11" gid="10" x="512" y="128" width="58" height="30"/>
  </objectgroup>
 </map>
