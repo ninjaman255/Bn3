@@ -3,8 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "areas/default.tmx",
     "expandedProjectPaths": [
+        "assets/tiles",
+        "assets",
+        "areas",
         "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -10340,11 +10343,11 @@
             }
         },
         "areas/Undernet4.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 2,
+            "scale": 0.125,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 1127,
-                "y": 749
+                "x": 1268,
+                "y": 492
             }
         },
         "areas/Undernet5.tmx": {
@@ -10750,10 +10753,37 @@
         "assets/tiles/Undernet3.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/Undernet4A.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet4B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet4C.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet4D.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet4E.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet4PillarBase.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/Undernet5A.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/Undernet5B.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet6.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet7A.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Undernet7B.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/UndernetConveyorAnim.tsx": {
@@ -10908,22 +10938,30 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
+        "areas/Undernet2.tmx",
+        "areas/Undernet4.tmx",
+        "assets/tiles/generic-arrow.tsx",
+        "areas/Undernet5.tmx",
+        "areas/Undernet6.tmx",
+        "areas/Undernet7.tmx",
+        "areas/ACDC2.tmx",
+        "areas/default.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "object",
     "recentFiles": [
+        "areas/Undernet2.tmx",
+        "areas/Undernet4.tmx",
+        "assets/tiles/generic-arrow.tsx",
+        "areas/Undernet5.tmx",
+        "areas/Undernet6.tmx",
+        "areas/Undernet7.tmx",
+        "areas/ACDC2.tmx",
+        "areas/default.tmx",
         "areas/Undernet3.tmx",
         "areas/SecretArea3.tmx",
         "areas/SecretArea2.tmx",
-        "areas/SecretArea1.tmx",
-        "areas/Scilab2.tmx",
-        "areas/Scilab1.tmx",
-        "areas/Hades.tmx",
-        "areas/Beachside2.tmx",
-        "areas/Beachside.tmx",
-        "areas/Yoka2.tmx",
-        "areas/Yoka1.tmx",
-        "areas/ACDCSqr.tmx"
+        "areas/SecretArea1.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
