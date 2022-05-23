@@ -1,5 +1,7 @@
 local CustPlugin = {} --Required! Doesn't have to be called this, but DOES need to exist!
 
+local helpers = require('scripts/ezlibs-scripts/helpers')
+local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
 local ezcheckpoints = require('scripts/ezlibs-custom/ezcheckpoints')
 
 local nebulibs = require('scripts/ezlibs-custom/nebulous-liberations/main') --Required! Include Nebulous Liberations!
