@@ -489,7 +489,7 @@
    </properties>
    <point/>
   </object>
-  <object id="120" type="Interact Relay" gid="114" x="192" y="672" width="64" height="32" visible="0">
+  <object id="120" gid="114" x="192" y="672" width="64" height="32" visible="0">
    <properties>
     <property name="Dialogue Type" value="None"/>
     <property name="Disappear Cooldown" type="int" value="0"/>
@@ -502,7 +502,6 @@
   <object id="121" type="NPC" x="112" y="624">
    <properties>
     <property name="Asset Name" value="Blank"/>
-    <property name="Dialogue Type" value="none"/>
     <property name="Direction" value="Down Right"/>
     <property name="Event Name" value="Cube Interact"/>
    </properties>
