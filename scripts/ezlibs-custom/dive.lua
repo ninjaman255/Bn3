@@ -41,12 +41,11 @@ function try_jump(event,jump_distance)
         local player_pos = Net.get_player_position(event.player_id)
         local jump_distance_x = (direction_vector.x*jump_distance)
         local jump_distance_y = (direction_vector.y*jump_distance)
-        local vertical_jump_distance = 2
         local new_x = player_pos.x+jump_distance_x
         local new_y = player_pos.y+jump_distance_y
         local tile_ahead = Net.get_tile(area, new_x, new_y, event.z)
-        local tile_below = Net.get_tile(area, new_x, new_y, event.z - vertical_jump_distance)
-        local tile_above = Net.get_tile(area, new_x, new_y, event.z + vertical_jump_distance)
+        local tile_below = Net.get_tile(area, new_x, new_y, event.z - 1)
+        local tile_above = Net.get_tile(area, new_x, new_y, event.z + 1)
         local jumping_up = false
         local jumping_down = false
         if tile_ahead then
@@ -60,9 +59,9 @@ function try_jump(event,jump_distance)
         if not (jumping_up or jumping_down) then
             return
         end
-        local jump_height = vertical_jump_distance+2
+        local jump_height = 2
         if jumping_down then
-            jump_height = vertical_jump_distance+1
+            jump_height = 1
         end
         local jump_time = 0.5
         local keyframes = { {
@@ -105,14 +104,14 @@ function try_jump(event,jump_distance)
             },
             duration = jump_time/2
         }
-        local new_z = player_pos.z
+        local new_z = player_pos.z-1
         if jumping_down then
-            new_z = player_pos.z-vertical_jump_distance
+            new_z = player_pos.z-1
         elseif jumping_up then
-            new_z = player_pos.z+vertical_jump_distance
+            new_z = player_pos.z+1
         end
-        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive/dive.png")
-        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive/dive.animation")
+        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive.png")
+        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive.animation")
         keyframes[#keyframes + 1] = {
             properties = { 
                 {
@@ -161,7 +160,7 @@ function try_jump(event,jump_distance)
                 area_id = area,
                 x = player_pos.x,
                 y = player_pos.y,
-                z = player_pos.z+vertical_jump_distance,
+                z = player_pos.z+1,
                 warp_in= false
             })
             Net.animate_bot(splash_bot_id, "UP_SPLASH", false)
