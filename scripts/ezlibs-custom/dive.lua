@@ -110,8 +110,8 @@ function try_jump(event,jump_distance)
         elseif jumping_up then
             new_z = player_pos.z+1
         end
-        Net.provide_asset_for_player(event.player_id, "/server/assets/dive.png")
-        Net.provide_asset_for_player(event.player_id, "/server/assets/dive.animation")
+        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive.png")
+        Net.provide_asset_for_player(event.player_id, "/server/assets/dive/dive.animation")
         keyframes[#keyframes + 1] = {
             properties = { 
                 {
@@ -138,15 +138,15 @@ function try_jump(event,jump_distance)
             --animate splash falling in
             await(Async.sleep(jump_time))
             local splash_bot_id = Net.create_bot({
-                texture_path = "/server/assets/dive.png",
-                animation_path = "/server/assets/dive.animation",
+                texture_path = "/server/assets/dive/dive.png",
+                animation_path = "/server/assets/dive/dive.animation",
                 area_id = area,
                 x = new_x,
                 y = new_y,
                 z = player_pos.z,
                 warp_in= false
             })
-            Net.play_sound_for_player(event.player_id,"/server/assets/dive_down.ogg")
+            Net.play_sound_for_player(event.player_id,"/server/assets/dive/dive_down.ogg")
             Net.animate_bot(splash_bot_id, "DOWN_SPLASH", false)
             await(Async.sleep(0.53))
             Net.remove_bot(splash_bot_id,false)
@@ -155,8 +155,8 @@ function try_jump(event,jump_distance)
             dive_locations[event.player_id] = nil
             --animate splash jumping out
             local splash_bot_id = Net.create_bot({
-                texture_path = "/server/assets/dive.png",
-                animation_path = "/server/assets/dive.animation",
+                texture_path = "/server/assets/dive/dive.png",
+                animation_path = "/server/assets/dive/dive.animation",
                 area_id = area,
                 x = player_pos.x,
                 y = player_pos.y,
@@ -164,7 +164,7 @@ function try_jump(event,jump_distance)
                 warp_in= false
             })
             Net.animate_bot(splash_bot_id, "UP_SPLASH", false)
-            Net.play_sound_for_player(event.player_id,"/server/assets/dive_up.ogg")
+            Net.play_sound_for_player(event.player_id,"/server/assets/dive/dive_up.ogg")
             await(Async.sleep(jump_time))
             Net.remove_bot(splash_bot_id,false)
         end
