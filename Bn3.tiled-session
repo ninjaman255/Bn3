@@ -10283,23 +10283,23 @@
             "selectedLayer": 1,
             "viewCenter": {
                 "x": 1407.3333333333333,
-                "y": 694
+                "y": 671.3333333333333
             }
         },
         "areas/SecretArea2.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1378,
-                "y": 559
+                "x": 1279,
+                "y": 615
             }
         },
         "areas/SecretArea3.tmx": {
-            "scale": 0.125,
+            "scale": 3,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 992,
-                "y": 444
+                "x": 1985.3333333333333,
+                "y": 691.5
             }
         },
         "areas/ShademanComp1.tmx": {
@@ -10747,6 +10747,9 @@
         "assets/tiles/TileBridgeOverlayACDC1.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/Transparent.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/Undernet1A.tsx": {
             "scaleInDock": 1
         },
@@ -10959,18 +10962,18 @@
     "project": "Bn3.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "areas/Undernet5.tmx",
-        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
         "areas/SecretArea1.tmx",
+        "areas/SecretArea3.tmx",
+        "areas/SecretArea2.tmx",
+        "assets/tiles/tile.tsx",
         "assets/tiles/WaterTilesV2.tsx",
+        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
+        "areas/Undernet5.tmx",
         "areas/UndernetSqr.tmx",
         "areas/DevRoom.tmx",
         "assets/tiles/ServerWarp.tsx",
         "areas/default.tmx",
-        "areas/ACDC3.tmx",
-        "areas/ACDC2.tmx",
-        "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx",
-        "areas/SecretArea3.tmx"
+        "areas/ACDC3.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
