@@ -10282,16 +10282,16 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1406.6666666666665,
-                "y": 694
+                "x": 1407.3333333333333,
+                "y": 671.3333333333333
             }
         },
         "areas/SecretArea2.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1378,
-                "y": 559
+                "x": 1279,
+                "y": 615
             }
         },
         "areas/SecretArea3.tmx": {
