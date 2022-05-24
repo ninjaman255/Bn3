@@ -6,6 +6,7 @@ local nebulibs = require('scripts/ezlibs-custom/nebulous-liberations/main') --Re
 
 local plugins = {nebulibs, ezcheckpoints} --Required! Make sure you list all the plugins you're including here!
 
+require('/scripts/ezlibs-custom/dive')
 
 
 --Required! Pass handlers on to all the libraries we are using!

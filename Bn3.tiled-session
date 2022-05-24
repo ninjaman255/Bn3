@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "assets/tiles/WaterTilesV2.tsx",
+    "activeFile": "areas/SecretArea1.tmx",
     "expandedProjectPaths": [
-        "assets/tiles",
-        "areas",
         ".",
-        "assets"
+        "areas",
+        "assets",
+        "assets/tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10282,7 +10282,7 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1407.3333333333333,
+                "x": 1406.6666666666665,
                 "y": 694
             }
         },
@@ -10961,8 +10961,8 @@
     "recentFiles": [
         "areas/Undernet5.tmx",
         "assets/tiles/Bn3UndernetFlashingWarp.tsx",
-        "areas/SecretArea1.tmx",
         "assets/tiles/WaterTilesV2.tsx",
+        "areas/SecretArea1.tmx",
         "areas/UndernetSqr.tmx",
         "areas/DevRoom.tmx",
         "assets/tiles/ServerWarp.tsx",

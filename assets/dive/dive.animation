@@ -1,0 +1,14 @@
+animation state="IDLE_U"
+
+animation state="DOWN_SPLASH"
+frame duration="0.05" x="38" y="69" w="30" h="21" originx="15" originy="15"
+frame duration="0.05" x="2" y="69" w="32" h="26" originx="16" originy="18"
+frame duration="0.05" x="2" y="37" w="34" h="28" originx="17" originy="19"
+frame duration="0.05" x="2" y="2" w="36" h="31" originx="18" originy="21"
+frame duration="0.033" x="59" y="49" w="1" h="1" originx="192" originy="192"
+
+animation state="UP_SPLASH"
+frame duration="0.017" x="40" y="37" w="13" h="8" originx="7" originy="6"
+frame duration="0.033" x="40" y="49" w="15" h="8" originx="8" originy="7"
+frame duration="0.017" x="64" y="49" w="1" h="1" originx="192" originy="192"
+
