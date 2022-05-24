@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.8" tiledversion="1.8.4" name="WaterTilesV2" tilewidth="64" tileheight="44" tilecount="36" columns="9">
+<tileset version="1.5" tiledversion="1.7.0" name="WaterTilesV2" tilewidth="64" tileheight="44" tilecount="36" columns="9">
  <tileoffset x="0" y="12"/>
  <image source="WaterTilesV2.png" width="576" height="176"/>
- <tile id="0" type="Invisible">
+ <tile id="0">
   <objectgroup draworder="index" id="2">
    <object id="2" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -19,7 +19,7 @@
    <frame tileid="7" duration="300"/>
   </animation>
  </tile>
- <tile id="1" type="Invisible">
+ <tile id="1">
   <objectgroup draworder="index" id="2">
    <object id="2" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -36,7 +36,7 @@
    <frame tileid="3" duration="300"/>
   </animation>
  </tile>
- <tile id="9" type="Invisible">
+ <tile id="9">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -53,7 +53,7 @@
    <frame tileid="16" duration="300"/>
   </animation>
  </tile>
- <tile id="10" type="Invisible">
+ <tile id="10">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -70,7 +70,7 @@
    <frame tileid="12" duration="300"/>
   </animation>
  </tile>
- <tile id="18" type="Invisible">
+ <tile id="18">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -87,7 +87,7 @@
    <frame tileid="25" duration="300"/>
   </animation>
  </tile>
- <tile id="19" type="Invisible">
+ <tile id="19">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -104,7 +104,7 @@
    <frame tileid="21" duration="300"/>
   </animation>
  </tile>
- <tile id="27" type="Invisible">
+ <tile id="27">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
@@ -121,7 +121,7 @@
    <frame tileid="34" duration="300"/>
   </animation>
  </tile>
- <tile id="28" type="Invisible">
+ <tile id="28">
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="18">
     <polygon points="0,-2 32,-18 64,-2 32,14"/>
