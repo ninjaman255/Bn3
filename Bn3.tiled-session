@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "assets/tiles/WaterTilesV2.tsx",
+    "activeFile": "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
     "expandedProjectPaths": [
+        "assets",
         "assets/tiles",
-        "areas",
         ".",
-        "assets"
+        "areas"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -550,6 +550,90 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/Expo.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1549,
+                "y": 775
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/default.tmx": {
+            "scale": 3,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 480.5,
+                "y": 230.83333333333334
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1098,
+                "y": 561
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/ezlibs-assets/ezmystery/RedMysteryData.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/SpecialBlockerObject.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/V1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/generic-arrow.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/home_warp.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/map1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/map1_old.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/tile.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/tree.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx": {
+            "scale": 0.3939024390243902,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 879.6594427244584,
+                "y": 425.232198142415
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/V1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/generic-arrow.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/home_warp.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/map1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/map1_old.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/tile.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/tree.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/Hotswap_Maps/default_V1.tmx": {
             "scale": 2,
             "selectedLayer": 1,
@@ -575,20 +659,24 @@
             }
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdc3.tmx": {
-            "scale": 0.33,
-            "selectedLayer": 2,
+            "scale": 0.75,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 672.7272727272727,
-                "y": 843.939393939394
+                "x": 1022.6666666666665,
+                "y": 487.3333333333333
             }
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdcsqr.tmx": {
-            "scale": 1,
-            "selectedLayer": 6,
+            "scale": 0.33,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 1478,
-                "y": 317.5
+                "x": 1836.3636363636363,
+                "y": 601.5151515151515
             }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdcsqr.tmx#CXstairs": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/default.tmx": {
             "scale": 0.5,
@@ -9679,8 +9767,8 @@
             "scale": 1.5,
             "selectedLayer": 9,
             "viewCenter": {
-                "x": 1575.6666666666665,
-                "y": 727.6666666666667
+                "x": 1575.3333333333333,
+                "y": 727.6666666666666
             }
         },
         "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/areas/test.tmx": {
@@ -9706,6 +9794,9 @@
         "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Cyberworld Indus.tsx": {
             "scaleInDock": 1
         },
+        "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Cyberworld arrows.tsx": {
+            "scaleInDock": 1
+        },
         "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Cyberworld new arrow.tsx": {
             "scaleInDock": 1
         },
@@ -9716,6 +9807,9 @@
             "scaleInDock": 1
         },
         "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Cyberworld new.tsx": {
+            "scaleInDock": 1
+        },
+        "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Cyberworld oneways.tsx": {
             "scaleInDock": 1
         },
         "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/assets/tiles/Darkmoon terminal.tsx": {
@@ -10282,24 +10376,24 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1407.3333333333333,
-                "y": 671.3333333333333
+                "x": 1397.3333333333333,
+                "y": 683.3333333333333
             }
         },
         "areas/SecretArea2.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1279,
-                "y": 615
+                "x": 1264,
+                "y": 599
             }
         },
         "areas/SecretArea3.tmx": {
             "scale": 3,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1985.3333333333333,
-                "y": 691.5
+                "x": 1597.3333333333333,
+                "y": 715.5
             }
         },
         "areas/ShademanComp1.tmx": {
@@ -10426,8 +10520,8 @@
             "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 926.6666666666667,
-                "y": 399.33333333333337
+                "x": 927.3333333333333,
+                "y": 400.66666666666663
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10936,7 +11030,7 @@
     "frame.defaultDuration": 166,
     "last.exportedFilePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_4_14_2021Yoka/assets/tiles",
     "last.externalTilesetPath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/ezlibs-assets/ezmystery",
-    "last.imagePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3/assets/tiles",
+    "last.imagePath": "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles",
     "last.objectTemplatePath": "D:/EverythingOpenBN/ClientServer_4_14_2021/server_5_22_2021_TESTING/assets/tiles",
     "last.worldFilePath": "E:/OBN/OpenNetBattleMyFork/Server_12_22_2021_Bn3/Bn3",
     "lastUsedTilesetExportFilter": "Tiled tileset files (*.tsx *.xml)",
@@ -10954,26 +11048,24 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/Undernet5.tmx",
-        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
-        "areas/SecretArea1.tmx",
-        "assets/tiles/WaterTilesV2.tsx"
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx"
     ],
     "project": "Bn3.tiled-project",
-    "property.type": "bool",
+    "property.type": "string",
     "recentFiles": [
-        "areas/SecretArea1.tmx",
-        "areas/SecretArea3.tmx",
-        "areas/SecretArea2.tmx",
-        "assets/tiles/tile.tsx",
-        "assets/tiles/WaterTilesV2.tsx",
-        "assets/tiles/Bn3UndernetFlashingWarp.tsx",
-        "areas/Undernet5.tmx",
-        "areas/UndernetSqr.tmx",
-        "areas/DevRoom.tmx",
-        "assets/tiles/ServerWarp.tsx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/default.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/Expo.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx",
         "areas/default.tmx",
-        "areas/ACDC3.tmx"
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/ACDCSquarePinkS.tsx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/tile.tsx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/CXstairs.tsx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdcsqr.tmx",
+        "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/areas/default.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdc3.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
@@ -10983,7 +11075,7 @@
     "tileset.margin": 0,
     "tileset.spacing": 0,
     "tileset.tileSize": {
-        "height": 32,
+        "height": 40,
         "width": 64
     },
     "tileset.transparentColor": "#ffffff",
