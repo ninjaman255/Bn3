@@ -1,0 +1,29 @@
+imagePath="blizzardman.png"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="1" y="47" w="33" h="44" originx="15" originy="36"
+
+animation state="ATTACK_UR"
+frame duration="2.0" x="47" y="47" w="40" h="44" originx="15" originy="36"
+frame duration="0.0" x="47" y="47" w="40" h="44" originx="15" originy="36"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="1" y="1" w="37" h="45" originx="18" originy="36"
+
+animation state="ATTACK_DL"
+frame duration="2.0" x="38" y="1" w="49" h="45" originx="30" originy="36"
+frame duration="0.0" x="38" y="1" w="49" h="45" originx="30" originy="36"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="1" y="47" w="33" h="44" originx="15" originy="36" flipx="1"
+
+animation state="ATTACK_UL"
+frame duration="2.0" x="47" y="47" w="40" h="44" originx="15" originy="36" flipx="1"
+frame duration="0.0" x="47" y="47" w="40" h="44" originx="15" originy="36" flipx="1"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="1" y="1" w="37" h="45" originx="18" originy="36" flipx="1"
+
+animation state="ATTACK_DR"
+frame duration="2.0" x="38" y="1" w="49" h="45" originx="30" originy="36" flipx="1"
+frame duration="0.0" x="38" y="1" w="49" h="45" originx="30" originy="36" flipx="1"

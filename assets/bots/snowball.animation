@@ -1,0 +1,19 @@
+imagePath="snowball.png"
+
+animation state="FALL"
+frame duration="0.5" x="1" y="1" w="30" h="34" originx="15" originy="20"
+frame duration="0.042" x="31" y="11" w="31" h="31" originx="16" originy="16"
+frame duration="0.042" x="64" y="5" w="42" h="40" originx="21" originy="20"
+frame duration="100" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"

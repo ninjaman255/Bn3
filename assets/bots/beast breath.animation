@@ -1,0 +1,26 @@
+imagePath="beast breath.png"
+
+animation state="ANIMATE"
+frame duration="0.083" x="0" y="29" w="32" h="25" originx="16" originy="18"
+frame duration="0.083" x="65" y="7" w="32" h="47" originx="16" originy="40"
+frame duration="0.083" x="131" y="0" w="32" h="54" originx="16" originy="47"
+frame duration="0.083" x="65" y="7" w="32" h="47" originx="16" originy="40"
+frame duration="0.083" x="131" y="0" w="32" h="54" originx="16" originy="47"
+frame duration="0.083" x="65" y="7" w="32" h="47" originx="16" originy="40"
+frame duration="0.083" x="131" y="0" w="32" h="54" originx="16" originy="47"
+frame duration="0.083" x="65" y="7" w="32" h="47" originx="16" originy="40"
+frame duration="0.083" x="131" y="0" w="32" h="54" originx="16" originy="47"
+frame duration="0.042" x="33" y="24" w="31" h="30" originx="16" originy="23"
+frame duration="999999" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"

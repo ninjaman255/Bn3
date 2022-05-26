@@ -1,0 +1,29 @@
+imagePath="paralyze.png"
+
+animation state="THIN"
+frame duration="0.042" x="6" y="1" w="26" h="22" originx="13" originy="27"
+frame duration="0.042" x="38" y="12" w="28" h="8" originx="14" originy="20"
+frame duration="0.042" x="71" y="1" w="31" h=23" originx="16" originy="27"
+frame duration="0.042" x="6" y="1" w="26" h="22" originx="13" originy="27" flipx="1"
+frame duration="0.042" x="38" y="12" w="28" h="8" originx="14" originy="20" flipx="1"
+frame duration="0.042" x="71" y="1" w="31" h=23" originx="16" originy="27" flipx="1"
+
+animation state="WIDE"
+frame duration="0.042" x="1" y="24" w="35" h="27" originx="17" originy="45"
+frame duration="0.042" x="37" y="32" w="40" h="16" originx="20" originy="40"
+frame duration="0.042" x="78" y="24" w="34" h=27" originx="17" originy="45"
+frame duration="0.042" x="1" y="24" w="35" h="27" originx="17" originy="45" flipx="1"
+frame duration="0.042" x="37" y="32" w="40" h="16" originx="20" originy="40" flipx="1"
+frame duration="0.042" x="78" y="24" w="34" h=27" originx="17" originy="45" flipx="1"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"

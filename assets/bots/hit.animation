@@ -1,0 +1,22 @@
+imagePath="hit.png"
+
+animation state="HIT"
+frame duration="0.042" x="1" y="12" w="12" h="12" originx="6" originy="38"
+frame duration="0.042" x="14" y="7" w="24" h="20" originx="12" originy="42"
+frame duration="0.042" x="39" y="1" w="32" h="32" originx="16" originy="64"
+frame duration="0.042" x="72" y="6" w="26" h="24" originx="13" originy="56"
+frame duration="0.042" x="99" y="2" w="30" h="30" originx="15" originy="62"
+frame duration="0.042" x="131" y="1" w="32" h="31" originx="16" originy="62"
+frame duration="1000" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"

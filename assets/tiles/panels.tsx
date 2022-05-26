@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.8" tiledversion="1.8.1" name="panels" tilewidth="50" tileheight="30" tilecount="70" columns="7" objectalignment="top">
+<tileset version="1.5" tiledversion="1.7.2" name="panels" tilewidth="50" tileheight="30" tilecount="70" columns="7" objectalignment="top">
  <tileoffset x="0" y="1"/>
  <image source="panels.png" width="350" height="300"/>
  <tile id="0">
@@ -9,14 +9,12 @@
    </object>
   </objectgroup>
   <animation>
-   <frame tileid="0" duration="250"/>
-   <frame tileid="7" duration="250"/>
-   <frame tileid="14" duration="250"/>
-   <frame tileid="21" duration="250"/>
-   <frame tileid="28" duration="250"/>
-   <frame tileid="35" duration="250"/>
-   <frame tileid="42" duration="250"/>
-   <frame tileid="49" duration="250"/>
+   <frame tileid="0" duration="1000"/>
+   <frame tileid="7" duration="500"/>
+   <frame tileid="14" duration="500"/>
+   <frame tileid="21" duration="1000"/>
+   <frame tileid="14" duration="500"/>
+   <frame tileid="7" duration="500"/>
   </animation>
  </tile>
  <tile id="1">
@@ -26,14 +24,12 @@
    </object>
   </objectgroup>
   <animation>
-   <frame tileid="1" duration="250"/>
-   <frame tileid="8" duration="250"/>
-   <frame tileid="15" duration="250"/>
-   <frame tileid="22" duration="250"/>
-   <frame tileid="29" duration="250"/>
-   <frame tileid="36" duration="250"/>
-   <frame tileid="43" duration="250"/>
-   <frame tileid="50" duration="250"/>
+   <frame tileid="1" duration="1000"/>
+   <frame tileid="8" duration="500"/>
+   <frame tileid="15" duration="500"/>
+   <frame tileid="22" duration="1000"/>
+   <frame tileid="15" duration="500"/>
+   <frame tileid="8" duration="500"/>
   </animation>
  </tile>
  <tile id="2">
@@ -43,14 +39,12 @@
    </object>
   </objectgroup>
   <animation>
-   <frame tileid="2" duration="250"/>
-   <frame tileid="9" duration="250"/>
-   <frame tileid="16" duration="250"/>
-   <frame tileid="23" duration="250"/>
-   <frame tileid="30" duration="250"/>
-   <frame tileid="37" duration="250"/>
-   <frame tileid="44" duration="250"/>
-   <frame tileid="51" duration="250"/>
+   <frame tileid="2" duration="500"/>
+   <frame tileid="9" duration="500"/>
+   <frame tileid="16" duration="500"/>
+   <frame tileid="23" duration="500"/>
+   <frame tileid="16" duration="500"/>
+   <frame tileid="9" duration="500"/>
   </animation>
  </tile>
  <tile id="3">
@@ -60,14 +54,12 @@
    </object>
   </objectgroup>
   <animation>
-   <frame tileid="3" duration="250"/>
-   <frame tileid="10" duration="250"/>
-   <frame tileid="17" duration="250"/>
-   <frame tileid="24" duration="250"/>
-   <frame tileid="31" duration="250"/>
-   <frame tileid="38" duration="250"/>
-   <frame tileid="45" duration="250"/>
-   <frame tileid="52" duration="250"/>
+   <frame tileid="3" duration="320"/>
+   <frame tileid="10" duration="320"/>
+   <frame tileid="17" duration="320"/>
+   <frame tileid="24" duration="320"/>
+   <frame tileid="17" duration="320"/>
+   <frame tileid="10" duration="320"/>
   </animation>
  </tile>
  <tile id="4">

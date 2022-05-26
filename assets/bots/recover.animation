@@ -1,0 +1,21 @@
+imagePath="recover.png"
+
+animation state="RECOVER"
+frame duration="0.05" x="0" y="37" w="37" h="30" originx="18" originy="30"
+frame duration="0.05" x="38" y="34" w="38" h="33" originx="20" originy="34"
+frame duration="0.05" x="76" y="20" w="43" h="47" originx="22" originy="47"
+frame duration="0.05" x="116" y="7" w="43" h="59" originx="22" originy="63"
+frame duration="0.05" x="160" y="1" w="37" h="65" originx="18" originy="68"
+frame duration="0.05" x="199" y="0" w="41" h="67" originx="18" originy="67"
+
+animation state="IDLE_DL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_DR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UL"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
+
+animation state="IDLE_UR"
+frame duration="0.1" x="0" y="0" w="1" h="1" originx="0" originy="0"
