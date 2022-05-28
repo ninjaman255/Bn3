@@ -10349,8 +10349,8 @@
             "scale": 1,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1063.5,
-                "y": 395.5
+                "x": 1105.5,
+                "y": 270.5
             }
         },
         "areas/ACDC4Liberation.tmx": {
@@ -10618,11 +10618,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 0.75,
+            "scale": 1.5,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 927.3333333333333,
-                "y": 400.6666666666667
+                "x": 989.6666666666666,
+                "y": 44.33333333333334
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
