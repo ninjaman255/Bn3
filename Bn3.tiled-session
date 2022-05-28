@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/Scilab2.tmx",
+    "activeFile": "areas/ACDC3.tmx",
     "expandedProjectPaths": [
         ".",
+        "assets",
         "assets/tiles",
-        "areas",
-        "assets"
+        "areas"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10346,11 +10346,11 @@
             }
         },
         "areas/ACDC3.tmx": {
-            "scale": 0.75,
+            "scale": 1,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1103.3333333333333,
-                "y": 272.6666666666667
+                "x": 1063.5,
+                "y": 395.5
             }
         },
         "areas/ACDC4Liberation.tmx": {
@@ -10413,8 +10413,8 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 640,
-                "y": 304.66666666666663
+                "x": 639.3333333333333,
+                "y": 304.6666666666667
             }
         },
         "areas/DexHP.tmx": {
@@ -10453,8 +10453,8 @@
             "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 576,
-                "y": 264.3333333333333
+                "x": 575.6666666666666,
+                "y": 264.33333333333326
             }
         },
         "areas/Scilab1.tmx": {
@@ -10533,8 +10533,8 @@
             "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1072,
-                "y": 480.66666666666663
+                "x": 1071.3333333333333,
+                "y": 480.6666666666666
             }
         },
         "areas/Undernet3.tmx": {
@@ -10549,7 +10549,7 @@
             "scale": 0.5,
             "selectedLayer": 15,
             "viewCenter": {
-                "x": 1040,
+                "x": 1039,
                 "y": 449
             }
         },
@@ -11189,21 +11189,17 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/DevRoom.tmx",
-        "areas/Undernet2.tmx",
-        "areas/Undernet4.tmx",
-        "areas/Scilab2.tmx",
-        "areas/SciLabSqr.tmx"
+        "areas/ACDC3.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "areas/DevRoom.tmx",
-        "areas/Undernet2.tmx",
-        "areas/Undernet4.tmx",
+        "areas/ACDC3.tmx",
         "areas/SciLabSqr.tmx",
         "areas/Scilab2.tmx",
-        "areas/ACDC3.tmx",
+        "areas/Undernet4.tmx",
+        "areas/Undernet2.tmx",
+        "areas/DevRoom.tmx",
         "areas/AlphaComp.tmx",
         "areas/AlphaLib1.tmx",
         "areas/Undernet5.tmx",
