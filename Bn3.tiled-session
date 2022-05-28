@@ -6,9 +6,9 @@
     "activeFile": "areas/DevRoom.tmx",
     "expandedProjectPaths": [
         "areas",
-        "assets",
+        ".",
         "assets/tiles",
-        "."
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10413,8 +10413,8 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 740.6666666666667,
-                "y": 2
+                "x": 782,
+                "y": 214
             }
         },
         "areas/DexHP.tmx": {
@@ -10453,8 +10453,8 @@
             "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 563.6666666666666,
-                "y": 346.33333333333326
+                "x": 576,
+                "y": 264.3333333333333
             }
         },
         "areas/Scilab1.tmx": {
@@ -10469,8 +10469,8 @@
             "scale": 1,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1324.5,
-                "y": 278.5
+                "x": 1232,
+                "y": 551.5
             }
         },
         "areas/SecretArea1.tmx": {
