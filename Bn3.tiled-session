@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/Scilab2.tmx",
+    "activeFile": "areas/default.tmx",
     "expandedProjectPaths": [
-        "areas",
-        ".",
         "assets/tiles",
+        ".",
+        "areas",
         "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -10341,7 +10341,7 @@
             "scale": 1,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 896,
+                "x": 895.5,
                 "y": 416.5
             }
         },
@@ -10461,16 +10461,16 @@
             "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 976,
+                "x": 975,
                 "y": 449
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 1.5,
+            "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1363.6666666666665,
-                "y": 439.66666666666663
+                "x": 1467.3333333333333,
+                "y": 256.6666666666667
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10618,11 +10618,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 0.5,
+            "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 928,
-                "y": 401
+                "x": 1220.6666666666665,
+                "y": 279.33333333333337
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -11189,20 +11189,16 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/ACDC3.tmx",
-        "areas/default.tmx",
-        "areas/ACDC2.tmx",
-        "areas/Scilab1.tmx",
-        "areas/Scilab2.tmx"
+        "areas/default.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "areas/ACDC3.tmx",
         "areas/default.tmx",
-        "areas/ACDC2.tmx",
-        "areas/Scilab1.tmx",
+        "areas/ACDC3.tmx",
         "areas/Scilab2.tmx",
+        "areas/Scilab1.tmx",
+        "areas/ACDC2.tmx",
         "areas/SciLabSqr.tmx",
         "areas/Undernet4.tmx",
         "areas/Undernet2.tmx",
