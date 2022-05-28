@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/ACDC3.tmx",
+    "activeFile": "areas/Scilab2.tmx",
     "expandedProjectPaths": [
+        "areas",
         ".",
-        "assets",
         "assets/tiles",
-        "areas"
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10338,19 +10338,19 @@
             "scaleInDock": 1
         },
         "areas/ACDC2.tmx": {
-            "scale": 2,
+            "scale": 1,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 1335.75,
-                "y": 486.75
+                "x": 896,
+                "y": 416.5
             }
         },
         "areas/ACDC3.tmx": {
-            "scale": 1,
-            "selectedLayer": 13,
+            "scale": 0.75,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 1105.5,
-                "y": 270.5
+                "x": 976,
+                "y": 423.3333333333333
             }
         },
         "areas/ACDC4Liberation.tmx": {
@@ -10461,16 +10461,16 @@
             "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 927,
-                "y": 513
+                "x": 976,
+                "y": 449
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 1,
+            "scale": 1.5,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1237.5,
-                "y": 692.5
+                "x": 1363.6666666666665,
+                "y": 439.66666666666663
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10618,11 +10618,11 @@
             }
         },
         "areas/default.tmx": {
-            "scale": 1.5,
+            "scale": 0.5,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 989.6666666666666,
-                "y": 44.33333333333334
+                "x": 928,
+                "y": 401
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -11189,23 +11189,27 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/ACDC3.tmx"
+        "areas/ACDC3.tmx",
+        "areas/default.tmx",
+        "areas/ACDC2.tmx",
+        "areas/Scilab1.tmx",
+        "areas/Scilab2.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
         "areas/ACDC3.tmx",
-        "areas/SciLabSqr.tmx",
+        "areas/default.tmx",
+        "areas/ACDC2.tmx",
+        "areas/Scilab1.tmx",
         "areas/Scilab2.tmx",
+        "areas/SciLabSqr.tmx",
         "areas/Undernet4.tmx",
         "areas/Undernet2.tmx",
         "areas/DevRoom.tmx",
         "areas/AlphaComp.tmx",
         "areas/AlphaLib1.tmx",
-        "areas/Undernet5.tmx",
-        "areas/Yoka2.tmx",
-        "areas/ACDC2.tmx",
-        "areas/default.tmx"
+        "areas/Undernet5.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
