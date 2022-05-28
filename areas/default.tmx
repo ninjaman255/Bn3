@@ -448,10 +448,9 @@
    <properties>
     <property name="Description" value=""/>
     <property name="Name" value=""/>
-    <property name="Next 1" type="object" value="104"/>
-    <property name="Next 2" type="object" value="105"/>
-    <property name="Next 3" type="object" value="106"/>
-    <property name="Type" value="random"/>
+    <property name="Next 1" type="object" value="107"/>
+    <property name="Next 2" type="object" value="107"/>
+    <property name="Next 3" type="object" value="107"/>
    </properties>
   </object>
   <object id="50" type="Mystery Data" gid="70" x="176" y="272" width="14" height="43">
@@ -459,7 +458,6 @@
     <property name="Next 1" type="object" value="106"/>
     <property name="Next 2" type="object" value="105"/>
     <property name="Next 3" type="object" value="104"/>
-    <property name="Type" value="random"/>
    </properties>
   </object>
   <object id="52" type="Mystery Data" gid="70" x="720" y="496" width="14" height="43">
