@@ -38,9 +38,27 @@
    </properties>
    <point/>
   </object>
-  <object id="3" gid="10" x="128" y="128" width="58" height="30"/>
-  <object id="4" gid="10" x="192" y="128" width="58" height="30"/>
-  <object id="5" gid="10" x="256" y="128" width="58" height="30"/>
+  <object id="3" name="Undernet 2 Shortcut" type="Custom Warp" gid="10" x="192" y="128" width="58" height="30">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Undernet2"/>
+    <property name="Target Object" value="61"/>
+   </properties>
+  </object>
+  <object id="4" name="Undernet 4 Shortcut" type="Custom Warp" gid="10" x="128" y="128" width="58" height="30">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Undernet4"/>
+    <property name="Target Object" value="39"/>
+   </properties>
+  </object>
+  <object id="5" name="Scilab2 Shortcut" type="Custom Warp" gid="10" x="256" y="128" width="58" height="30">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Scilab2"/>
+    <property name="Target Object" value="14"/>
+   </properties>
+  </object>
   <object id="6" gid="10" x="320" y="128" width="58" height="30"/>
   <object id="7" gid="10" x="384" y="128" width="58" height="30"/>
   <object id="8" name="Secret Area Shortcut" type="Custom Warp" gid="10" x="64" y="128" width="58" height="30">
