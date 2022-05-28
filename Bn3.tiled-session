@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/Undernet4.tmx",
+    "activeFile": "areas/DevRoom.tmx",
     "expandedProjectPaths": [
         "areas",
-        ".",
         "assets",
-        "assets/tiles"
+        "assets/tiles",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -10453,8 +10453,8 @@
             "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 349.66666666666663,
-                "y": 347
+                "x": 563.6666666666666,
+                "y": 346.33333333333326
             }
         },
         "areas/Scilab1.tmx": {
@@ -11189,28 +11189,27 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
+        "areas/DevRoom.tmx",
+        "areas/Undernet2.tmx",
         "areas/Undernet4.tmx",
-        "areas/Undernet5.tmx",
-        "areas/AlphaLib1.tmx",
-        "areas/AlphaComp.tmx",
-        "areas/ACDC3.tmx",
-        "areas/Scilab2.tmx"
+        "areas/Scilab2.tmx",
+        "areas/SciLabSqr.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "areas/SciLabSqr.tmx",
         "areas/Scilab2.tmx",
+        "areas/Undernet4.tmx",
+        "areas/Undernet2.tmx",
+        "areas/DevRoom.tmx",
         "areas/ACDC3.tmx",
         "areas/AlphaComp.tmx",
         "areas/AlphaLib1.tmx",
         "areas/Undernet5.tmx",
-        "areas/Undernet4.tmx",
         "areas/Yoka2.tmx",
         "areas/ACDC2.tmx",
-        "areas/default.tmx",
-        "areas/Undernet2.tmx",
-        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/home_warp.tsx",
-        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/BN3.tsx"
+        "areas/default.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

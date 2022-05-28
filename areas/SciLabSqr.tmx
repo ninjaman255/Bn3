@@ -65,7 +65,7 @@
   <object id="3" name="ToScilab2" type="Custom Warp" gid="18" x="256" y="224" width="64" height="40">
    <properties>
     <property name="Direction" value="Down Left"/>
-    <property name="Target Area" value="SciLabSqr"/>
+    <property name="Target Area" value="Scilab2"/>
     <property name="Target Object" value="14"/>
    </properties>
   </object>
