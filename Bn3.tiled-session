@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
+    "activeFile": "areas/Undernet4.tmx",
     "expandedProjectPaths": [
         "assets",
-        "assets/tiles",
+        "areas",
         ".",
-        "areas"
+        "assets/tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -361,6 +361,14 @@
         "C:/Users/Clevettes/Desktop/8_1_2021/assets/tiles/warp.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Clevettes/Desktop/ACDC4Liberation.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 880,
+                "y": 126
+            }
+        },
         "C:/Users/Clevettes/Desktop/ACDC_1.tmx": {
             "scale": 0.5,
             "selectedLayer": 11,
@@ -570,8 +578,8 @@
             "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1098,
-                "y": 561
+                "x": 1550,
+                "y": 774.3333333333333
             }
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/ezlibs-assets/ezmystery/RedMysteryData.tsx": {
@@ -580,6 +588,9 @@
         "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/Speakers.tsx": {
+            "scaleInDock": 1
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/SpecialBlockerObject.tsx": {
             "scaleInDock": 1
@@ -2583,6 +2594,58 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/Test.tmx": {
+            "scale": 2.2370967741935486,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 154.8882480173035,
+                "y": 70.8507570295602
+            }
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/default.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 335.66666666666663,
+                "y": 160.33333333333334
+            }
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/BN3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/PressConfirm.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/SpecialBlockerObject.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/cloud.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/coffee.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/floor.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/gate.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/home_warp.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/hp_warp.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/tree.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/warp.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/Desktop/Various Sprites/Natalie's MMBN resources/ACDC_School_Library.tmx": {
             "scale": 0.6729166666666667,
             "selectedLayer": 0,
@@ -3779,6 +3842,12 @@
         "C:/Users/Clevettes/assets/tiles/BattleMachineBN4.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Clevettes/assets/tiles/Beach Tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/Beach_Next_Area.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/assets/tiles/BlueMysteryData.tsx": {
             "scaleInDock": 1
         },
@@ -3791,7 +3860,16 @@
         "C:/Users/Clevettes/assets/tiles/Custom_Central_Tiles.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Clevettes/assets/tiles/DarkLiberationArrow.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/DarkLiberationRamp.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/assets/tiles/DarkLiberationTileset.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/Den_Exits.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/Ducky.tsx": {
@@ -3804,6 +3882,9 @@
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/GreenMysteryData.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/LiberationArrow.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/Netopia Tileset.tsx": {
@@ -3828,6 +3909,9 @@
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/TilesColorful.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/attack indicator.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/bbs.tsx": {
@@ -3866,6 +3950,9 @@
         "C:/Users/Clevettes/assets/tiles/hp_warp_blue.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Clevettes/assets/tiles/panels.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/assets/tiles/pvpfloor.tsx": {
             "scaleInDock": 1
         },
@@ -3875,10 +3962,16 @@
         "C:/Users/Clevettes/assets/tiles/rainbow_floor.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/Clevettes/assets/tiles/selected tile.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/assets/tiles/stairs.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/tree.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/assets/tiles/walkable space.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/assets/tiles/warp.tsx": {
@@ -9988,15 +10081,15 @@
             "scale": 0.29198807157057655,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1246.6262681282767,
-                "y": 613.0387417443998
+                "x": 1244.9138694083204,
+                "y": 655.8487097433106
             }
         },
         "E:/OBN/OpenNetBattleMyFork/Whitelist-Server/Server Set Up EXE/areas/default.tmx": {
             "scale": 2,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 1521.5,
+                "x": 1521.25,
                 "y": 158.25
             }
         },
@@ -10245,11 +10338,11 @@
             "scaleInDock": 1
         },
         "areas/ACDC2.tmx": {
-            "scale": 1.5,
+            "scale": 2,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 895.3333333333333,
-                "y": 415.66666666666663
+                "x": 1335.75,
+                "y": 486.75
             }
         },
         "areas/ACDC3.tmx": {
@@ -10258,6 +10351,14 @@
             "viewCenter": {
                 "x": 1286,
                 "y": 518.25
+            }
+        },
+        "areas/ACDC4Liberation.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 879.5,
+                "y": 253
             }
         },
         "areas/ACDCSqr.tmx": {
@@ -10269,19 +10370,19 @@
             }
         },
         "areas/AlphaComp.tmx": {
-            "scale": 0.33,
+            "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1134.8484848484848,
-                "y": 74.24242424242425
+                "x": 1146.3333333333333,
+                "y": 5.666666666666686
             }
         },
         "areas/AlphaLib1.tmx": {
             "scale": 0.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1359,
-                "y": 357
+                "x": 1749,
+                "y": 753
             }
         },
         "areas/BeachSqr.tmx": {
@@ -10325,11 +10426,11 @@
             }
         },
         "areas/GospelHQ.tmx": {
-            "scale": 3,
+            "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 927.1666666666666,
-                "y": 108.83333333333334
+                "x": 543.6666666666666,
+                "y": 248.3333333333333
             }
         },
         "areas/Hades.tmx": {
@@ -10365,11 +10466,11 @@
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 0.5,
+            "scale": 1.5,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1254,
-                "y": 701
+                "x": 1352.3333333333333,
+                "y": 505.66666666666663
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10432,8 +10533,8 @@
             "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1070.6666666666665,
-                "y": 479.33333333333337
+                "x": 847.3333333333333,
+                "y": 151.33333333333337
             }
         },
         "areas/Undernet3.tmx": {
@@ -10445,19 +10546,19 @@
             }
         },
         "areas/Undernet4.tmx": {
-            "scale": 0.125,
-            "selectedLayer": 1,
+            "scale": 0.5,
+            "selectedLayer": 15,
             "viewCenter": {
-                "x": 1040,
-                "y": 452
+                "x": 1167,
+                "y": 775
             }
         },
         "areas/Undernet5.tmx": {
             "scale": 0.75,
-            "selectedLayer": 1,
+            "selectedLayer": 9,
             "viewCenter": {
-                "x": 1022,
-                "y": 463.3333333333333
+                "x": 876.6666666666667,
+                "y": 463.33333333333337
             }
         },
         "areas/Undernet6.tmx": {
@@ -10496,16 +10597,16 @@
             "scale": 0.75,
             "selectedLayer": 14,
             "viewCenter": {
-                "x": 1080.6666666666665,
+                "x": 1079.3333333333333,
                 "y": 419.33333333333337
             }
         },
         "areas/Yoka2.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 10,
+            "scale": 1.5,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 941,
-                "y": 265
+                "x": 953.6666666666666,
+                "y": 588.3333333333333
             }
         },
         "areas/YokaSqr.tmx": {
@@ -10521,7 +10622,7 @@
             "selectedLayer": 13,
             "viewCenter": {
                 "x": 927.3333333333333,
-                "y": 400.66666666666663
+                "y": 400.6666666666667
             }
         },
         "areas/defaultLanHPReplaceVariables.tmx": {
@@ -10592,6 +10693,9 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/ACDC_Net_Tileset.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/AlphaAreaTileset.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -10637,6 +10741,9 @@
         "assets/tiles/BN3YaiPanel.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/Beach Tiles.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/Beach1.tsx": {
             "scaleInDock": 1
         },
@@ -10668,6 +10775,9 @@
             "scaleInDock": 1
         },
         "assets/tiles/BeachSqr2.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Beach_Next_Area.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/Beachside2A.tsx": {
@@ -10704,6 +10814,21 @@
         "assets/tiles/CusBeachWarp.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "assets/tiles/Custom_Central_Tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/DarkLiberationArrow.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/DarkLiberationRamp.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/DarkLiberationTileset.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/Den_Exits.tsx": {
+            "scaleInDock": 1
         },
         "assets/tiles/DexHomepage.tsx": {
             "scaleInDock": 1
@@ -10744,6 +10869,9 @@
             "scaleInEditor": 1
         },
         "assets/tiles/LargeFire.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/LiberationArrow.tsx": {
             "scaleInDock": 1
         },
         "assets/tiles/Map1B.tsx": {
@@ -10963,6 +11091,12 @@
         "assets/tiles/YokaSqr.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/attack indicator.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/tiles/central_arrows.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/cursed-stairs-2.tsx": {
             "scaleInDock": 1
         },
@@ -11011,6 +11145,9 @@
         "assets/tiles/scilab2C.tsx": {
             "scaleInDock": 1
         },
+        "assets/tiles/selected tile.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/shotcutwarps.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -11022,9 +11159,13 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "assets/tiles/walkable space.tsx": {
+            "scaleInDock": 1
+        },
         "assets/tiles/warp.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 0.75
         }
     },
     "frame.defaultDuration": 166,
@@ -11048,24 +11189,24 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx"
+        "areas/Undernet4.tmx",
+        "areas/Undernet5.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/RiffLiberationFloor.tsx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/expo.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/default.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/areas/Expo.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx",
+        "areas/Yoka2.tmx",
+        "areas/ACDC2.tmx",
+        "areas/Undernet5.tmx",
+        "areas/Undernet4.tmx",
         "areas/default.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/ACDCSquarePinkS.tsx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/tile.tsx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/assets/tiles/CXstairs.tsx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdcsqr.tmx",
-        "E:/OBN/OpenNetBattleMyFork/Quetzen-Server/areas/default.tmx",
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/areas/acdc3.tmx"
+        "areas/Undernet2.tmx",
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/home_warp.tsx",
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/BN3.tsx",
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/Test.tmx",
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/default.tmx",
+        "areas/Undernet1.tmx",
+        "areas/Yoka1.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

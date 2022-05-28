@@ -16,3 +16,13 @@ local AlphaFight = {
     end
 }
 eznpcs.add_event(AlphaFight)
+
+local StartLiberationAlpha1 ={
+    name = "StartLiberationAlpha1",
+    action = function(npc, player_id, dialogue, relay_object)
+        return async(function()
+            return LibPlugin.start_game_for_player(player_id, "AlphaLib1")
+        end)
+    end
+}
+eznpcs.add_event(StartLiberationAlpha1)

@@ -165,24 +165,28 @@
   <object id="58" name="Yellow2" type="Custom Warp" gid="73" x="64" y="224" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Right"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="59"/>
    </properties>
   </object>
   <object id="59" name="Yellow1" type="Custom Warp" gid="73" x="384" y="544" width="60" height="29">
    <properties>
     <property name="Direction" value="Up Right"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="58"/>
    </properties>
   </object>
   <object id="61" name="YellowGreen1" type="Custom Warp" gid="73" x="256" y="224" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="62"/>
    </properties>
   </object>
   <object id="67" name="Teal1" type="Custom Warp" gid="73" x="864" y="448" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="66"/>
    </properties>
   </object>
@@ -344,24 +348,28 @@
   <object id="62" name="YellowGreen2" type="Custom Warp" gid="73" x="768" y="288" width="60" height="29">
    <properties>
     <property name="Direction" value="Up Left"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="61"/>
    </properties>
   </object>
   <object id="63" name="Green2" type="Custom Warp" gid="73" x="352" y="480" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="64"/>
    </properties>
   </object>
   <object id="64" name="Green1" type="Custom Warp" gid="73" x="640" y="192" width="60" height="29">
    <properties>
     <property name="Direction" value="Down Right"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="63"/>
    </properties>
   </object>
   <object id="66" name="Teal2" type="Custom Warp" gid="73" x="160" y="480" width="60" height="29">
    <properties>
     <property name="Direction" value="Down"/>
+    <property name="Target Area" value="Undernet2"/>
     <property name="Target Object" value="67"/>
    </properties>
   </object>
