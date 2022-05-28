@@ -5,9 +5,9 @@
     },
     "activeFile": "areas/Undernet4.tmx",
     "expandedProjectPaths": [
-        "assets",
         "areas",
         ".",
+        "assets",
         "assets/tiles"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -10346,11 +10346,11 @@
             }
         },
         "areas/ACDC3.tmx": {
-            "scale": 2,
+            "scale": 0.75,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1286,
-                "y": 518.25
+                "x": 1104.6666666666665,
+                "y": 271.33333333333337
             }
         },
         "areas/ACDC4Liberation.tmx": {
@@ -10370,11 +10370,11 @@
             }
         },
         "areas/AlphaComp.tmx": {
-            "scale": 1.5,
+            "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1146.3333333333333,
-                "y": 5.666666666666686
+                "x": 1376.6666666666665,
+                "y": -46
             }
         },
         "areas/AlphaLib1.tmx": {
@@ -10466,11 +10466,11 @@
             }
         },
         "areas/Scilab2.tmx": {
-            "scale": 1.5,
+            "scale": 2,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1352.3333333333333,
-                "y": 505.66666666666663
+                "x": 1294.25,
+                "y": 617.25
             }
         },
         "areas/SecretArea1.tmx": {
@@ -11190,23 +11190,27 @@
     "map.width": 50,
     "openFiles": [
         "areas/Undernet4.tmx",
-        "areas/Undernet5.tmx"
+        "areas/Undernet5.tmx",
+        "areas/AlphaLib1.tmx",
+        "areas/AlphaComp.tmx",
+        "areas/ACDC3.tmx",
+        "areas/Scilab2.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "areas/Yoka2.tmx",
-        "areas/ACDC2.tmx",
+        "areas/Scilab2.tmx",
+        "areas/ACDC3.tmx",
+        "areas/AlphaComp.tmx",
+        "areas/AlphaLib1.tmx",
         "areas/Undernet5.tmx",
         "areas/Undernet4.tmx",
+        "areas/Yoka2.tmx",
+        "areas/ACDC2.tmx",
         "areas/default.tmx",
         "areas/Undernet2.tmx",
         "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/home_warp.tsx",
-        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/BN3.tsx",
-        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/Test.tmx",
-        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/areas/default.tmx",
-        "areas/Undernet1.tmx",
-        "areas/Yoka1.tmx"
+        "C:/Users/Clevettes/Desktop/UpdatedServer_TitleScreenTest/assets/tiles/BN3.tsx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,
