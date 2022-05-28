@@ -345,7 +345,7 @@
    </properties>
   </object>
   <object id="10" gid="16" x="80" y="336" width="800" height="600"/>
-  <object id="11" name="TOGOSPEL" type="Cusom Warp" gid="18" x="736" y="608" width="61" height="32">
+  <object id="11" name="TOGOSPEL" type="Cusom Warp" gid="18" x="736" y="608" width="61" height="32" visible="0">
    <properties>
     <property name="Direction" value="Up Left"/>
     <property name="Target Area" value="GospelHQ"/>
@@ -359,7 +359,7 @@
     <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="15" name="ScilabArchObj" gid="40" x="1216" y="1136" width="1280" height="1080" visible="0"/>
+  <object id="15" name="ScilabArchObj" gid="40" x="1216" y="1136" width="1280" height="1080"/>
   <object id="44" name="Scilab2To1F2" type="Radius Warp" x="976" y="1056">
    <properties>
     <property name="Activation Radius" type="float" value="0.6"/>
@@ -502,10 +502,5 @@
   <object id="76" gid="103" x="944.5" y="709.5" width="33" height="24"/>
   <object id="77" gid="103" x="944.5" y="741.5" width="33" height="24"/>
   <object id="78" gid="103" x="944.5" y="773.5" width="33" height="24"/>
-  <object id="79" gid="2147483689" x="784" y="736" width="64" height="52">
-   <properties>
-    <property name="Flavor" value="You cant open this door yet"/>
-   </properties>
-  </object>
  </objectgroup>
 </map>

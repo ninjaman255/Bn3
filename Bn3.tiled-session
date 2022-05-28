@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/DevRoom.tmx",
+    "activeFile": "areas/Scilab2.tmx",
     "expandedProjectPaths": [
-        "areas",
         ".",
         "assets/tiles",
+        "areas",
         "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -10413,8 +10413,8 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 782,
-                "y": 214
+                "x": 640,
+                "y": 304.66666666666663
             }
         },
         "areas/DexHP.tmx": {
@@ -10469,8 +10469,8 @@
             "scale": 1,
             "selectedLayer": 13,
             "viewCenter": {
-                "x": 1232,
-                "y": 551.5
+                "x": 1237.5,
+                "y": 692.5
             }
         },
         "areas/SecretArea1.tmx": {
@@ -10533,8 +10533,8 @@
             "scale": 0.75,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1030,
-                "y": 424.6666666666667
+                "x": 1072,
+                "y": 480.66666666666663
             }
         },
         "areas/Undernet3.tmx": {
@@ -10549,8 +10549,8 @@
             "scale": 0.5,
             "selectedLayer": 15,
             "viewCenter": {
-                "x": 1167,
-                "y": 775
+                "x": 1040,
+                "y": 449
             }
         },
         "areas/Undernet5.tmx": {
@@ -11198,11 +11198,11 @@
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "areas/DevRoom.tmx",
+        "areas/Undernet2.tmx",
+        "areas/Undernet4.tmx",
         "areas/SciLabSqr.tmx",
         "areas/Scilab2.tmx",
-        "areas/Undernet4.tmx",
-        "areas/Undernet2.tmx",
-        "areas/DevRoom.tmx",
         "areas/ACDC3.tmx",
         "areas/AlphaComp.tmx",
         "areas/AlphaLib1.tmx",
