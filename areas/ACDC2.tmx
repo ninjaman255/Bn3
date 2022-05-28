@@ -306,6 +306,7 @@
   <object id="74" type="Mystery Data" gid="56" x="624" y="560" width="14" height="43">
    <properties>
     <property name="Next 1" type="object" value="102"/>
+    <property name="Type" value="random"/>
    </properties>
   </object>
   <object id="75" type="Mystery Data" gid="56" x="720" y="176" width="14" height="43">
