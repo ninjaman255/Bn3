@@ -1,0 +1,1 @@
+net_battle_server.exe -p 8765 --custom-emotes-path="/server/assets/custom emotes.png"
