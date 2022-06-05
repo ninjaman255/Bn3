@@ -1,0 +1,7 @@
+imagePath="order pts.png"
+
+animation state="TALK"
+frame duration="0.1" x="0" y="128" w="78" h="16" originx="0" originy="38"
+
+animation state="IDLE"
+frame duration="0.1" x="0" y="128" w="78" h="16" originx="0" originy="38"
