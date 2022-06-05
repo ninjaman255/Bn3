@@ -3,12 +3,12 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "areas/ACDC2.tmx",
+    "activeFile": "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/central1.tmx",
     "expandedProjectPaths": [
-        "assets/tiles",
-        "assets",
         "areas",
-        "."
+        "assets/tiles",
+        ".",
+        "assets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -616,15 +616,48 @@
         "C:/Users/Clevettes/Desktop/Chrono_x_ExpoFolder/assets/tiles/tree.tsx": {
             "scaleInDock": 1
         },
-        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx": {
-            "scale": 0.3939024390243902,
-            "selectedLayer": 0,
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/acdc2.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 879.6594427244584,
-                "y": 425.232198142415
+                "x": 912.1212121212121,
+                "y": 437.8787878787879
             }
         },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/acdc3.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 1068,
+                "y": 211
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/central1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 141,
+                "y": -11.5
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 1006.6666666666666,
+                "y": 196.66666666666669
+            }
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/ACDCConveyors.tsx": {
+            "scaleInDock": 1
+        },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/V1.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/acdc2_w_trees.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/acdc3_w_trees.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/generic-arrow.tsx": {
@@ -643,6 +676,9 @@
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/tree.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/assets/tiles/warp.tsx": {
             "scaleInDock": 1
         },
         "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021/Hotswap_Maps/default_V1.tmx": {
@@ -10342,7 +10378,7 @@
             "selectedLayer": 5,
             "viewCenter": {
                 "x": 895.5,
-                "y": 416.5
+                "y": 415.5
             }
         },
         "areas/ACDC3.tmx": {
@@ -10482,11 +10518,11 @@
             }
         },
         "areas/SecretArea2.tmx": {
-            "scale": 0.5,
+            "scale": 4,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1264,
-                "y": 599
+                "x": 1452.125,
+                "y": 449.125
             }
         },
         "areas/SecretArea3.tmx": {
@@ -11189,24 +11225,23 @@
     "map.tileWidth": 62,
     "map.width": 50,
     "openFiles": [
-        "areas/default.tmx",
-        "areas/ACDC2.tmx"
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/central1.tmx"
     ],
     "project": "Bn3.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "areas/default.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/central1.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/acdc3.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/acdc2.tmx",
+        "C:/Users/Clevettes/Desktop/Chrono_x_Server_12_22_2021 FinalVersion/areas/default.tmx",
         "areas/ACDC2.tmx",
+        "areas/default.tmx",
+        "areas/SecretArea2.tmx",
+        "assets/tiles/WaterTilesV2.tsx",
         "areas/ACDC3.tmx",
         "areas/Scilab2.tmx",
         "areas/Scilab1.tmx",
-        "areas/SciLabSqr.tmx",
-        "areas/Undernet4.tmx",
-        "areas/Undernet2.tmx",
-        "areas/DevRoom.tmx",
-        "areas/AlphaComp.tmx",
-        "areas/AlphaLib1.tmx",
-        "areas/Undernet5.tmx"
+        "areas/SciLabSqr.tmx"
     ],
     "resizeMap.removeObjects": false,
     "textEdit.monospace": true,

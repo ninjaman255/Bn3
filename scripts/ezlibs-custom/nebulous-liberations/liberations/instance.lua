@@ -146,7 +146,7 @@ local function liberate_panel(self, player_session)
       if panel.custom_properties["Message"] ~= nil then
         Async.await(player:message_with_mug(panel.custom_properties["Message"]))
       else
-        Async.await(player:message_with_mug("A BonusPanel! What will we get?"))
+        Async.await(player:message_with_mug("A BonusPanel! What's it hiding?"))
       end
 
       self:remove_panel(panel)
@@ -188,7 +188,7 @@ local function liberate_panel(self, player_session)
       end
 
       -- looting occurs last
-      Async.await(player_session:loot_panels(panels))
+      Async.await(player_session:loot_panels(panels, false, false))
 
       player_session:complete_turn()
     else
@@ -206,6 +206,8 @@ local function liberate_panel(self, player_session)
       if enemy then
         encounter_path = enemy.encounter
         data.health = enemy.health
+      elseif panel.custom_properties["Encounter Path"] then
+        encounter_path = enemy.custom_properties["Encounter Path"]
       else
         encounter_path = PanelEncounters[self.area_name]
       end
@@ -229,7 +231,7 @@ local function liberate_panel(self, player_session)
       end
 
       local panels = player_session.selection:get_panels()
-      Async.await(player_session:liberate_and_loot_panels(panels, results))
+      Async.await(player_session:liberate_and_loot_panels(panels, results, false, false))
 
       if enemy and enemy.is_boss then
         liberate(self)
@@ -333,7 +335,14 @@ local function take_enemy_turn(self)
         local panel = self:get_panel_at(dark_hole.x + neighbor_offset[1], dark_hole.y + neighbor_offset[2], dark_hole.z)
 
         if panel then
-          neighbors[#neighbors+1] = panel
+          local can_move_to = (
+            panel.type == "Dark Panel" or
+            panel.type == "Item Panel" or
+            panel.type == "Trap Panel"
+          )
+          if can_move_to then
+            neighbors[#neighbors+1] = panel
+          end
         end
       end
 
@@ -343,8 +352,7 @@ local function take_enemy_turn(self)
       end
 
       -- pick a neighbor to be the destination
-      local destination = neighbors[math.random(#neighbors)]
-
+      local destination = neighbors[math.random(#neighbors)] --Move here in one go
       -- move the camera here
       for _, player in ipairs(self.players) do
         Net.slide_player_camera(player.id, dark_hole.x + .5, dark_hole.y + .5, dark_hole.z, slide_time)
@@ -405,13 +413,16 @@ local Mission = {}
 function Mission:new(base_area_id, new_area_id, players)
   local FIRST_PANEL_GID = Net.get_tileset(base_area_id, "/server/assets/tiles/panels.tsx").first_gid
   local TOTAL_PANEL_GIDS = 1
-  local solo_target = tonumber(Net.get_area_custom_property(base_area_id, "Target"))
+  local solo_target = tonumber(Net.get_area_custom_property(base_area_id, "Target Phase Count")) or 13
+  local desired_players = tonumber(Net.get_area_custom_property(base_area_id, "Target Player Count")) or 3
+  local minimum_phases = tonumber(Net.get_area_custom_property(base_area_id, "Minimum Target Phase Count")) or 1
+  local player_difference = #players-desired_players
 
   local mission = {
     area_id = new_area_id,
     area_name = Net.get_area_name(base_area_id),
     emote_timer = 0,
-    target_phase = math.ceil(solo_target / #players),
+    target_phase = math.max(minimum_phases, math.ceil(solo_target / math.max(1, player_difference))),
     phase = 1,
     ready_count = 0,
     order_points = 3,
@@ -449,7 +460,7 @@ function Mission:new(base_area_id, new_area_id, players)
   local object_ids = Net.list_objects(mission.area_id)
   for _, object_id in ipairs(object_ids) do
     local object = Net.get_object_by_id(mission.area_id, object_id)
-    if object.name == "Point of Interest" then
+    if object.type == "Point of Interest" then
       -- track points of interest for the camera
       mission.points_of_interest[#mission.points_of_interest + 1] = object
       -- delete to reduce map size
@@ -461,7 +472,18 @@ function Mission:new(base_area_id, new_area_id, players)
           mission.ITEM_PANEL_GID = object.data.gid
           TOTAL_PANEL_GIDS = TOTAL_PANEL_GIDS + 1
         end
-        object.loot = Loot.DEFAULT_POOL[math.random(#Loot.DEFAULT_POOL)]
+        if object.custom_properties["Specific Loot"] ~= nil then
+          local check_loot = object.custom_properties["Specific Loot"]
+          for i = 1, #Loot.FULL_POOL, 1 do
+            local potential_loot = Loot.FULL_POOL[i]
+            if potential_loot.name == check_loot then
+              object.loot = check_loot
+              break
+            end
+          end
+        else
+          object.loot = Loot.DEFAULT_POOL[math.random(#Loot.DEFAULT_POOL)]
+        end
       elseif object.type == "Dark Hole" then
         -- track dark holes for converting indestructible panels
         if mission.DARK_HOLE_PANEL_GID == -1 then

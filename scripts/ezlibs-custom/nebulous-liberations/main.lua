@@ -116,8 +116,8 @@ local function remove_instance(area_id)
 end
 
 -- handlers
-function LibPlugin.on_tick(elapsed)
-  Parties.on_tick(elapsed)
+Net:on("tick", function(event)
+  local elapsed = event.delta_time
 
   local dead_instances = {}
 
@@ -132,9 +132,11 @@ function LibPlugin.on_tick(elapsed)
   for i, area_id in ipairs(dead_instances) do
     remove_instance(area_id)
   end
-end
+end)
 
-function LibPlugin.handle_tile_interaction(player_id, x, y, z, button)
+Net:on("tile_interaction", function(event)
+  local button = event.button
+  local player_id = event.player_id
   local area_id = Net.get_player_area(player_id)
 
   if waiting_area_map[area_id] ~= nil and button == 0 then
@@ -146,20 +148,26 @@ function LibPlugin.handle_tile_interaction(player_id, x, y, z, button)
       end
     end)
   elseif instances[area_id] ~= nil then
-    instances[area_id]:handle_tile_interaction(player_id, x, y, z, button)
+    instances[area_id]:handle_tile_interaction(player_id, event.x, event.y, event.z, button)
   end
-end
+end)
 
-function LibPlugin.handle_object_interaction(player_id, object_id, button)
+Net:on("object_interaction", function(event)
+  local button = event.button
+  local player_id = event.player_id
+  local object_id = event.object_id
   local area_id = Net.get_player_area(player_id)
   if waiting_area_map[area_id] ~= nil then
     detect_door_interaction(player_id, object_id, button)
   elseif instances[area_id] ~= nil then
     instances[area_id]:handle_object_interaction(player_id, object_id, button)
   end
-end
+end)
 
-function LibPlugin.handle_actor_interaction(player_id, other_player_id, button)
+Net:on("actor_interaction", function(event)
+  local player_id = event.player_id
+  local button = event.button
+  local other_player_id = event.actor_id
   local area_id = Net.get_player_area(player_id)
 
   if waiting_area_map[area_id] == nil or button ~= 0 then return end
@@ -198,32 +206,37 @@ function LibPlugin.handle_actor_interaction(player_id, other_player_id, button)
       Parties.request(player_id, other_player_id)
     end
   end)
-end
+end)
 
-function LibPlugin.handle_textbox_response(player_id, response)
+Net:on("textbox_response", function(event)
+  local player_id = event.player_id
+  local response = event.response
   local player = players[player_id]
 
   player:handle_textbox_response(response)
-end
+end)
 
-function LibPlugin.handle_battle_results(player_id, stats)
+Net:on("battle_results", function(event)
+  local player_id = event.player_id
   local player = players[player_id]
   if player then
-    player:handle_battle_results(stats)
+    player:handle_battle_results(event)
   end
-end
+end)
 
-function LibPlugin.handle_player_avatar_change(player_id, details)
+Net:on("player_avatar_change", function(event)
+  local player_id = event.player_id
   local player = players[player_id]
 
-  player.avatar_details = details
+  player.avatar_details = event
 
   if player.activity then
     player.activity:handle_player_avatar_change(player_id)
   end
-end
+end)
 
-function LibPlugin.handle_player_transfer(player_id)
+Net:on("player_area_transfer", function(event)
+  local player_id = event.player_id
   local player = players[player_id]
 
   local player_pos = Net.get_player_position(player_id)
@@ -234,26 +247,29 @@ function LibPlugin.handle_player_transfer(player_id)
   if player.activity then
     player.activity:handle_player_transfer(player_id)
   end
-end
+end)
 
-function LibPlugin.handle_player_request(player_id)
+Net:on("player_request", function(event)
+  local player_id = event.player_id
   players[player_id] = Player:new(player_id)
-end
+end)
 
-function LibPlugin.handle_player_disconnect(player_id)
+Net:on("player_disconnect", function(event)
+  local player_id = event.player_id
   local player = players[player_id]
   player:handle_disconnect()
 
   leave_party(player)
   players[player_id] = nil
-end
+end)
 
-function LibPlugin.handle_player_move(player_id, x, y, z)
+Net:on("player_move", function(event)
+    local player_id = event.player_id
     local player = players[player_id]
-    player.x = x
-    player.y = y
-    player.z = z
-end
+    player.x = event.x
+    player.y = event.y
+    player.z = event.z
+end)
 
 local areas = Net.list_areas()
 for i, area_id in next, areas do

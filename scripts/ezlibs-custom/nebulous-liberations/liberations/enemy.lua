@@ -34,7 +34,7 @@ local name_to_enemy = {
 function Enemy.from(instance, position, direction, name)
   local enemy = name_to_enemy[name]:new(instance, position, direction)
   enemy.name = enemy.name or name
-  
+
   Net.set_bot_name(enemy.id, enemy.name .. ": " .. enemy.health)
 
   return enemy

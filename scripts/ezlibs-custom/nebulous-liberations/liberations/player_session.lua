@@ -87,7 +87,6 @@ function PlayerSession:get_ability_permission()
     end
 
     -- Yes
-
     if self.instance.order_points < self.ability.cost then
       -- not enough order points
       self.player:message("Not enough Order Pts!")
@@ -95,7 +94,7 @@ function PlayerSession:get_ability_permission()
     end
 
     self.instance.order_points = self.instance.order_points - self.ability.cost
-    self.ability.activate(self.instance, self)
+    self.ability.activate(self.instance, self, nil, self.ability.remove_traps, self.ability.destroy_items)
   end)
 end
 
@@ -282,23 +281,38 @@ function PlayerSession:liberate_panels(panels, results)
 end
 
 -- returns a promise that resolves after looting
-function PlayerSession:loot_panels(panels)
+function PlayerSession:loot_panels(panels, remove_traps, destroy_items)
   local co = coroutine.create(function()
     for _, panel in ipairs(panels) do
       if panel.loot then
         -- loot the panel if it has loot
-        Async.await(Loot.loot_item_panel(self.instance, self, panel))
+        Async.await(Loot.loot_item_panel(self.instance, self, panel, destroy_items))
         if self.get_monies then
-          local cash = Net.get_player_money(self.player.id)
-          local bonus = 100
-          if panel.custom_properties["Money"] then bonus = tonumber(panel.custom_properties["Money"]) end
-          Async.await(self.player:message("Obtained "..tostring(bonus).." Monies!"))
-          Net.set_player_money(self.player.id, cash + bonus)
-          ezmemory.set_player_money(self.player.id, Net.get_player_money(self.player.id))
+          if not destroy_items then
+            local cash = Net.get_player_money(self.player.id)
+            local bonus = 100
+            if panel.custom_properties["Money"] then bonus = tonumber(panel.custom_properties["Money"]) end
+            Async.await(self.player:message("Obtained "..tostring(bonus).." Monies!"))
+            Net.set_player_money(self.player.id, cash + bonus)
+            ezmemory.set_player_money(self.player.id, Net.get_player_money(self.player.id))
+          end
           self.get_monies = false
         end
       elseif panel.type == "Trap Panel" then
-        if panel.custom_properties["Damage Trap"] == "true" then
+        local slide_time = .1
+        local spawn_x = math.floor(panel.x) + .5
+        local spawn_y = math.floor(panel.y) + .5
+        local spawn_z = panel.z
+        Net.slide_player_camera(
+          self.player.id,
+          spawn_x,
+          spawn_y,
+          spawn_z,
+          slide_time
+        )
+        Async.await(Async.sleep(slide_time))
+        if remove_traps then Async.await(self.player:message_with_mug("I found a trap! It's been removed."))
+        elseif panel.custom_properties["Damage Trap"] == "true" then
           if panel.custom_properties["Trap Message"] ~= nil then
             Async.await(self.player:message_with_mug(panel.custom_properties["Trap Message"]))
           else
@@ -314,16 +328,18 @@ function PlayerSession:loot_panels(panels)
           self:paralyze()
         end
       end
+      panel.data.gid = self.instance.BASIC_PANEL_GID
+      panel.type = "Dark Panel"
+      Net.set_object_data(self.instance.area_id, panel.id, panel.data)
     end
   end)
-
   return Async.promisify(co)
 end
 
-function PlayerSession:liberate_and_loot_panels(panels, results)
+function PlayerSession:liberate_and_loot_panels(panels, results, remove_traps, destroy_items)
   return Async.create_promise(function(resolve)
     self:liberate_panels(panels, results).and_then(function()
-      self:loot_panels(panels).and_then(resolve)
+      self:loot_panels(panels, remove_traps, destroy_items).and_then(resolve)
     end)
   end)
 end

@@ -2,8 +2,11 @@ local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
 
 local ezcheckpoints = {}
 
-function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
+Net:on("object_interaction", function(event)
+    local button = event.button
     if button ~= 0 then return end
+    local player_id = event.player_id
+    local object_id = event.object_id
     local area_id = Net.get_player_area(player_id)
     local checkpoint_object = Net.get_object_by_id(area_id, object_id)
     if checkpoint_object.type ~= "Checkpoint" then return end
@@ -19,8 +22,7 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
         item_count = ezmemory.count_player_item(player_id, required_item)
     end
 	local necessary_count = 1
-    local is_hide_forever = nil
-
+    local is_hide_forever = false
     if checkpoint_object.custom_properties["Once"] ~= nil then
         is_hide_forever = tostring(checkpoint_object.custom_properties["Once"])
     end
@@ -92,6 +94,6 @@ function ezcheckpoints.handle_object_interaction(player_id, object_id, button)
             end
         end
     end
-end
+end)
 
 return ezcheckpoints

@@ -125,12 +125,7 @@ function Player:handle_battle_results(stats)
     return
   end
   local resolve = self.resolve_battle
-  self.resolve_battle = nil 
-  for index, value in ipairs(stats) do
-    print(value)
-  end
-  -- stats = { health: number, score: number, time: number, ran: bool, emotion: number, turns: number, enemies: { id: String, health: number }[] }
-  print("battle turn count is "..stats.turns)
+  self.resolve_battle = nil
 
   resolve(stats)
 end

@@ -3,6 +3,7 @@ local Enemy = require("scripts/ezlibs-custom/nebulous-liberations/liberations/en
 local Loot = {
   HEART = {
     animation = "HEART",
+    breakable = true,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message_with_mug("I found\na heart!").and_then(function()
@@ -14,6 +15,7 @@ local Loot = {
   },
   CHIP = {
     animation = "CHIP",
+    breakable = true,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message_with_mug("I found a\nBattleChip!").and_then(function()
@@ -24,6 +26,7 @@ local Loot = {
   },
   ZENNY = {
     animation = "ZENNY",
+    breakable = true,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message_with_mug("I found some\nMonies!").and_then(function()
@@ -35,6 +38,7 @@ local Loot = {
   },
   BUGFRAG = {
     animation = "BUGFRAG",
+    breakable = true,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message_with_mug("I found a\nBugFrag!").and_then(function()
@@ -45,6 +49,7 @@ local Loot = {
   },
   ORDER_POINT = {
     animation = "ORDER_POINT",
+    breakable = false,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message_with_mug("I found\nOrder Points!")
@@ -61,13 +66,13 @@ local Loot = {
   },
   INVINCIBILITY = {
     animation = "INVINCIBILITY",
+    breakable = false,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         player_session.player:message("Team becomes invincible for\n 1 phase!!").and_then(function()
           for _, other_session in pairs(instance.player_sessions) do
             other_session.invincible = true
           end
-
           resolve()
         end)
       end)
@@ -75,6 +80,7 @@ local Loot = {
   },
   MAJOR_HIT = {
     animation = "MAJOR_HIT",
+    breakable = false,
     activate = function(instance, player_session)
       local co = coroutine.create(function()
         Async.await(player_session.player:message("Damages the closest Guardian the most!"))
@@ -94,20 +100,13 @@ local Loot = {
   },
   KEY = {
     animation = "KEY",
+    breakable = false,
     activate = function(instance, player_session)
       return Async.create_promise(function(resolve)
         resolve()
       end)
     end
-  },
-  TRAP = {
-    animation = "TRAP",
-    activate = function(instance, player_session)
-      return Async.create_promise(function(resolve)
-        resolve()
-      end)
-    end
-  },
+  }
 }
 
 Loot.DEFAULT_POOL = {
@@ -133,6 +132,17 @@ Loot.TEST_POOL = {
   Loot.ZENNY,
   Loot.BUGFRAG,
   Loot.ORDER_POINT,
+}
+
+Loot.FULL_POOl = {
+  Loot.HEART,
+  Loot.CHIP,
+  Loot.ZENNY,
+  Loot.BUGFRAG,
+  Loot.ORDER_POINT,
+  Loot.INVINCIBILITY,
+  Loot.KEY,
+  Loot.MAJOR_HIT,
 }
 
 local RISE_DURATION = .1
@@ -257,7 +267,7 @@ function Loot.spawn_randomized_item_bot(loot_pool, item_index, area_id, x, y, z)
 end
 
 -- returns a promise, resolves when looting is completed
-function Loot.loot_item_panel(instance, player_session, panel)
+function Loot.loot_item_panel(instance, player_session, panel, destroy_items)
   local slide_time = .1
 
   local spawn_x = math.floor(panel.x) + .5
@@ -275,18 +285,20 @@ function Loot.loot_item_panel(instance, player_session, panel)
   local loot = panel.loot
 
   -- prevent other players from looting this panel again
+  local breakable = panel.loot.breakable
   panel.loot = nil
 
   local co = coroutine.create(function()
     Async.await(Async.sleep(slide_time))
-
     local remove_item_bot = Async.await(Loot.spawn_item_bot(loot, instance.area_id, spawn_x, spawn_y, spawn_z))
-
-    Async.await(loot.activate(instance, player_session))
-
-    remove_item_bot()
+    if not breakable and destroy_items or not destroy_items then
+      Async.await(loot.activate(instance, player_session))
+      remove_item_bot()
+    else
+      Async.await(player_session.player:message_with_mug("Ah!! The item was destroyed!"))
+      remove_item_bot()
+    end
   end)
-
   return Async.promisify(co)
 end
 
