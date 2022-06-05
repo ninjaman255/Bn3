@@ -83,13 +83,13 @@
     <property name="Spawns" value="BigBrute"/>
    </properties>
   </object>
-  <object id="40" type="Dark Panel" gid="20" x="576" y="960" width="50" height="30"/>
-  <object id="41" type="Dark Panel" gid="20" x="544" y="960" width="50" height="30"/>
-  <object id="42" type="Dark Panel" gid="20" x="576" y="928" width="50" height="30"/>
-  <object id="43" type="Dark Panel" gid="20" x="608" y="928" width="50" height="30"/>
-  <object id="44" type="Dark Panel" gid="20" x="640" y="928" width="50" height="30"/>
-  <object id="45" type="Dark Panel" gid="20" x="640" y="960" width="50" height="30"/>
-  <object id="46" type="Dark Panel" gid="20" x="672" y="960" width="50" height="30"/>
+  <object id="40" type="Dark Panel" gid="20" x="512" y="992" width="50" height="30"/>
+  <object id="41" type="Dark Panel" gid="20" x="544" y="992" width="50" height="30"/>
+  <object id="42" type="Dark Panel" gid="20" x="480" y="992" width="50" height="30"/>
+  <object id="43" type="Dark Panel" gid="20" x="512" y="1024" width="50" height="30"/>
+  <object id="44" type="Dark Panel" gid="20" x="544" y="1056" width="50" height="30"/>
+  <object id="45" type="Dark Panel" gid="20" x="544" y="1024" width="50" height="30"/>
+  <object id="46" type="Dark Panel" gid="20" x="576" y="1056" width="50" height="30"/>
   <object id="52" type="Trap Panel" gid="21" x="608" y="896" width="50" height="30">
    <properties>
     <property name="Damage Dealt" type="int" value="25"/>
@@ -122,8 +122,8 @@
    </properties>
    <point/>
   </object>
-  <object id="87" type="Dark Panel" gid="20" x="576" y="896" width="50" height="30"/>
-  <object id="88" type="Dark Panel" gid="20" x="640" y="896" width="50" height="30"/>
+  <object id="87" type="Dark Panel" gid="20" x="512" y="1056" width="50" height="30"/>
+  <object id="88" type="Dark Panel" gid="20" x="480" y="1024" width="50" height="30"/>
   <object id="89" type="Dark Panel" gid="20" x="480" y="736" width="50" height="30"/>
   <object id="90" type="Dark Panel" gid="20" x="480" y="768" width="50" height="30"/>
   <object id="91" type="Dark Panel" gid="20" x="480" y="800" width="50" height="30"/>
@@ -145,7 +145,7 @@
   <object id="107" type="Dark Panel" gid="20" x="704" y="832" width="50" height="30"/>
   <object id="108" type="Dark Panel" gid="20" x="672" y="832" width="50" height="30"/>
   <object id="109" type="Dark Panel" gid="20" x="640" y="832" width="50" height="30"/>
-  <object id="110" type="Dark Panel" gid="20" x="672" y="896" width="50" height="30"/>
+  <object id="110" type="Dark Panel" gid="20" x="480" y="1056" width="50" height="30"/>
   <object id="111" type="Dark Panel" gid="20" x="704" y="896" width="50" height="30"/>
   <object id="112" type="Dark Panel" gid="20" x="736" y="896" width="50" height="30"/>
   <object id="113" type="Dark Panel" gid="20" x="768" y="896" width="50" height="30"/>

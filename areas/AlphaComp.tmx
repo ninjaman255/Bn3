@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="22" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="52">
+<map version="1.8" tiledversion="1.8.4" orientation="isometric" renderorder="right-down" width="22" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="58">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Alpha/BG.animation"/>
@@ -144,6 +144,58 @@
    </properties>
   </object>
   <object id="51" name="Liberation Respawn" type="Spawn Point" x="128" y="112">
+   <point/>
+  </object>
+  <object id="52" name="Ability Prog" type="NPC" x="112" y="144">
+   <properties>
+    <property name="Asset Name" value="prog-gold"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Down Right"/>
+    <property name="Next 1" type="object" value="53"/>
+    <property name="Text 1" value="I can grant you new powers!!! i can make you over 9000!!!!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" type="dialogue" x="80" y="144">
+   <properties>
+    <property name="Dialogue Type" value="quiz"/>
+    <property name="Next 1" type="object" value="54"/>
+    <property name="Next 2" type="object" value="55"/>
+    <property name="Next 3" type="object" value="56"/>
+    <property name="Text 1" value="Shadow Shoe"/>
+    <property name="Text 2" value="Long Sword"/>
+    <property name="Text 3" value="Number Search"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Shadow Shoe question" type="dialogue" x="16" y="160">
+   <properties>
+    <property name="Dialogue Type" value="question"/>
+    <property name="Next 1" type="object" value="57"/>
+    <property name="Next 2" type="object" value="53"/>
+    <property name="Text 1">SHADOW SHOES ALLOW
+YOU TO WALK
+ON DARK PANELS.
+HOWEVER, YOU CAN'T
+MOVE IN TO
+ENEMIES, OR SOME
+SPECIAL PANELS.
+DO YOU WANT THEM?</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" type="dialogue" x="16" y="128">
+   <point/>
+  </object>
+  <object id="56" type="dialogue" x="16" y="96">
+   <point/>
+  </object>
+  <object id="57" name="Give shadow shoe" type="Dialogue" x="-32" y="160">
+   <properties>
+    <property name="Ability Item" value="ShdwShoe"/>
+    <property name="Dialogue Type" value="none"/>
+    <property name="Event Name" value="Grant Liberation Mission Ability"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>
