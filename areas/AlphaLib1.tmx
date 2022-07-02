@@ -7,6 +7,7 @@
   <property name="Background Vel X" type="float" value="0.1"/>
   <property name="Background Vel Y" type="float" value="0"/>
   <property name="Liberation Encounters" value="/server/assets/encounters/NebulousEncounters/AlphaLib1.zip"/>
+  <property name="Liberation Tileset" value="AlphaAreaTileset"/>
   <property name="Minimum Target Phase Count" type="int" value="13"/>
   <property name="Name" value="?"/>
   <property name="Respawn Area" value="AlphaComp"/>
