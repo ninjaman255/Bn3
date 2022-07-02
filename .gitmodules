@@ -10,3 +10,6 @@
 [submodule "scripts/ezlibs-custom/nebulous-liberations"]
 	path = scripts/ezlibs-custom/nebulous-liberations
 	url = https://github.com/RogueClaris/Nebulous-Liberations-Scripts
+[submodule "assets/NebuLibsAssets"]
+	path = assets/NebuLibsAssets
+	url = https://github.com/RogueClaris/Nebulous-Liberations-Assets
