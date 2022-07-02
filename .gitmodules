@@ -7,3 +7,6 @@
 [submodule "Scriptable-OpenNetBattle-Server"]
 	path = Scriptable-OpenNetBattle-Server
 	url = https://github.com/ArthurCose/Scriptable-OpenNetBattle-Server
+[submodule "scripts/ezlibs-custom/nebulous-liberations"]
+	path = scripts/ezlibs-custom/nebulous-liberations
+	url = https://github.com/RogueClaris/Nebulous-Liberations-Scripts
