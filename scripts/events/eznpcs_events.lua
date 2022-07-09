@@ -223,9 +223,11 @@ local function lan_says(player_id, idx)
     return Async.message_player(player_id, format_message_tokens(lan_lines[idx], format_data), lan.texture, lan.anim)
 end
 
-local FinaleCutsceneTrigger = {
-    name = "FinaleCutsceneTrigger",
-    action = function(npc, player_id, dialogue, relay_object)
+local cutscene_listener = Net.EventEmitter.new()
+
+cutscene_listener:on("FinaleCutsceneTrigger",
+    function(player_id)
+        warn("CUTSCENE SHOULD BE TRIGGERED!!!!")
         local player_says = make_player_says(player_id)
 
         local bass_id = nil
@@ -457,9 +459,8 @@ local FinaleCutsceneTrigger = {
             await(wily_says(player_id, 7))
             await(player_says(player_id, 5))
             await(Async.sleep(0.5))
-            Net.shake_player_camera(player_id, 3.0, 6)
-            -- TODO: make this loop for a bit. Hardcode it atm?
             Net.play_sound_for_player(player_id, "/server/assets/cutscene/quake.ogg")
+            Net.shake_player_camera(player_id, 3.0, 6)
             await(Async.sleep(0.5))
             await(player_says(player_id, 6))
             await(bass_says(player_id, 12))
@@ -516,9 +517,9 @@ local FinaleCutsceneTrigger = {
             Net.unlock_player_camera(player_id)
         end)
     end
-}
+) -- cutscene_listener.on('FinaleCutsceneTrigger')
 
-eznpcs.add_event(FinaleCutsceneTrigger)
+--eznpcs.add_event(FinaleCutsceneTrigger)
 
 local AlphaFight = {
     name="AlphaFight",
