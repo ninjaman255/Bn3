@@ -273,6 +273,11 @@ local FinaleCutsceneTrigger = {
         Net.animate_bot(bass_id, "IDLE_DL", true)
         Net.include_actor_for_player(player_id, bass_id);
 
+        -- other asset preloading
+        Net.provide_asset("AlphaComp", "/server/assets/cutscene/alpha_eat.ogg")
+        Net.provide_asset("AlphaComp", "/server/assets/cutscene/bass_attack_stone.ogg")
+        Net.provide_asset("AlphaComp", "/server/assets/cutscene/bass_charge.ogg")
+
         return async(function()
             Net.lock_player_input(player_id)
             Net.fade_player_camera(player_id, {r=0,g=0,b=0}, 0.5)
@@ -302,17 +307,29 @@ local FinaleCutsceneTrigger = {
                     duration = 0.0
                 },
                 {
-                    properties={{
-                        property="Animation",
-                        value="EARTH_BREAKER_CHARGE_L"
-                    }},
+                    properties={
+                        {
+                            property="Animation",
+                            value="EARTH_BREAKER_CHARGE_L"
+                        },
+                        {
+                            property="Sound Effect Loop",
+                            value="/server/assets/cutscene/bass_charge.ogg"
+                        }
+                    },
                     duration = 0.15
                 },
                 {
-                    properties={{
-                        property="Animation",
-                        value="EARTH_BREAKER_L"
-                    }},
+                    properties={
+                        {
+                            property="Animation",
+                            value="EARTH_BREAKER_L"
+                        },
+                        {
+                            property="Sound Effect",
+                            value="/server/assets/cutscene/bass_attack_stone.ogg"
+                        }
+                    },
                     duration = 0.15*18
                 },
                 {
@@ -335,6 +352,7 @@ local FinaleCutsceneTrigger = {
             Net.fade_player_camera(player_id, {r=255,g=255,b=255}, 1.0)
             await(Async.sleep(1.0))
             Net.exclude_object_for_player(player_id, pillar.id);
+            Net.play_sound_for_player(player_id, "/server/assets/cutscene/bass_destroy_stone.ogg")
             local giga_freeze_id = Net.create_bot({area_id="AlphaComp", warp_in=false, texture_path="/server/assets/cutscene/gigafreeze.png", animation_path="/server/assets/cutscene/gigafreeze.animation", x=pillar.x, y=pillar.y, z=pillar.z, direction="Down Left", animation="IDLE_DL"})
             Net.fade_player_camera(player_id, {r=255,g=255,b=255,a=0}, 0.5)
             await(Async.sleep(0.5))
@@ -384,12 +402,13 @@ local FinaleCutsceneTrigger = {
 
             await(Async.sleep(3.0 + (11.0/60.0))) -- sum of the animation time
             Net.remove_bot(giga_freeze_id, false);
-
+            Net.play_sound_for_player(player_id, "/server/assets/cutscene/bass_acquire_gigafreeze.ogg")
             await(player_says(player_id, 1))
             -- todo: animate player running to their first destination
             Net.teleport_player(player_id, false, player_pos_2.x, player_pos_2.y, player_pos_2.z, "Up Right")
             Net.slide_player_camera(player_id, camera_pos_2.x, camera_pos_2.y, camera_pos_2.z, 0.5)
             Net.set_bot_direction(wily_id, "Down Left")
+            -- TODO: play the track "face_bass_music.ogg BG music here"
             await(wily_says(player_id, 4))
             Net.animate_bot_properties(bass_id, {
                 {
@@ -426,9 +445,11 @@ local FinaleCutsceneTrigger = {
             await(bass_says(player_id, 8))
             await(lan_says(player_id, 2))
             await(player_says(player_id, 4))
+            -- TODO: stop BG music for player here
             await(Async.initiate_encounter(player_id, "/server/assets/mobs/BassBn3.zip"))
             Net.animate_bot(bass_id, "WOUNDED", true)
             await(bass_says(player_id, 9))
+            -- TODO: play the track "after_bass_battle_music.ogg BG music here"
             await(wily_says(player_id, 5))
             await(bass_says(player_id, 10))
             await(wily_says(player_id, 6))
@@ -437,6 +458,8 @@ local FinaleCutsceneTrigger = {
             await(player_says(player_id, 5))
             await(Async.sleep(0.5))
             Net.shake_player_camera(player_id, 3.0, 6)
+            -- TODO: make this loop for a bit. Hardcode it atm?
+            Net.play_sound_for_player(player_id, "/server/assets/cutscene/quake.ogg")
             await(Async.sleep(0.5))
             await(player_says(player_id, 6))
             await(bass_says(player_id, 12))
@@ -447,10 +470,16 @@ local FinaleCutsceneTrigger = {
             local bass_blob_id = Net.create_bot({area_id="AlphaComp", warp_in=false, texture_path="/server/assets/cutscene/alpha_blob.png", animation_path="/server/assets/cutscene/alpha_blob.animation", x=pillar.x, y=pillar.y, z=pillar.z, animation="IDLE_DL", direction="Down Left"})
             Net.animate_bot_properties(bass_blob_id, {
                 {
-                    properties={{
-                        property="Animation",
-                        value="BASS_SWALLOW"
-                    }},
+                    properties={
+                        {
+                            property="Animation",
+                            value="BASS_SWALLOW"
+                        },
+                        {
+                            property="Sound Effect",
+                            value="/server/assets/cutscene/alpha_eat.ogg"
+                        }
+                    },
                     duration = 0.0
                 },
                 {
@@ -463,18 +492,24 @@ local FinaleCutsceneTrigger = {
             })
             await(Async.sleep(0.3))
             Net.exclude_actor_for_player(player_id, bass_id);
-            await(Async.sleep(1.0))
+            await(Async.sleep(0.6))
             await(bass_says(player_id, 12))
             Net.animate_bot_properties(bass_blob_id, {
                 {
-                    properties={{
-                        property="Animation",
-                        value="BASS_LEAVE"
-                    }},
+                    properties={
+                        {
+                            property="Animation",
+                            value="BASS_LEAVE"
+                        },
+                        {
+                            property="Sound Effect",
+                            value="/server/assets/cutscene/alpha_eat.ogg"
+                        }
+                    },
                     duration = 0.0
                 },
             })
-            await(Async.sleep(1.0))
+            await(Async.sleep(0.5))
             Net.remove_bot(bass_blob_id, false);
             await(player_says(player_id, 7))
             Net.unlock_player_input(player_id)
