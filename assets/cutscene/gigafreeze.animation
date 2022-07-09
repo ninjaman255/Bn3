@@ -1,0 +1,20 @@
+# @frame_rate 60
+
+imagePath="X:/Big_Code/Bn3/assets/cutscene/gigafreeze.png"
+
+animation state="IDLE_DL"
+frame duration="0.033" x="2" y="2" w="16" h="32" originx="8" originy="66" flipx="0" flipy="0"
+frame duration="0.033" x="22" y="2" w="22" h="28" originx="11" originy="64" flipx="0" flipy="0"
+frame duration="0.033" x="48" y="2" w="20" h="28" originx="10" originy="64" flipx="0" flipy="0"
+frame duration="0.033" x="72" y="2" w="26" h="26" originx="13" originy="63" flipx="0" flipy="0"
+frame duration="0.033" x="2" y="38" w="26" h="26" originx="13" originy="63" flipx="0" flipy="0"
+frame duration="0.033" x="32" y="38" w="26" h="26" originx="13" originy="63" flipx="0" flipy="0"
+frame duration="0.033" x="62" y="38" w="22" h="24" originx="11" originy="62" flipx="0" flipy="0"
+frame duration="0.033" x="2" y="68" w="22" h="24" originx="11" originy="62" flipx="0" flipy="0"
+frame duration="0.033" x="28" y="68" w="30" h="22" originx="15" originy="61" flipx="0" flipy="0"
+frame duration="0.033" x="62" y="68" w="30" h="22" originx="15" originy="61" flipx="0" flipy="0"
+frame duration="0.033" x="2" y="96" w="16" h="16" originx="8" originy="58" flipx="0" flipy="0"
+frame duration="0.033" x="22" y="96" w="16" h="16" originx="8" originy="58" flipx="0" flipy="0"
+frame duration="0.033" x="42" y="96" w="16" h="16" originx="8" originy="58" flipx="0" flipy="0"
+frame duration="0.033" x="62" y="96" w="10" h="10" originx="5" originy="55" flipx="0" flipy="0"
+frame duration="0.033" x="76" y="96" w="6" h="6" originx="3" originy="53" flipx="0" flipy="0"
