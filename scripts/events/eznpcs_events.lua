@@ -1,4 +1,5 @@
 local eznpcs = require('scripts/ezlibs-scripts/eznpcs/eznpcs')
+local eztriggers = require('scripts/ezlibs-scripts/eztriggers')
 local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
 local ezmystery = require('scripts/ezlibs-scripts/ezmystery')
 local ezweather = require('scripts/ezlibs-scripts/ezweather')
@@ -207,9 +208,6 @@ local function make_player_says(player_id)
     local player_texture = playerNaviCache.player_navi_mug_texture_path[player_id]
     local player_anim = playerNaviCache.player_navi_mug_animation_path[player_id]
 
-    print("player_texture_path: "..player_texture)
-    print("player_animation_path: "..player_anim)
-
     return function(player_id, idx)
         return Async.message_player(player_id, player_lines[idx], player_texture, player_anim)
     end
@@ -223,11 +221,9 @@ local function lan_says(player_id, idx)
     return Async.message_player(player_id, format_message_tokens(lan_lines[idx], format_data), lan.texture, lan.anim)
 end
 
-local cutscene_listener = Net.EventEmitter.new()
-
-cutscene_listener:on("FinaleCutsceneTrigger",
-    function(player_id)
-        warn("CUTSCENE SHOULD BE TRIGGERED!!!!")
+local FinaleCutsceneTrigger = {
+    name="FinaleCutsceneTrigger",
+    action=function(player_id)
         local player_says = make_player_says(player_id)
 
         local bass_id = nil
@@ -263,7 +259,6 @@ cutscene_listener:on("FinaleCutsceneTrigger",
 
         -- alpha pillar setup
         local pillar = Net.get_object_by_name("AlphaComp", "AlphaPillar")
-        print(pillar) 
 
         Net.include_object_for_player(player_id, pillar.id);
 
@@ -282,9 +277,38 @@ cutscene_listener:on("FinaleCutsceneTrigger",
 
         return async(function()
             Net.lock_player_input(player_id)
+
+            -- animate the player running
+            Net.animate_player_properties(player_id,{
+                {
+                    properties={{
+                        property="X",
+                        ease="Linear",
+                        value=player_pos_2.x
+                    },
+                    {
+                        property="Y",
+                        ease="Linear",
+                        value=player_pos_2.y
+                    }},
+                    duration=3.0
+                }
+            })
+
             Net.fade_player_camera(player_id, {r=0,g=0,b=0}, 0.5)
             await(Async.sleep(0.5))
-            Net.teleport_player(player_id, false, player_pos_1.x, player_pos_1.y, player_pos_1.z, "Up Right")
+            Net.animate_player_properties(player_id,{
+                {
+                    properties={{
+                        property="X",
+                        value=player_pos_1.x
+                    },
+                    {
+                        property="Y",
+                        value=player_pos_1.y
+                    }}
+                }
+            })
             Net.move_player_camera(player_id, camera_pos_1.x, camera_pos_1.y, camera_pos_1.z)
             Net.fade_player_camera(player_id, {r=0,g=0,b=0,a=0}, 0.5)
             await(Async.sleep(0.5))
@@ -315,7 +339,7 @@ cutscene_listener:on("FinaleCutsceneTrigger",
                             value="EARTH_BREAKER_CHARGE_L"
                         },
                         {
-                            property="Sound Effect Loop",
+                            property="Sound Effect",
                             value="/server/assets/cutscene/bass_charge.ogg"
                         }
                     },
@@ -332,7 +356,7 @@ cutscene_listener:on("FinaleCutsceneTrigger",
                             value="/server/assets/cutscene/bass_attack_stone.ogg"
                         }
                     },
-                    duration = 0.15*18
+                    duration = 0.15*20
                 },
                 {
                     properties={{
@@ -349,12 +373,13 @@ cutscene_listener:on("FinaleCutsceneTrigger",
                     duration = 0.083
                 }
             })
-            await(Async.sleep(3.366)) -- accumulative total of all the frames so that the anim can finish
-            -- TODO white explosion covers screen
+            await(Async.sleep(3.366))
+            -- TODO white explosion ball ALSO covers screen
             Net.fade_player_camera(player_id, {r=255,g=255,b=255}, 1.0)
             await(Async.sleep(1.0))
-            Net.exclude_object_for_player(player_id, pillar.id);
             Net.play_sound_for_player(player_id, "/server/assets/cutscene/bass_destroy_stone.ogg")
+            Net.exclude_object_for_player(player_id, pillar.id);
+            await(Async.sleep(0.6))
             local giga_freeze_id = Net.create_bot({area_id="AlphaComp", warp_in=false, texture_path="/server/assets/cutscene/gigafreeze.png", animation_path="/server/assets/cutscene/gigafreeze.animation", x=pillar.x, y=pillar.y, z=pillar.z, direction="Down Left", animation="IDLE_DL"})
             Net.fade_player_camera(player_id, {r=255,g=255,b=255,a=0}, 0.5)
             await(Async.sleep(0.5))
@@ -406,11 +431,41 @@ cutscene_listener:on("FinaleCutsceneTrigger",
             Net.remove_bot(giga_freeze_id, false);
             Net.play_sound_for_player(player_id, "/server/assets/cutscene/bass_acquire_gigafreeze.ogg")
             await(player_says(player_id, 1))
-            -- todo: animate player running to their first destination
-            Net.teleport_player(player_id, false, player_pos_2.x, player_pos_2.y, player_pos_2.z, "Up Right")
+            Net.animate_player_properties(player_id,{
+                {
+                    properties={{
+                        property="X",
+                        value=player_pos_1.x
+                    },
+                    {
+                        property="Y",
+                        value=player_pos_1.y
+                    }},
+                },
+                {
+                    properties={{
+                        property="X",
+                        ease="Linear",
+                        value=player_pos_2.x
+                    },
+                    {
+                        property="Y",
+                        ease="Linear",
+                        value=player_pos_2.y
+                    }},
+                    duration=2.0
+                },
+                {
+                    properties={{
+                        property="Animation",
+                        value="IDLE_UR"
+                    }},
+                    duration = 0.0
+                }
+            })
             Net.slide_player_camera(player_id, camera_pos_2.x, camera_pos_2.y, camera_pos_2.z, 0.5)
             Net.set_bot_direction(wily_id, "Down Left")
-            -- TODO: play the track "face_bass_music.ogg BG music here"
+            Net.set_song("AlphaComp", "/server/assets/cutscene/face_bass_music.ogg")
             await(wily_says(player_id, 4))
             Net.animate_bot_properties(bass_id, {
                 {
@@ -448,12 +503,15 @@ cutscene_listener:on("FinaleCutsceneTrigger",
             await(lan_says(player_id, 2))
             await(player_says(player_id, 4))
             -- TODO: stop BG music for player here
+            Net.set_song("AlphaComp", "/server/assets/cutscene/silence.ogg")
             await(Async.initiate_encounter(player_id, "/server/assets/mobs/BassBn3.zip"))
+            -- TODO: stop BG music for player here (2nd time)
+            Net.set_song("AlphaComp", "/server/assets/cutscene/silence.ogg")
             Net.animate_bot(bass_id, "WOUNDED", true)
             await(bass_says(player_id, 9))
-            -- TODO: play the track "after_bass_battle_music.ogg BG music here"
             await(wily_says(player_id, 5))
             await(bass_says(player_id, 10))
+            Net.set_song("AlphaComp", "/server/assets/cutscene/after_bass_battle_music.ogg")
             await(wily_says(player_id, 6))
             await(bass_says(player_id, 11))
             await(wily_says(player_id, 7))
@@ -517,9 +575,8 @@ cutscene_listener:on("FinaleCutsceneTrigger",
             Net.unlock_player_camera(player_id)
         end)
     end
-) -- cutscene_listener.on('FinaleCutsceneTrigger')
-
---eznpcs.add_event(FinaleCutsceneTrigger)
+}
+eztriggers.add_event(FinaleCutsceneTrigger)
 
 local AlphaFight = {
     name="AlphaFight",

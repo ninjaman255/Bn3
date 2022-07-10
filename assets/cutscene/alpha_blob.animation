@@ -1,4 +1,4 @@
-imagePath="alpha_blob.png"
+imagePath="X:/Big_Code/Bn3/assets/cutscene/alpha_blob.png"
 
 animation state="IDLE_DL"
 frame duration="0.1" x="9" y="23" w="30" h="24" originx="15" originy="17" flipx="0" flipy="0"
@@ -23,4 +23,5 @@ frame duration="0.1" x="150" y="60" w="36" h="44" originx="18" originy="37" flip
 frame duration="0.1" x="8" y="129" w="32" h="31" originx="16" originy="25" flipx="0" flipy="0"
 frame duration="0.1" x="52" y="131" w="40" h="29" originx="20" originy="22" flipx="0" flipy="0"
 frame duration="0.1" x="99" y="144" w="42" h="19" originx="21" originy="12" flipx="0" flipy="0"
-frame duration="0.1" x="154" y="147" w="28" h="14" originx="13" originy="8" flipx="0" flipy="0"
+frame duration="0.1" x="153" y="147" w="28" h="14" originx="13" originy="8" flipx="0" flipy="0"
+frame duration="1" x="191" y="151" w="4" h="3" originx="0" originy="0" flipx="0" flipy="0"

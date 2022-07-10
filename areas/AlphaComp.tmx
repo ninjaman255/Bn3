@@ -202,8 +202,8 @@ DO YOU WANT THEM?</property>
   <object id="58" type="Liberation Tutorial" x="6" y="-152">
    <point/>
   </object>
-  <object id="59" name="AlphaPillar" gid="40" x="86" y="14" width="48" height="64"/>
-  <object id="64" name="FinaleCutsceneTrigger" type="Location Trigger" x="190" y="192.5" width="39.5" height="59.5">
+  <object id="59" name="AlphaPillar" gid="40" x="211" y="115" width="48" height="64"/>
+  <object id="64" name="FinaleCutsceneTrigger" type="Location Trigger" x="193" y="218.5" width="39.5" height="30">
    <properties>
     <property name="Event Name" value="FinaleCutsceneTrigger"/>
     <property name="Solid" type="bool" value="false"/>
@@ -221,9 +221,9 @@ DO YOU WANT THEM?</property>
   <object id="70" name="CameraPos2" x="226" y="122">
    <point/>
   </object>
-  <object id="72" name="TEST" type="Location Trigger" x="121.5" y="140.5" width="45.5" height="18.5">
+  <object id="72" name="TEST" type="Location Trigger" x="163.5" y="592.5" width="24" height="283">
    <properties>
-    <property name="Event" value=""/>
+    <property name="Event Name" value="Good View"/>
    </properties>
    <ellipse/>
   </object>
@@ -241,11 +241,6 @@ DO YOU WANT THEM?</property>
   </object>
   <object id="78" x="154" y="150">
    <ellipse/>
-  </object>
-  <object id="80" name="RECT_TEST" type="Location Trigger" x="56" y="298.5" width="496.5" height="313.5">
-   <properties>
-    <property name="Solid" type="bool" value="false"/>
-   </properties>
   </object>
  </objectgroup>
 </map>
