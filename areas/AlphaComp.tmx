@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="22" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="81">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="22" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="82">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Alpha/BG.animation"/>
@@ -241,6 +241,17 @@ DO YOU WANT THEM?</property>
   </object>
   <object id="78" x="154" y="150">
    <ellipse/>
+  </object>
+  <object id="81" name="???" type="NPC" x="179" y="297">
+   <properties>
+    <property name="Asset Name" value="ranked-navi-bn3"/>
+    <property name="Dialogue Type" value="first"/>
+    <property name="Direction" value="Up Left"/>
+    <property name="Dont Face Player" type="bool" value="false"/>
+    <property name="Event Name" value="CreateCheckpoint"/>
+    <property name="Text 1" value="Talk to me and I'll create a checkpoint for you."/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
 </map>

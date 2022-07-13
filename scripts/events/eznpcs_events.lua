@@ -3,6 +3,7 @@ local eztriggers = require('scripts/ezlibs-scripts/eztriggers')
 local ezmemory = require('scripts/ezlibs-scripts/ezmemory')
 local ezmystery = require('scripts/ezlibs-scripts/ezmystery')
 local ezweather = require('scripts/ezlibs-scripts/ezweather')
+local ezshortcuts = require('scripts/ezlibs-custom/ezshortcuts')
 local ezwarps = require('scripts/ezlibs-scripts/ezwarps/main')
 local ezencounters = require('scripts/ezlibs-scripts/ezencounters/main')
 local helpers = require('scripts/ezlibs-scripts/helpers')
@@ -598,6 +599,19 @@ local StartLiberationAlpha1 ={
     end
 }
 eznpcs.add_event(StartLiberationAlpha1)
+
+local CreateCheckpoint = {
+    name = "CreateCheckpoint",
+    action = function(npc, player_id, dialogue, relay_object)
+        return async(function()
+            warn("made it to CreateCheckpoint")
+            local player_pos = Net.get_player_position(player_id)
+            ezshortcuts.create_checkpoint(player_id, player_pos.x, player_pos.y, player_pos.z, true)
+        end)
+    end
+}
+
+eznpcs.add_event(CreateCheckpoint)
 
 local GrantLiberationAbility = {
     name = "Grant Liberation Mission Ability",
