@@ -73,6 +73,32 @@ Here it comes!!
 Here it comes!!
 Finally!!
 Alpha's awakening! It's the end of Network society!
+]],
+[[
+Ahahaha!!
+
+
+That is Alpha!!
+The beast who will
+devour Cyberworld!!
+This is the end!
+Of Net society...
+And the world!!
+Alpha!
+Swallow it all!
+All of it!
+]],
+[[
+Aahahahaha!!
+]],
+[[
+Huh...!?
+
+
+Stop!! What...!?
+
+
+Aaaahhhhh!!
 ]]
 }
 
@@ -174,6 +200,27 @@ Woah!
 ]],
 [[
 Bass!
+
+
+Bass is...
+What...
+What's happening!?
+]],
+[[
+Lan!
+]],
+[[
+The monster that would swallow all of Cyberworld...
+Lan,we have to stop this thing here and now!!
+]],
+[[
+Execute!
+]],
+[[
+Whew...
+
+
+Lan...
 ]]
 }
 
@@ -189,6 +236,38 @@ Let's show him how
 strong we are!
 Battle routine,
 set!
+]],
+[[
+Wily!
+
+
+It's even swallowed up Wily...!
+]],
+[[
+So this is Alpha!!
+]],
+[[
+Of course!
+For peace, and
+for our future!!
+Let's go, %NAVI_NAME%!
+Battle routine, set!
+]],
+[[
+We did it...
+We...
+We beat Alpha...
+]]
+}
+
+local alpha_lines = {
+[[
+Gah...Gah..Gaaahhh...
+Grraaahhh...!!
+]],
+[[
+Grraaahhh!!
+Mmwaaaa!!
 ]]
 }
 
@@ -229,7 +308,9 @@ local FinaleCutsceneTrigger = {
 
         local bass_id = nil
         local wily_id = nil
+        local alpha_id = nil
         local bass_position = nil
+        local wily_position = nil
         local player_pos_1 = nil
         local player_pos_2 = nil
         local camera_pos_1 = nil
@@ -243,6 +324,11 @@ local FinaleCutsceneTrigger = {
 
             if Net.get_bot_name(v) == "Wily" then
                 wily_id = v
+                wily_position = Net.get_bot_position(wily_id)
+            end
+
+            if Net.get_bot_name(v) == "alpha" then
+                alpha_id = v
             end
         end
 
@@ -519,6 +605,7 @@ local FinaleCutsceneTrigger = {
             await(player_says(player_id, 5))
             await(Async.sleep(0.5))
             Net.play_sound_for_player(player_id, "/server/assets/cutscene/quake.ogg")
+            Net.set_song("AlphaComp", "/server/assets/cutscene/silence.ogg") -- stops the music when quaking
             Net.shake_player_camera(player_id, 3.0, 6)
             await(Async.sleep(0.5))
             await(player_says(player_id, 6))
@@ -553,7 +640,7 @@ local FinaleCutsceneTrigger = {
             await(Async.sleep(0.3))
             Net.exclude_actor_for_player(player_id, bass_id);
             await(Async.sleep(0.6))
-            await(bass_says(player_id, 12))
+            await(bass_says(player_id, 13))
             Net.animate_bot_properties(bass_blob_id, {
                 {
                     properties={
@@ -572,8 +659,108 @@ local FinaleCutsceneTrigger = {
             await(Async.sleep(0.5))
             Net.remove_bot(bass_blob_id, false);
             await(player_says(player_id, 7))
-            Net.unlock_player_input(player_id)
+            await(wily_says(player_id, 9))
+            Net.animate_bot_properties(wily_id, {
+                {
+                    properties={
+                        {
+                            property="Animation",
+                            value="LAUGH_DL"
+                        },
+                    },
+                    duration = 0.0
+                },
+                {
+                    properties={
+                        {
+                            property="Animation",
+                            value="LAUGH_DL"
+                        },
+                    },
+                    duration = 3.0
+                },
+            })
+            await(wily_says(player_id, 10))
+            local wily_blob_id = Net.create_bot({area_id="AlphaComp", warp_in=false, texture_path="/server/assets/cutscene/alpha_blob.png", animation_path="/server/assets/cutscene/alpha_blob.animation", x=wily_position.x, y=wily_position.y, z=wily_position.z, animation="IDLE_DL", direction="Down Left"})
+            Net.animate_bot_properties(wily_blob_id, {
+                {
+                    properties={
+                        {
+                            property="Animation",
+                            value="BASS_SWALLOW"
+                        },
+                        {
+                            property="Sound Effect",
+                            value="/server/assets/cutscene/alpha_eat.ogg"
+                        }
+                    },
+                    duration = 0.0
+                },
+                {
+                    properties={{
+                        property="Animation",
+                        value="BASS_CONSUME"
+                    }},
+                    duration = 0.3
+                },
+            })
+            await(Async.sleep(0.3))
+            Net.exclude_actor_for_player(player_id, wily_id);
+            await(Async.sleep(0.6))
+            await(wily_says(player_id, 11))
+            Net.animate_bot_properties(wily_blob_id, {
+                {
+                    properties={
+                        {
+                            property="Animation",
+                            value="BASS_LEAVE"
+                        },
+                        {
+                            property="Sound Effect",
+                            value="/server/assets/cutscene/alpha_eat.ogg"
+                        }
+                    },
+                    duration = 0.0
+                },
+            })
+            await(Async.sleep(0.5))
+            Net.remove_bot(wily_blob_id, false);
+            await(lan_says(player_id, 3))
+            await(player_says(player_id, 8))
+
+            -- quake again
+            Net.play_sound_for_player(player_id, "/server/assets/cutscene/quake.ogg")
+            Net.shake_player_camera(player_id, 3.0, 6)
+            await(Async.sleep(4))
+            Net.fade_player_camera(player_id, {r=255,g=255,b=255}, 1.0)
+            await(Async.sleep(1))
+            Net.move_bot(alpha_id, camera_pos_1.x, camera_pos_1.y, camera_pos_1.z)
+            Net.fade_player_camera(player_id, {r=255,g=255,b=255,a=0}, 0.5)
+            await(Async.sleep(1))
+            -- TODO: wait while alpha opens eyes, blinks
+            await(lan_says(player_id, 4))
+            -- music picks back up again
+            Net.set_song("AlphaComp", "/server/assets/cutscene/face_bass_music.ogg")
+            await(player_says(player_id, 9))
+            await(lan_says(player_id, 5))
+            await(player_says(player_id, 10))
+            Net.set_song("AlphaComp", "/server/assets/cutscene/silence.ogg") -- silence before and after battle
+            await(Async.initiate_encounter(player_id, "/server/assets/mobs/Alpha.zip"))
+            await(Async.message_player(player_id, alpha_lines[1]))
+            await(player_says(player_id, 11))
+            await(lan_says(player_id, 6))
+            await(Async.message_player(player_id, alpha_lines[1]))
+            -- TODO: lots of alpha explosions
+            await(Async.sleep(6))
+            Net.fade_player_camera(player_id, {r=255,g=255,b=255}, 0.2)
+            -- TODO: big explosion sound here
+            await(Async.sleep(3))
+            Net.fade_player_camera(player_id, {r=0,g=0,b=0}, 2)
+            await(Async.sleep(2))
             Net.unlock_player_camera(player_id)
+            Net.fade_player_camera(player_id, {r=0,g=0,b=0,a=0}, 2)
+            await(Async.sleep(2))
+            Net.unlock_player_input(player_id)
         end)
     end
 }
