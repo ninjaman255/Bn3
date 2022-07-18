@@ -1,3 +1,22 @@
+local simplebbsmenus = require("scripts/ezlibs-custom/simplebbsmenus")
+
+local m = simplebbsmenus.create_menu(nil, "Test Level 1")
+local test_callback = function (player_id, name, menu, close_fn)
+  warn(player_id.." selected "..name.." from menu "..menu:get_title())
+  -- close_fn()
+end
+
+m:add_item("option 1", test_callback)
+m:add_item("option 2", test_callback)
+m:add_item("option 3", test_callback)
+local m2 = m:create_submenu("Test Level 2.A")
+m2:add_item("option 1", test_callback)
+m2:add_item("option 2", test_callback)
+m2:add_item("option 3", test_callback)
+local m3 = m:create_submenu("Test Level 2.B")
+m3:add_item("option 4", test_callback)
+m3:add_item("option 5", test_callback)
+m3:add_item("option 6", test_callback)
 
     local color = {
       r = 0,
@@ -34,9 +53,10 @@
       end
   
       function handle_post_selection(player_id,post_id)
-        Net.set_player_emote(player_id, tonumber(post_id), true)
-        Net.close_bbs(player_id)
-        print(post_id)
+        simplebbsmenus.handle_selection(player_id, post_id)
+        --Net.set_player_emote(player_id, tonumber(post_id), true)
+        --Net.close_bbs(player_id)
+        --print(post_id)
       end
   
     for i, s in ipairs(Emotes) do
@@ -49,5 +69,6 @@
     function handle_tile_interaction(player_id, x, y, z, button)
       if button ~= 1 then return end
       print("hello")
-      Net.open_board(player_id, "Emotes", color, Emotes)
+      -- Net.open_board(player_id, "Emotes", color, Emotes)
+      m:open_for_player(player_id)
     end
