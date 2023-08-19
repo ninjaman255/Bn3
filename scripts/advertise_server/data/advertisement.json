@@ -4,7 +4,7 @@
     },
     "advertisements":[
         {
-            "unique_server_id":"BN3_D3str0y3d",
+            "unique_server_id":"bn3",
             "name":"BN3",
             "description":"Recreation of the internet areas of BN3 with some QoL features, WIP",
             "tags":["Pvp"],
