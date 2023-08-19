@@ -1,0 +1,17 @@
+{
+    "listservers":{
+        "main":"https://www.keristero.xyz/server_list/"
+    },
+    "advertisements":[
+        {
+            "unique_server_id":"BN3-D3str0y3d",
+            "name":"BN3",
+            "description":"Recreation of the internet areas of BN3 with some QoL features, WIP",
+            "tags":["Pvp"],
+            "address":"159.223.165.219:3000",
+            "data":"",
+            "icon":"advertisement.png",
+            "color":"rgb(255,255,255)"
+        }
+    ]
+}
