@@ -7,7 +7,7 @@
             "unique_server_id":"bn3",
             "name":"BN3",
             "description":"Recreation of the internet areas of BN3 with some QoL features, WIP",
-            "tags":["Pvp"],
+            "tags":["pvp"],
             "address":"159.223.165.219:3000",
             "data":"",
             "icon":"advertisement.png",
