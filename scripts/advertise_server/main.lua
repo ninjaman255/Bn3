@@ -61,12 +61,10 @@ function set_pending_field(server_id,field_name,value)
 end
 
 function clear_pending_fields(server_id)
-    print('clear_pending_fields')
     public_info.pending_fields[server_id] = {}
 end
 
 function build_payload(server_id)
-    print('build_payload')
     local payload = {
         server_id=server_id,
         fields={}
@@ -79,7 +77,6 @@ function build_payload(server_id)
 end
 
 function get_secret_key(server_id,listserver_name)
-    print('get_secret_key')
     if not secret_keys[listserver_name] then
         return nil
     end
@@ -91,7 +88,6 @@ end
 
 function save_secret_key(file_path,server_id,listserver_name,secret_key)
     return async(function ()
-        print('save_secret_key')
         if not secret_keys[listserver_name] then
             secret_keys[listserver_name] = {}
         end
@@ -111,19 +107,17 @@ function sync_to_servers(server_id)
         headers["Content-Type"] = "application/json"
         --for each serverlist server
         for listserver_name, url in pairs(listservers) do
-            print('iterating ',listserver_name)
             payload.secret_key = get_secret_key(server_id,listserver_name)
-            print('sending with secret key',payload.secret_key)
             local res = await(Async.request(url, {
                 method = "POST",
                 headers = headers,
                 body = json.encode(payload)
             }))
-            print('res',res)
-            local data = json.decode(res.body)
-            print('data',data)
-            if data and data.secret_key ~= nil then
-                await(save_secret_key(secret_keys_json_path,server_id,listserver_name,data.secret_key))
+            if res then
+                local data = json.decode(res.body)
+                if data and data.secret_key ~= nil then
+                    await(save_secret_key(secret_keys_json_path,server_id,listserver_name,data.secret_key))
+                end
             end
         end
         public_info.time_since_last_sync[server_id] = 0
@@ -139,7 +133,6 @@ local function read_json(file_path)
                 data = {}
             end
         end)
-        print('loaded',file_path,data)
         return data
     end)
 end
@@ -157,13 +150,43 @@ local function load_all_images_for_advertisements(advertisements)
 end
 
 local function initialize_pending_fields_from_advertisements(advertisements)
+    set_pending_field_for_all_servers("online_players",0)
     for i, advertisement in ipairs(advertisements) do
+        --Some ephemral fields need defaults
         local server_id = advertisement.unique_server_id
         for field_name, value in pairs(advertisement) do
-            print("initting",field_name,value)
             set_pending_field(server_id,field_name,value)
         end
     end
+end
+
+local function build_server_map()
+    local server_map = {}
+    local areas = Net.list_areas()
+    for i, area_id in ipairs(areas) do
+        local area_p = Net.get_area_custom_properties(area_id)
+        if not server_map[area_id] then
+            server_map[area_id] = {
+                name=area_p["Name"],
+                l={},--local connections (same server)
+                r={}--remote connections (other servers)
+            }
+        end
+        local objects = Net.list_objects(area_id)
+        for j, object_id in ipairs(objects) do
+            local object = Net.get_object_by_id(area_id,object_id)
+            local custom_p = object.custom_properties
+            if custom_p["Target Area"] then
+                server_map[area_id].l[custom_p["Target Area"]] = {id=custom_p["Target Object"]}
+            end
+            local address = custom_p["Address"]
+            local port = custom_p["Port"]
+            if address and port then
+                server_map[area_id].r[address..":"..port] = {data=custom_p["Data"],incoming_data=custom_p["Incoming Data"]}
+            end
+        end
+    end
+    return server_map
 end
 
 --load configuration
@@ -171,18 +194,20 @@ async(function()
     print('[advertise_server] loading...')
     --load secret keys
     secret_keys = await(read_json(secret_keys_json_path))
-    print("LOADED===============")
     --load advertisements
     local data = await(read_json(advertisement_json_path))
-    print("LOADED===============")
     local advertisements = data.advertisements
     listservers = data.listservers
-    print("LOADED===============",listservers)
     initialize_pending_fields_from_advertisements(advertisements)
-    print("LOADED===============")
     --load images
     await(load_all_images_for_advertisements(advertisements))
-    print("LOADED===============")
+    --load sever map
+    local server_map = build_server_map()
+    for i, advertisement in ipairs(advertisements) do
+        if advertisement.advertise_map then
+            set_pending_field(advertisement.unique_server_id,"map",server_map)
+        end
+    end
     while true do
         --every minimum_sync_interval, we send all the batched changes
         await(Async.sleep(minimum_sync_interval))
